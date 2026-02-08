@@ -4,7 +4,7 @@ const VIEW = (repo) => `https://raw.githack.com/${USER}/${repo}/main/index.html`
 const APPS = [
   { name:"all", emoji:"🏠", desc:"The Workshop-Diy hub — browse every mini-app in one place.", tags:["hub","portal","web"] },
   { name:"bit-bot", emoji:"🤖", desc:"Control a robot with your micro:bit over Bluetooth — drive, steer & play!", tags:["robot","micro:bit","BLE"] },
-  { name:"bitPlayground", emoji:"🧩", desc:"Play with the BBC micro:bit from your browser (BLE): LEDs, sensors, servos, gamepad, charts!", tags:["micro:bit","BLE","web"] },
+  { name:"bit-playground", emoji:"🧩", desc:"Play with the BBC micro:bit from your browser (BLE): LEDs, sensors, servos, gamepad, charts!", tags:["micro:bit","BLE","web"] },
   { name:"magic-hands", emoji:"🪄", desc:"Wave your hands in front of the camera to trigger magic effects like confetti & trails.", tags:["camera","hand-tracking","fun"] },
   { name:"bitmoji-lab", emoji:"😄", desc:"Turn emojis into colorful micro:bit LED art and send them wirelessly.", tags:["emoji","micro:bit","BLE"] },
   { name:"rxy", emoji:"🎛️", desc:"Build a Bluetooth remote for micro:bit — no coding, just click & play.", tags:["builder","micro:bit","BLE"] },
@@ -12,6 +12,8 @@ const APPS = [
   { name:"ble-logger", emoji:"📡", desc:"Bluetooth logger / playground for micro:bit experiments.", tags:["BLE","micro:bit","tools"] },
   { name:"mission-control", emoji:"🚀", desc:"Mission control: video/chat + buttons to send commands (and optional micro:bit BLE).", tags:["webrtc","kids","BLE"] },
   { name:"classroom", emoji:"🏫", desc:"PeerJS Cloud Classroom Lite — simple room-code classroom for up to ~12 students.", tags:["peerjs","classroom","webrtc"] },
+  { name:"claude-toolkit", emoji:"🧰", desc:"A toolkit for building apps and workflows powered by Claude AI.", tags:["ai","claude","tools"] },
+  { name:"crypto-academy", emoji:"💰", desc:"Learn about cryptocurrency and blockchain with interactive lessons.", tags:["crypto","blockchain","education"] },
   { name:"arabic-translator", emoji:"📖", desc:"تطبيق مترجم عربي يعمل داخل المتصفح بدون خادم وبدون مفاتيح API.", tags:["arabic","translate","browser-only"] },
   { name:"arabic-speaker", emoji:"🗣️", desc:"Arabic TTS + STT in the browser using Web Speech API (no backend).", tags:["arabic","tts","stt"] },
   { name:"piper-arabic-tts", emoji:"🎙️", desc:"Arabic TTS demo using Piper (WASM). (May need hosting for model files.)", tags:["arabic","piper","wasm"] },
@@ -19,6 +21,9 @@ const APPS = [
   { name:"face-quest", emoji:"🕵️", desc:"Face Quest — a face game you can play with the camera (privacy-first: runs locally).", tags:["camera","ai","micro:bit"] },
   { name:"talking-robot", emoji:"🤖", desc:"A talking robot that can speak, listen, show emotions, and message a micro:bit.", tags:["robot","speech","BLE"] },
   { name:"face-tracking", emoji:"😎", desc:"Kids Edition face tracking with camera events and optional micro:bit BLE.", tags:["camera","face-tracking","BLE"] },
+  { name:"pentest-lab", emoji:"🔐", desc:"A beginner-friendly penetration testing lab to learn cybersecurity basics.", tags:["security","pentest","education"] },
+  { name:"production-chain", emoji:"🏭", desc:"Visualize and simulate a production chain — from raw materials to finished product.", tags:["simulation","industry","education"] },
+  { name:"puppeteer-playground", emoji:"🎭", desc:"Experiment with Puppeteer for browser automation, scraping & testing.", tags:["puppeteer","automation","web"] },
 ].map(a => ({
   ...a,
   github: `https://github.com/${USER}/${a.name}`,
