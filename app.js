@@ -456,7 +456,8 @@ function card(app) {
   const sparkles = ["✨", "🎈", "🎉", "⭐", "🍭", "🌟", "🫧", "🎪", "🦄", "🔥"];
   const sp = sparkles[Math.floor(Math.random() * sparkles.length)];
   const thumb = `./thumbs/${app.name}.png`;
-  const thumbApiFallback = `https://image.thum.io/get/width/640/https://${USER}.github.io/${app.name}/`;
+  const thumbGitHub = `https://raw.githubusercontent.com/${USER}/all/main/thumbs/${app.name}.png`;
+  const thumbApi = `https://image.thum.io/get/width/640/https://${USER}.github.io/${app.name}/`;
   const desc = (app.desc && typeof app.desc === 'object') ? (app.desc[LANG] || app.desc.en || '') : (app.desc || '');
   const tooltip = t("tooltips")[Math.floor(Math.random() * t("tooltips").length)];
   const isFav = FAVS.includes(app.name);
@@ -475,7 +476,7 @@ function card(app) {
     <div class="kids-thumb-wrap">
       <img class="kids-thumb" src="${thumb}" alt="${app.name} screenshot"
            onload="this.classList.add('loaded');this.parentElement.classList.add('thumb-loaded')"
-           onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src='${thumbApiFallback}';}else{this.parentElement.classList.add('no-thumb');}"/>
+           onerror="var r=parseInt(this.dataset.retry||0);this.dataset.retry=r+1;if(r===0)this.src='${thumbGitHub}';else if(r===1)this.src='${thumbApi}';else this.parentElement.classList.add('no-thumb');"/>
       <span class="kids-thumb-emoji">${app.emoji}</span>
       <div class="thumb-overlay"><span class="thumb-overlay-text">${app.name}</span></div>
     </div>
