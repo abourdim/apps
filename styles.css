@@ -986,3 +986,9 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   .lang-switcher, .theme-switcher { gap: 2px; padding: 3px; }
   .lang-btn, .theme-btn { padding: 4px 6px; font-size: 0.95rem; }
 }
+
+.kids-thumb,
+.kids-card img {
+  display: none !important;
+}
+
