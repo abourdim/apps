@@ -7,7 +7,11 @@
       "emoji": "🏠",
       "category": "tools",
       "badge": "hub",
-      "tags": ["hub", "portal", "web"],
+      "tags": [
+        "hub",
+        "portal",
+        "web"
+      ],
       "desc": {
         "en": "The Workshop-Diy hub — browse every mini-app in one place.",
         "fr": "Le hub Workshop-Diy — explorez toutes les mini-apps au même endroit.",
@@ -19,7 +23,11 @@
       "emoji": "🤖",
       "category": "microbit",
       "badge": "popular",
-      "tags": ["robot", "micro:bit", "BLE"],
+      "tags": [
+        "robot",
+        "micro:bit",
+        "BLE"
+      ],
       "desc": {
         "en": "Control a robot with your micro:bit over Bluetooth — drive, steer & play!",
         "fr": "Contrôlez un robot avec votre micro:bit en Bluetooth — conduisez et jouez !",
@@ -31,7 +39,11 @@
       "emoji": "🧩",
       "category": "microbit",
       "badge": "",
-      "tags": ["micro:bit", "BLE", "web"],
+      "tags": [
+        "micro:bit",
+        "BLE",
+        "web"
+      ],
       "desc": {
         "en": "Play with the BBC micro:bit from your browser (BLE): LEDs, sensors, servos, gamepad, charts!",
         "fr": "Jouez avec le BBC micro:bit depuis votre navigateur (BLE) : LEDs, capteurs, servos, manette, graphiques !",
@@ -43,7 +55,11 @@
       "emoji": "🪄",
       "category": "camera",
       "badge": "popular",
-      "tags": ["camera", "hand-tracking", "fun"],
+      "tags": [
+        "camera",
+        "hand-tracking",
+        "fun"
+      ],
       "desc": {
         "en": "Wave your hands in front of the camera to trigger magic effects like confetti & trails.",
         "fr": "Agitez vos mains devant la caméra pour déclencher des effets magiques comme des confettis et des traînées.",
@@ -55,7 +71,11 @@
       "emoji": "😄",
       "category": "microbit",
       "badge": "",
-      "tags": ["emoji", "micro:bit", "BLE"],
+      "tags": [
+        "emoji",
+        "micro:bit",
+        "BLE"
+      ],
       "desc": {
         "en": "Turn emojis into colorful micro:bit LED art and send them wirelessly.",
         "fr": "Transformez des emojis en art LED coloré sur micro:bit et envoyez-les sans fil.",
@@ -67,7 +87,11 @@
       "emoji": "🎛️",
       "category": "microbit",
       "badge": "",
-      "tags": ["builder", "micro:bit", "BLE"],
+      "tags": [
+        "builder",
+        "micro:bit",
+        "BLE"
+      ],
       "desc": {
         "en": "Build a Bluetooth remote for micro:bit — no coding, just click & play.",
         "fr": "Construisez une télécommande Bluetooth pour micro:bit — sans coder, juste cliquer et jouer.",
@@ -79,7 +103,11 @@
       "emoji": "🔌",
       "category": "microbit",
       "badge": "",
-      "tags": ["micro:bit", "serial", "web"],
+      "tags": [
+        "micro:bit",
+        "serial",
+        "web"
+      ],
       "desc": {
         "en": "Talk to your micro:bit over USB serial from the browser (send/receive + speed test).",
         "fr": "Communiquez avec votre micro:bit via USB série depuis le navigateur (envoi/réception + test de vitesse).",
@@ -91,7 +119,11 @@
       "emoji": "📡",
       "category": "microbit",
       "badge": "",
-      "tags": ["BLE", "micro:bit", "tools"],
+      "tags": [
+        "BLE",
+        "micro:bit",
+        "tools"
+      ],
       "desc": {
         "en": "Bluetooth logger / playground for micro:bit experiments.",
         "fr": "Enregistreur Bluetooth / terrain de jeu pour expériences micro:bit.",
@@ -103,7 +135,11 @@
       "emoji": "🚀",
       "category": "classroom",
       "badge": "",
-      "tags": ["webrtc", "kids", "BLE"],
+      "tags": [
+        "webrtc",
+        "kids",
+        "BLE"
+      ],
       "desc": {
         "en": "Mission control: video/chat + buttons to send commands (and optional micro:bit BLE).",
         "fr": "Contrôle de mission : vidéo/chat + boutons pour envoyer des commandes (et micro:bit BLE en option).",
@@ -115,7 +151,11 @@
       "emoji": "🏫",
       "category": "classroom",
       "badge": "new",
-      "tags": ["peerjs", "classroom", "webrtc"],
+      "tags": [
+        "peerjs",
+        "classroom",
+        "webrtc"
+      ],
       "desc": {
         "en": "PeerJS Cloud Classroom Lite — simple room-code classroom for up to ~12 students.",
         "fr": "PeerJS Cloud Classroom Lite — salle de classe simple avec code de salle pour ~12 élèves.",
@@ -127,7 +167,11 @@
       "emoji": "🧰",
       "category": "tools",
       "badge": "new",
-      "tags": ["ai", "claude", "tools"],
+      "tags": [
+        "ai",
+        "claude",
+        "tools"
+      ],
       "desc": {
         "en": "A toolkit for building apps and workflows powered by Claude AI.",
         "fr": "Une boîte à outils pour créer des apps et des flux de travail avec Claude AI.",
@@ -139,7 +183,11 @@
       "emoji": "💰",
       "category": "education",
       "badge": "",
-      "tags": ["crypto", "blockchain", "education"],
+      "tags": [
+        "crypto",
+        "blockchain",
+        "education"
+      ],
       "desc": {
         "en": "Learn about cryptocurrency and blockchain with interactive lessons.",
         "fr": "Apprenez la cryptomonnaie et la blockchain avec des leçons interactives.",
@@ -151,7 +199,11 @@
       "emoji": "📖",
       "category": "arabic",
       "badge": "",
-      "tags": ["arabic", "translate", "browser-only"],
+      "tags": [
+        "arabic",
+        "translate",
+        "browser-only"
+      ],
       "desc": {
         "en": "Arabic translator app that runs entirely in the browser — no server, no API keys.",
         "fr": "Traducteur arabe qui fonctionne entièrement dans le navigateur — sans serveur, sans clés API.",
@@ -163,7 +215,11 @@
       "emoji": "🗣️",
       "category": "arabic",
       "badge": "",
-      "tags": ["arabic", "tts", "stt"],
+      "tags": [
+        "arabic",
+        "tts",
+        "stt"
+      ],
       "desc": {
         "en": "Arabic TTS + STT in the browser using Web Speech API (no backend).",
         "fr": "Synthèse et reconnaissance vocale arabe dans le navigateur avec Web Speech API (sans backend).",
@@ -175,7 +231,11 @@
       "emoji": "🎙️",
       "category": "arabic",
       "badge": "",
-      "tags": ["arabic", "piper", "wasm"],
+      "tags": [
+        "arabic",
+        "piper",
+        "wasm"
+      ],
       "desc": {
         "en": "Arabic TTS demo using Piper (WASM). (May need hosting for model files.)",
         "fr": "Démo de synthèse vocale arabe avec Piper (WASM). (Peut nécessiter un hébergement pour les fichiers du modèle.)",
@@ -187,7 +247,11 @@
       "emoji": "🧠",
       "category": "microbit",
       "badge": "popular",
-      "tags": ["ml", "micro:bit", "BLE"],
+      "tags": [
+        "ml",
+        "micro:bit",
+        "BLE"
+      ],
       "desc": {
         "en": "Teach gestures/sounds, then control a micro:bit over Bluetooth.",
         "fr": "Enseignez des gestes/sons, puis contrôlez un micro:bit en Bluetooth.",
@@ -199,7 +263,11 @@
       "emoji": "🕵️",
       "category": "camera",
       "badge": "",
-      "tags": ["camera", "ai", "micro:bit"],
+      "tags": [
+        "camera",
+        "ai",
+        "micro:bit"
+      ],
       "desc": {
         "en": "Face Quest — a face game you can play with the camera (privacy-first: runs locally).",
         "fr": "Face Quest — un jeu facial avec la caméra (respect de la vie privée : fonctionne localement).",
@@ -211,7 +279,11 @@
       "emoji": "🤖",
       "category": "microbit",
       "badge": "",
-      "tags": ["robot", "speech", "BLE"],
+      "tags": [
+        "robot",
+        "speech",
+        "BLE"
+      ],
       "desc": {
         "en": "A talking robot that can speak, listen, show emotions, and message a micro:bit.",
         "fr": "Un robot parlant qui peut parler, écouter, montrer des émotions et envoyer des messages à un micro:bit.",
@@ -223,7 +295,11 @@
       "emoji": "😎",
       "category": "camera",
       "badge": "",
-      "tags": ["camera", "face-tracking", "BLE"],
+      "tags": [
+        "camera",
+        "face-tracking",
+        "BLE"
+      ],
       "desc": {
         "en": "Kids Edition face tracking with camera events and optional micro:bit BLE.",
         "fr": "Suivi de visage édition enfants avec événements caméra et micro:bit BLE en option.",
@@ -235,7 +311,11 @@
       "emoji": "🔐",
       "category": "education",
       "badge": "",
-      "tags": ["security", "pentest", "education"],
+      "tags": [
+        "security",
+        "pentest",
+        "education"
+      ],
       "desc": {
         "en": "A beginner-friendly penetration testing lab to learn cybersecurity basics.",
         "fr": "Un laboratoire de test d'intrusion pour débutants pour apprendre les bases de la cybersécurité.",
@@ -247,7 +327,11 @@
       "emoji": "🏭",
       "category": "education",
       "badge": "",
-      "tags": ["simulation", "industry", "education"],
+      "tags": [
+        "simulation",
+        "industry",
+        "education"
+      ],
       "desc": {
         "en": "Visualize and simulate a production chain — from raw materials to finished product.",
         "fr": "Visualisez et simulez une chaîne de production — des matières premières au produit fini.",
@@ -259,11 +343,31 @@
       "emoji": "🎭",
       "category": "tools",
       "badge": "",
-      "tags": ["puppeteer", "automation", "web"],
+      "tags": [
+        "puppeteer",
+        "automation",
+        "web"
+      ],
       "desc": {
         "en": "Experiment with Puppeteer for browser automation, scraping & testing.",
         "fr": "Expérimentez avec Puppeteer pour l'automatisation du navigateur, le scraping et les tests.",
         "ar": "جرّب Puppeteer لأتمتة المتصفح والكشط والاختبار."
+      }
+    },
+    {
+      "name": "pixel-gateway",
+      "emoji": "🕹️",
+      "category": "tools",
+      "badge": "new",
+      "tags": [
+        "pixel",
+        "gateway",
+        "web"
+      ],
+      "desc": {
+        "en": "Pixel Gateway — a retro-style portal for creative pixel projects.",
+        "fr": "Pixel Gateway — un portail rétro pour des projets créatifs en pixels.",
+        "ar": "Pixel Gateway — بوابة رجعية لمشاريع البيكسل الإبداعية."
       }
     }
   ]

@@ -197,7 +197,9 @@ const INLINE_APPS = [
   { name:"production-chain", emoji:"\u{1F3ED}", category:"education", badge:"", tags:["simulation","industry","education"],
     desc:{ en:"Visualize and simulate a production chain \u2014 from raw materials to finished product.", fr:"Visualisez et simulez une cha\u00eene de production.", ar:"\u062a\u0635\u0648\u0651\u0631 \u0648\u0645\u062d\u0627\u0643\u0627\u0629 \u0633\u0644\u0633\u0644\u0629 \u0625\u0646\u062a\u0627\u062c." }},
   { name:"puppeteer-playground", emoji:"\u{1F3AD}", category:"tools", badge:"", tags:["puppeteer","automation","web"],
-    desc:{ en:"Experiment with Puppeteer for browser automation, scraping & testing.", fr:"Exp\u00e9rimentez avec Puppeteer pour l'automatisation du navigateur.", ar:"\u062c\u0631\u0651\u0628 Puppeteer \u0644\u0623\u062a\u0645\u062a\u0629 \u0627\u0644\u0645\u062a\u0635\u0641\u062d." }}
+    desc:{ en:"Experiment with Puppeteer for browser automation, scraping & testing.", fr:"Exp\u00e9rimentez avec Puppeteer pour l'automatisation du navigateur.", ar:"\u062c\u0631\u0651\u0628 Puppeteer \u0644\u0623\u062a\u0645\u062a\u0629 \u0627\u0644\u0645\u062a\u0635\u0641\u062d." }},
+  { name:"pixel-gateway", emoji:"\u{1F579}\uFE0F", category:"tools", badge:"new", tags:["pixel","gateway","web"],
+    desc:{ en:"Pixel Gateway \u2014 a retro-style portal for creative pixel projects.", fr:"Pixel Gateway \u2014 un portail r\u00e9tro pour des projets cr\u00e9atifs en pixels.", ar:"Pixel Gateway \u2014 \u0628\u0648\u0627\u0628\u0629 \u0631\u062c\u0639\u064a\u0629 \u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u0628\u064a\u0643\u0633\u0644 \u0627\u0644\u0625\u0628\u062f\u0627\u0639\u064a\u0629." }}
 ];
 
 /* ============================================================
@@ -475,7 +477,7 @@ function card(app) {
     <button class="fav-btn ${isFav ? 'favorited' : ''}" data-fav="${app.name}" title="Favorite" aria-label="Toggle favorite">⭐</button>
     <div class="kids-thumb-wrap">
       <img class="kids-thumb" src="${thumb}" alt="${app.name} screenshot"
-           onload="this.classList.add('loaded');this.parentElement.classList.add('thumb-loaded')"
+           onload="this.classList.add('loaded')"
            onerror="var r=parseInt(this.dataset.retry||0);this.dataset.retry=r+1;if(r===0)this.src='${thumbGitHub}';else if(r===1)this.src='${thumbApi}';else this.parentElement.classList.add('no-thumb');"/>
       <span class="kids-thumb-emoji">${app.emoji}</span>
       <div class="thumb-overlay"><span class="thumb-overlay-text">${app.name}</span></div>
@@ -502,6 +504,18 @@ function card(app) {
     fireConfetti();
     playSound("tada");
     trackExplored(app.name);
+  });
+
+  // Mobile tap-to-preview thumbnail
+  el.querySelector(".kids-thumb-wrap")?.addEventListener("click", (e) => {
+    if ('ontouchstart' in window) {
+      e.stopPropagation();
+      // Remove tapped from all other cards
+      document.querySelectorAll(".kids-card.tapped").forEach(c => {
+        if (c !== el) c.classList.remove("tapped");
+      });
+      el.classList.toggle("tapped");
+    }
   });
 
   return el;

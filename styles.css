@@ -649,7 +649,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
 .card-badge ~ .fav-btn { top: 36px; }
 
 /* ============================================================
-   THUMBNAIL
+   THUMBNAIL — hover preview (emoji by default)
    ============================================================ */
 .kids-thumb-wrap {
   position: relative;
@@ -657,34 +657,10 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   height: 160px;
   overflow: hidden;
   background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
+  cursor: pointer;
 }
-.kids-thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s cubic-bezier(.4,0,.2,1), opacity 0.4s;
-  opacity: 0;
-}
-.kids-thumb.loaded { opacity: 1; }
-.kids-card:hover .kids-thumb { transform: scale(1.08); }
 
-/* Skeleton loader */
-.kids-thumb-wrap::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-secondary) 50%, var(--bg-card) 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
-  z-index: 1;
-}
-.kids-thumb-wrap.thumb-loaded::before { animation: none; opacity: 0; }
-.kids-thumb-wrap.no-thumb::before { animation: none; opacity: 0; }
-
-/* Hide emoji when thumb loads */
-.kids-thumb-wrap.thumb-loaded .kids-thumb-emoji { display: none; }
-
-/* Emoji fallback */
+/* Emoji always visible by default */
 .kids-thumb-emoji {
   position: absolute;
   inset: 0;
@@ -695,11 +671,49 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   z-index: 2;
   animation: float 3s ease-in-out infinite;
   background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
-.kids-thumb-wrap.no-thumb { background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card)); }
-.kids-thumb-wrap.no-thumb .kids-thumb { display: none; }
 
-/* Hover overlay */
+/* Thumbnail hidden by default */
+.kids-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.12);
+  transition: opacity 0.5s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1);
+  z-index: 1;
+}
+
+/* On hover: reveal thumbnail, fade out emoji */
+.kids-card:hover .kids-thumb.loaded,
+.kids-card.tapped .kids-thumb.loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+.kids-card:hover .kids-thumb-emoji,
+.kids-card.tapped .kids-thumb-emoji {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+/* Skeleton shimmer while loading */
+.kids-thumb-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-secondary) 50%, var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  z-index: 0;
+  opacity: 0;
+}
+
+/* If thumb failed, don't show it at all */
+.kids-thumb-wrap.no-thumb .kids-thumb { display: none; }
+.kids-thumb-wrap.no-thumb { background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card)); }
+
+/* Hover overlay label */
 .thumb-overlay {
   position: absolute;
   bottom: 0;
@@ -710,7 +724,8 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   transition: opacity var(--transition);
   z-index: 3;
 }
-.kids-card:hover .thumb-overlay { opacity: 1; }
+.kids-card:hover .thumb-overlay,
+.kids-card.tapped .thumb-overlay { opacity: 1; }
 .thumb-overlay-text {
   color: #fff;
   font-size: 0.75rem;
