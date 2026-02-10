@@ -31,7 +31,6 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
 [dir="rtl"] .header-controls { flex-direction: row-reverse; }
 [dir="rtl"] .mode-selector { direction: rtl; }
 [dir="rtl"] .search-row { flex-direction: row-reverse; }
-[dir="rtl"] .sparkline { left: auto; right: 10px; }
 [dir="rtl"] .card-badge { left: 12px; right: auto; }
 
 /* ============================================================
@@ -551,17 +550,16 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   gap: 12px;
   align-items: center;
 }
-.kids-grid.list-view .kids-thumb-wrap { height: 80px; }
-.kids-grid.list-view .sparkline { display: none; }
 .kids-grid.list-view .kids-tags { display: none; }
 
 /* ============================================================
-   KIDS CARD
+   KIDS CARD — unique accent color per card
    ============================================================ */
 .kids-card {
   position: relative;
   background: var(--bg-card);
   border: 1.5px solid var(--border);
+  border-top: 4px solid var(--card-color, var(--accent));
   border-radius: var(--radius);
   padding: 0;
   overflow: hidden;
@@ -570,26 +568,14 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   animation: cardIn 0.4s ease-out both;
 }
 .kids-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  border-color: var(--accent);
-  box-shadow: var(--shadow-hover), 0 0 30px var(--glow);
+  transform: translateY(-8px) scale(1.03);
+  border-color: var(--card-color, var(--accent));
+  border-top-color: var(--card-color, var(--accent));
+  box-shadow: 0 10px 35px rgba(0,0,0,0.35), 0 0 25px color-mix(in srgb, var(--card-color) 35%, transparent);
   background: var(--bg-card-hover);
 }
 
-/* Category left border */
-.kids-card[data-cat="microbit"] { border-left: 4px solid var(--cat-microbit); }
-.kids-card[data-cat="camera"] { border-left: 4px solid var(--cat-camera); }
-.kids-card[data-cat="arabic"] { border-left: 4px solid var(--cat-arabic); }
-.kids-card[data-cat="classroom"] { border-left: 4px solid var(--cat-classroom); }
-.kids-card[data-cat="education"] { border-left: 4px solid var(--cat-education); }
-.kids-card[data-cat="tools"] { border-left: 4px solid var(--cat-tools); }
-[dir="rtl"] .kids-card[data-cat] { border-left: 1.5px solid var(--border); border-right-width: 4px; border-right-style: solid; }
-[dir="rtl"] .kids-card[data-cat="microbit"] { border-right-color: var(--cat-microbit); }
-[dir="rtl"] .kids-card[data-cat="camera"] { border-right-color: var(--cat-camera); }
-[dir="rtl"] .kids-card[data-cat="arabic"] { border-right-color: var(--cat-arabic); }
-[dir="rtl"] .kids-card[data-cat="classroom"] { border-right-color: var(--cat-classroom); }
-[dir="rtl"] .kids-card[data-cat="education"] { border-right-color: var(--cat-education); }
-[dir="rtl"] .kids-card[data-cat="tools"] { border-right-color: var(--cat-tools); }
+/* Remove old category left borders — now using top border via --card-color */
 
 /* Stagger animation */
 .kids-card:nth-child(1) { animation-delay: 0.02s; }
@@ -602,16 +588,6 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
 .kids-card:nth-child(8) { animation-delay: 0.30s; }
 .kids-card:nth-child(9) { animation-delay: 0.34s; }
 .kids-card:nth-child(10) { animation-delay: 0.38s; }
-
-/* Sparkle badge */
-.sparkline {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 1rem;
-  animation: wiggle 2s ease-in-out infinite;
-  z-index: 3;
-}
 
 /* Badge */
 .card-badge {
@@ -627,6 +603,30 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   color: #fff;
   z-index: 3;
   animation: badgePop 0.4s ease-out both;
+}
+
+/* Card number — inline in title */
+.card-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 6px;
+  font-family: var(--ff-heading);
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: #fff;
+  background: var(--card-color, var(--accent));
+  border-radius: 50px;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--card-color) 50%, transparent);
+  transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.3s;
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
+}
+.kids-card:hover .card-number {
+  transform: scale(1.15) rotate(-6deg);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--card-color) 60%, transparent);
 }
 .card-badge.new { background: var(--badge-new); }
 .card-badge.popular { background: var(--badge-popular); }
@@ -644,148 +644,71 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   transition: transform 0.3s;
   filter: grayscale(1) opacity(0.4);
 }
-.fav-btn.favorited { filter: none; animation: starPop 0.4s ease-out; }
+.fav-btn.favorited { filter: none; animation: firePop 0.4s ease-out; }
 .fav-btn:hover { transform: scale(1.3); filter: none; }
 .card-badge ~ .fav-btn { top: 36px; }
 
 /* ============================================================
-   THUMBNAIL — hover preview (emoji by default)
-   ============================================================ */
-.kids-thumb-wrap {
-  position: relative;
-  width: 100%;
-  height: 160px;
-  overflow: hidden;
-  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
-  cursor: pointer;
-}
-
-/* Emoji always visible by default */
-.kids-thumb-emoji {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3.5rem;
-  z-index: 2;
-  animation: float 3s ease-in-out infinite;
-  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-/* Thumbnail hidden by default */
-.kids-thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transform: scale(1.12);
-  transition: opacity 0.5s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1);
-  z-index: 1;
-}
-
-/* On hover: reveal thumbnail, fade out emoji */
-.kids-card:hover .kids-thumb.loaded,
-.kids-card.tapped .kids-thumb.loaded {
-  opacity: 1;
-  transform: scale(1);
-}
-.kids-card:hover .kids-thumb-emoji,
-.kids-card.tapped .kids-thumb-emoji {
-  opacity: 0;
-  transform: scale(0.7);
-}
-
-/* Skeleton shimmer while loading */
-.kids-thumb-wrap::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-secondary) 50%, var(--bg-card) 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
-  z-index: 0;
-  opacity: 0;
-}
-
-/* If thumb failed, don't show it at all */
-.kids-thumb-wrap.no-thumb .kids-thumb { display: none; }
-.kids-thumb-wrap.no-thumb { background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card)); }
-
-/* Hover overlay label */
-.thumb-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0; right: 0;
-  padding: 20px 12px 8px;
-  background: linear-gradient(transparent, rgba(0,0,0,0.7));
-  opacity: 0;
-  transition: opacity var(--transition);
-  z-index: 3;
-}
-.kids-card:hover .thumb-overlay,
-.kids-card.tapped .thumb-overlay { opacity: 1; }
-.thumb-overlay-text {
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-
-/* ============================================================
-   CARD CONTENT
+   CARD TITLE — big, fun, bouncy
    ============================================================ */
 .kids-card h3 {
-  padding: 12px 14px 4px;
+  padding: 22px 16px 6px;
   font-family: var(--ff-heading);
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: 0.01em;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
+  transition: color 0.3s ease;
+  line-height: 1.2;
+}
+.kids-card:hover h3 {
+  color: var(--card-color, var(--accent));
 }
 .kids-emoji {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   display: inline-block;
-  transition: transform 0.3s;
+  transition: transform 0.4s cubic-bezier(.34,1.56,.64,1);
+  filter: drop-shadow(0 2px 6px color-mix(in srgb, var(--card-color) 35%, transparent));
 }
-.kids-card:hover .kids-emoji { transform: scale(1.25) rotate(-8deg); animation: wiggle 0.5s; }
+.kids-card:hover .kids-emoji {
+  animation: emojiPop 0.6s ease-in-out;
+}
+.kids-name {
+  background: linear-gradient(135deg, var(--text-primary), color-mix(in srgb, var(--card-color) 40%, var(--text-primary)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+.kids-card:hover .kids-name {
+  background: linear-gradient(135deg, var(--card-color), color-mix(in srgb, var(--card-color) 60%, #fff));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+}
+
+@keyframes emojiPop {
+  0%   { transform: scale(1) rotate(0deg); }
+  15%  { transform: scale(1.6) rotate(-20deg); }
+  30%  { transform: scale(0.85) rotate(12deg); }
+  50%  { transform: scale(1.35) rotate(-6deg); }
+  70%  { transform: scale(1.05) rotate(3deg); }
+  100% { transform: scale(1.2) rotate(0deg); }
+}
 
 .kids-desc {
   padding: 0 14px 10px;
   font-size: 0.8rem;
   color: var(--text-secondary);
   line-height: 1.5;
-  min-height: 42px;
+  min-height: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-
-/* Funny tooltip */
-.fun-tooltip {
-  display: none;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 6px 12px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 600;
-  border-radius: 8px;
-  white-space: nowrap;
-  z-index: 10;
-  animation: tooltipBounce 0.3s ease-out;
-}
-.fun-tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 5px solid transparent;
-  border-top-color: var(--accent);
-}
-.kids-card:hover .fun-tooltip { display: block; }
 
 /* ============================================================
    CARD ACTIONS
@@ -816,23 +739,34 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   box-shadow: 0 2px 10px var(--glow);
 }
 .kids-link.primary {
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  background: var(--card-color, var(--accent));
   color: #fff;
   border-color: transparent;
 }
 .kids-link.primary:hover {
-  box-shadow: 0 4px 20px var(--glow);
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--card-color) 40%, transparent);
   transform: translateY(-2px) scale(1.05);
+  filter: brightness(1.15);
 }
 
 /* ============================================================
-   TAGS
+   TAGS — hidden by default, shown on hover
    ============================================================ */
 .kids-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
   padding: 0 14px 12px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.3s ease, padding 0.3s ease;
+  padding-bottom: 0;
+}
+.kids-card:hover .kids-tags {
+  max-height: 60px;
+  opacity: 1;
+  padding-bottom: 12px;
 }
 .kids-tag {
   font-size: 0.68rem;
@@ -845,8 +779,8 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   transition: all var(--transition);
 }
 .kids-card:hover .kids-tag {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--card-color, var(--accent));
+  color: var(--card-color, var(--accent));
 }
 
 /* ============================================================
@@ -945,25 +879,30 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
 }
 @keyframes wiggle {
   0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(-8deg); }
-  75% { transform: rotate(8deg); }
+  25% { transform: rotate(-6deg); }
+  75% { transform: rotate(6deg); }
 }
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
 }
 @keyframes badgePop {
-  from { opacity: 0; transform: scale(0.5); }
-  to { opacity: 1; transform: scale(1); }
+  from { opacity: 0; transform: scale(0.5) rotate(-10deg); }
+  to { opacity: 1; transform: scale(1) rotate(0deg); }
 }
-@keyframes starPop {
+@keyframes firePop {
   0% { transform: scale(1); }
-  50% { transform: scale(1.5); }
+  30% { transform: scale(1.6) rotate(15deg); }
+  60% { transform: scale(0.9); }
   100% { transform: scale(1); }
 }
-@keyframes tooltipBounce {
-  from { opacity: 0; transform: translateX(-50%) translateY(6px); }
-  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -1px); }
+  60% { transform: translate(-1px, -2px); }
+  80% { transform: translate(1px, 1px); }
+  100% { transform: translate(0); }
 }
 @keyframes rocketUp {
   0% { transform: translateY(0); }
