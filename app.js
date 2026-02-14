@@ -220,6 +220,8 @@ const INLINE_APPS = [
     desc:{ en:"Prompt Hero — explore and experiment!", fr:"Prompt Hero — explorez et expérimentez !", ar:"Prompt Hero — استكشف وجرّب!" }},
   { name:"save-our-planet", emoji:"🛠️", category:"tools", badge:"new", tags:["save","our","planet"],
     desc:{ en:"Save Our Planet — explore and experiment!", fr:"Save Our Planet — explorez et expérimentez !", ar:"Save Our Planet — استكشف وجرّب!" }},
+  { name:"ops-catalog", emoji:"🛠️", category:"tools", badge:"new", tags:["ops","catalog"],
+    desc:{ en:"Ops Catalog — explore and experiment!", fr:"Ops Catalog — explorez et expérimentez !", ar:"Ops Catalog — استكشف وجرّب!" }},
 ];
 
 /* ============================================================

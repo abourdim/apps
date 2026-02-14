@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-14T19:30:18.766874Z",
+  "generated": "2026-02-14T19:38:02.540113Z",
   "user": "abourdim",
   "apps": [
     {
@@ -523,6 +523,21 @@
         "en": "Save Our Planet — explore and experiment!",
         "fr": "Save Our Planet — explorez et expérimentez !",
         "ar": "Save Our Planet — استكشف وجرّب!"
+      }
+    },
+    {
+      "name": "ops-catalog",
+      "emoji": "🛠️",
+      "category": "tools",
+      "badge": "new",
+      "tags": [
+        "ops",
+        "catalog"
+      ],
+      "desc": {
+        "en": "Ops Catalog — explore and experiment!",
+        "fr": "Ops Catalog — explorez et expérimentez !",
+        "ar": "Ops Catalog — استكشف وجرّب!"
       }
     }
   ]
