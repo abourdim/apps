@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-14T16:37:20.813755Z",
+  "generated": "2026-02-14T17:33:42.407324Z",
   "user": "abourdim",
   "apps": [
     {
@@ -463,6 +463,20 @@
         "en": "Rocket Shield Vpn — explore and experiment!",
         "fr": "Rocket Shield Vpn — explorez et expérimentez !",
         "ar": "Rocket Shield Vpn — استكشف وجرّب!"
+      }
+    },
+    {
+      "name": "3d-lab",
+      "emoji": "📚",
+      "category": "education",
+      "badge": "new",
+      "tags": [
+        "lab"
+      ],
+      "desc": {
+        "en": "3D Lab — explore and experiment!",
+        "fr": "3D Lab — explorez et expérimentez !",
+        "ar": "3D Lab — استكشف وجرّب!"
       }
     }
   ]

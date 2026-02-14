@@ -212,6 +212,8 @@ const INLINE_APPS = [
     desc:{ en:"Circuit Lab — explore and experiment!", fr:"Circuit Lab — explorez et expérimentez !", ar:"Circuit Lab — استكشف وجرّب!" }},
   { name:"rocket-shield-vpn", emoji:"🛠️", category:"tools", badge:"new", tags:["rocket","shield","vpn"],
     desc:{ en:"Rocket Shield Vpn — explore and experiment!", fr:"Rocket Shield Vpn — explorez et expérimentez !", ar:"Rocket Shield Vpn — استكشف وجرّب!" }},
+  { name:"3d-lab", emoji:"📚", category:"education", badge:"new", tags:["lab"],
+    desc:{ en:"3D Lab — explore and experiment!", fr:"3D Lab — explorez et expérimentez !", ar:"3D Lab — استكشف وجرّب!" }},
 ];
 
 /* ============================================================
