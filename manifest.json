@@ -1,9 +1,9 @@
 {
-  "generated": "2026-02-14T11:42:48.273878Z",
+  "generated": "2026-02-14T16:39:08.937303Z",
   "thumbs": {
     "all": {
       "file": "all.png",
-      "size": 152988
+      "size": 201231
     },
     "arabic-speaker": {
       "file": "arabic-speaker.png",
@@ -15,19 +15,23 @@
     },
     "bit-bot": {
       "file": "bit-bot.png",
-      "size": 50460
+      "size": 50674
     },
     "bit-playground": {
       "file": "bit-playground.png",
-      "size": 183464
+      "size": 183702
     },
     "bitmoji-lab": {
       "file": "bitmoji-lab.png",
-      "size": 410564
+      "size": 410558
     },
     "ble-logger": {
       "file": "ble-logger.png",
-      "size": 265689
+      "size": 263172
+    },
+    "circuit-lab": {
+      "file": "circuit-lab.png",
+      "size": 347085
     },
     "classroom": {
       "file": "classroom.png",
@@ -39,23 +43,31 @@
     },
     "crypto-academy": {
       "file": "crypto-academy.png",
-      "size": 123882
+      "size": 123846
+    },
+    "esp32-c3-kids-lab": {
+      "file": "esp32-c3-kids-lab.png",
+      "size": 297106
     },
     "face-quest": {
       "file": "face-quest.png",
-      "size": 356889
+      "size": 357482
     },
     "face-tracking": {
       "file": "face-tracking.png",
-      "size": 208488
+      "size": 208285
+    },
+    "linux-kids-lab": {
+      "file": "linux-kids-lab.png",
+      "size": 302873
     },
     "magic-hands": {
       "file": "magic-hands.png",
-      "size": 223135
+      "size": 223166
     },
     "mission-control": {
       "file": "mission-control.png",
-      "size": 260043
+      "size": 260837
     },
     "pentest-lab": {
       "file": "pentest-lab.png",
@@ -67,7 +79,7 @@
     },
     "pixel-gateway": {
       "file": "pixel-gateway.png",
-      "size": 394059
+      "size": 394183
     },
     "production-chain": {
       "file": "production-chain.png",
@@ -75,7 +87,11 @@
     },
     "puppeteer-playground": {
       "file": "puppeteer-playground.png",
-      "size": 198269
+      "size": 198350
+    },
+    "rocket-shield-vpn": {
+      "file": "rocket-shield-vpn.png",
+      "size": 134720
     },
     "rxy": {
       "file": "rxy.png",
@@ -83,15 +99,23 @@
     },
     "talking-robot": {
       "file": "talking-robot.png",
-      "size": 399877
+      "size": 402600
     },
     "teachable-machine": {
       "file": "teachable-machine.png",
-      "size": 405513
+      "size": 403819
     },
     "usb-logger": {
       "file": "usb-logger.png",
       "size": 265696
+    },
+    "wled-kids-lab": {
+      "file": "wled-kids-lab.png",
+      "size": 292189
+    },
+    "workshop-diy": {
+      "file": "workshop-diy.png",
+      "size": 509300
     }
   }
 }
