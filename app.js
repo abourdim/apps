@@ -235,6 +235,8 @@ const INLINE_APPS = [
     desc:{ en:"Smart Home — explore and experiment!", fr:"Smart Home — explorez et expérimentez !", ar:"Smart Home — استكشف وجرّب!" }},
   { name:"makecode-adventures", emoji:"🧱", category:"tools", badge:"new", tags:["makecode","adventures"],
     desc:{ en:"Makecode Adventures — explore and experiment!", fr:"Makecode Adventures — explorez et expérimentez !", ar:"Makecode Adventures — استكشف وجرّب!" }},
+  { name:"bit-54-activities", emoji:"🤖", category:"microbit", badge:"new", tags:["bit","activities"],
+    desc:{ en:"Bit 54 Activities — explore and experiment!", fr:"Bit 54 Activities — explorez et expérimentez !", ar:"Bit 54 Activities — استكشف وجرّب!" }},
 ];
 
 /* ============================================================
