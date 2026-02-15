@@ -219,6 +219,1636 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --particle-color: rgba(255,69,0,0.18);
 }
 
+/* 🕌 MEDINA — an immersive Islamic art theme */
+[data-theme="islamic"] {
+  --bg-primary: #0b1a1a;
+  --bg-secondary: #0f2626;
+  --bg-card: #132e2e;
+  --bg-card-hover: #1a3d3a;
+  --text-primary: #f2e8d0;
+  --text-secondary: #a8b8a0;
+  --accent: #d4a843;
+  --accent2: #1b8c6a;
+  --accent3: #f0c75e;
+  --border: rgba(212,168,67,0.18);
+  --glow: rgba(212,168,67,0.30);
+  --input-bg: #0e2220;
+  --badge-new: #f0c75e;
+  --badge-popular: #d4a843;
+  --badge-hub: #1b8c6a;
+  --cat-microbit: #1b8c6a;
+  --cat-camera: #d4a843;
+  --cat-arabic: #f0c75e;
+  --cat-classroom: #3aaf85;
+  --cat-education: #dfc36a;
+  --cat-tools: #1b8c6a;
+  --particle-color: rgba(212,168,67,0.14);
+  --medina-gold: #d4a843;
+  --medina-gold-light: #f0c75e;
+  --medina-teal: #1b8c6a;
+  --medina-teal-deep: #0f5e47;
+  --medina-ivory: #f2e8d0;
+  --medina-night: #0b1a1a;
+  --ff-medina: 'Amiri', 'Noto Sans Arabic', serif;
+}
+
+/* ── Geometric tiled background ── */
+[data-theme="islamic"] .app {
+  background:
+    var(--bg-primary);
+  position: relative;
+}
+[data-theme="islamic"] .app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23d4a843' stroke-width='0.6'%3E%3Cpolygon points='40,4 47.6,20 64.7,10.7 56,28 76,28 60.4,38 68,55.3 51.7,47 47.6,64 40,48 32.4,64 28.3,47 12,55.3 19.6,38 4,28 24,28 15.3,10.7 32.4,20'/%3E%3Ccircle cx='40' cy='40' r='16'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80px 80px;
+  animation: medinaTileShift 90s linear infinite;
+}
+@keyframes medinaTileShift {
+  from { background-position: 0 0; }
+  to { background-position: 80px 80px; }
+}
+
+/* ── Calligraphic typography ── */
+[data-theme="islamic"] .site-title {
+  font-family: var(--ff-medina) !important;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #f0c75e 0%, #d4a843 40%, #b8922e 70%, #f0c75e 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: goldShimmer 4s ease-in-out infinite;
+  text-shadow: none;
+}
+@keyframes goldShimmer {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 200% center; }
+}
+
+[data-theme="islamic"] .subtitle {
+  font-family: var(--ff-medina) !important;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  color: var(--medina-gold-light);
+  opacity: 0.7;
+}
+[data-theme="islamic"] .greeting-bar {
+  font-family: var(--ff-medina) !important;
+  font-size: 1.25rem;
+  color: var(--medina-gold-light);
+  text-shadow: 0 0 20px rgba(212,168,67,0.3);
+}
+
+/* ── Ornamental header — arch frame ── */
+[data-theme="islamic"] .header {
+  background: linear-gradient(180deg, rgba(27,140,106,0.12) 0%, var(--bg-secondary) 100%);
+  border: 1px solid var(--medina-gold);
+  border-image: none;
+  position: relative;
+  border-radius: 6px 6px 40px 40px;
+  overflow: visible;
+}
+[data-theme="islamic"] .header::before {
+  content: "✦";
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  color: var(--medina-gold);
+  text-shadow: 0 0 12px rgba(212,168,67,0.5);
+  z-index: 5;
+  line-height: 1;
+}
+[data-theme="islamic"] .header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--medina-gold), transparent);
+}
+
+/* ── Star divider after stats ── */
+[data-theme="islamic"] .stats-bar {
+  position: relative;
+  padding-bottom: 18px;
+  margin-bottom: 4px;
+  font-family: var(--ff-medina) !important;
+}
+[data-theme="islamic"] .stats-bar::after {
+  content: "✧ ─────── ✦ ─────── ✧";
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--medina-gold);
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  opacity: 0.5;
+}
+
+/* ── Arched cards ── */
+[data-theme="islamic"] .kids-card {
+  border: 1px solid rgba(212,168,67,0.20);
+  border-top: none;
+  border-radius: 0 0 14px 14px;
+  overflow: visible;
+  position: relative;
+  background: var(--bg-card);
+}
+[data-theme="islamic"] .kids-card::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -1px;
+  right: -1px;
+  height: 34px;
+  background: var(--bg-card);
+  border: 1px solid rgba(212,168,67,0.20);
+  border-bottom: none;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  z-index: 0;
+  transition: all var(--transition);
+}
+[data-theme="islamic"] .kids-card::after {
+  content: "✦";
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  color: var(--medina-gold);
+  opacity: 0.45;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+[data-theme="islamic"] .kids-card:hover::after {
+  opacity: 1;
+  font-size: 0.8rem;
+  top: -24px;
+  text-shadow: 0 0 10px rgba(212,168,67,0.6);
+  color: var(--medina-gold-light);
+}
+[data-theme="islamic"] .kids-card:hover {
+  border-color: var(--medina-gold);
+  box-shadow:
+    0 8px 30px rgba(0,0,0,0.4),
+    0 0 30px rgba(212,168,67,0.12),
+    inset 0 0 30px rgba(212,168,67,0.03);
+  transform: translateY(-6px);
+  background: var(--bg-card-hover);
+}
+[data-theme="islamic"] .kids-card:hover::before {
+  border-color: var(--medina-gold);
+  background: var(--bg-card-hover);
+}
+/* give cards top margin to allow the arch to breathe */
+[data-theme="islamic"] .kids-grid {
+  gap: 38px 18px;
+  padding-top: 34px;
+}
+
+/* ── Gold card number — octagonal feel ── */
+[data-theme="islamic"] .card-number {
+  background: linear-gradient(145deg, var(--medina-gold), #b8922e);
+  color: var(--medina-night);
+  font-family: var(--ff-medina) !important;
+  font-weight: 700;
+  border-radius: 4px;
+  transform: rotate(0deg);
+  box-shadow:
+    0 2px 8px rgba(212,168,67,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.2);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  min-width: 38px;
+  height: 38px;
+  border-radius: 2px;
+}
+[data-theme="islamic"] .kids-card:hover .card-number {
+  transform: rotate(45deg) scale(1.15);
+  box-shadow: 0 4px 16px rgba(212,168,67,0.5);
+}
+
+/* ── Card title — Amiri font ── */
+[data-theme="islamic"] .kids-card h3 {
+  font-family: var(--ff-medina) !important;
+  padding-top: 16px;
+}
+[data-theme="islamic"] .kids-name {
+  background: linear-gradient(135deg, var(--medina-ivory), var(--medina-gold-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+[data-theme="islamic"] .kids-card:hover .kids-name {
+  background: linear-gradient(135deg, var(--medina-gold-light), #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* ── Emoji — gold glow on hover ── */
+[data-theme="islamic"] .kids-emoji {
+  filter: drop-shadow(0 2px 4px rgba(212,168,67,0.25));
+}
+[data-theme="islamic"] .kids-card:hover .kids-emoji {
+  filter: drop-shadow(0 0 12px rgba(212,168,67,0.6));
+}
+
+/* ── Tags — jewel-toned pills ── */
+[data-theme="islamic"] .kids-tag {
+  border-color: rgba(212,168,67,0.2);
+  font-family: var(--ff-medina) !important;
+  font-size: 0.72rem;
+}
+[data-theme="islamic"] .kids-card:hover .kids-tag {
+  border-color: var(--medina-gold);
+  color: var(--medina-gold-light);
+  background: rgba(212,168,67,0.08);
+}
+
+/* ── Action buttons — elegant gold outlines ── */
+[data-theme="islamic"] .kids-link {
+  border-radius: 8px;
+  font-family: var(--ff-medina) !important;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+[data-theme="islamic"] .kids-link.primary {
+  background: linear-gradient(135deg, var(--medina-gold), #b8922e);
+  color: var(--medina-night);
+  box-shadow: 0 2px 10px rgba(212,168,67,0.25);
+}
+[data-theme="islamic"] .kids-link.primary:hover {
+  box-shadow: 0 4px 24px rgba(212,168,67,0.45);
+}
+[data-theme="islamic"] .kids-link:not(.primary) {
+  border-color: rgba(212,168,67,0.25);
+}
+[data-theme="islamic"] .kids-link:not(.primary):hover {
+  border-color: var(--medina-gold);
+  color: var(--medina-gold-light);
+}
+
+/* ── Badge — ornamental style ── */
+[data-theme="islamic"] .card-badge {
+  border-radius: 6px;
+  font-family: var(--ff-medina) !important;
+  letter-spacing: 0.08em;
+  top: 6px;
+  z-index: 5;
+}
+[data-theme="islamic"] .card-badge.new {
+  background: linear-gradient(135deg, #f0c75e, #d4a843);
+  color: #1a1a1a;
+}
+[data-theme="islamic"] .card-badge.popular {
+  background: linear-gradient(135deg, var(--medina-teal), var(--medina-teal-deep));
+  color: #fff;
+}
+
+/* ── Status badge — Medina style ── */
+[data-theme="islamic"] .status-badge {
+  border-radius: 4px;
+  font-family: var(--ff-medina) !important;
+  letter-spacing: 0.06em;
+}
+
+/* ── Filter buttons — geometric pill ── */
+[data-theme="islamic"] .mode-btn {
+  border-radius: 8px;
+  font-family: var(--ff-medina) !important;
+  font-size: 0.88rem;
+  border-color: rgba(212,168,67,0.15);
+}
+[data-theme="islamic"] .mode-btn:hover {
+  border-color: var(--medina-gold);
+  box-shadow: 0 4px 16px rgba(212,168,67,0.2);
+}
+[data-theme="islamic"] .mode-btn.active {
+  background: linear-gradient(135deg, var(--medina-gold), #b8922e);
+  color: var(--medina-night);
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(212,168,67,0.3);
+}
+[data-theme="islamic"] .mode-btn.active .filter-count {
+  background: rgba(0,0,0,0.2);
+}
+
+/* ── Search bar — arched input ── */
+[data-theme="islamic"] #q {
+  border-radius: 12px;
+  border-color: rgba(212,168,67,0.2);
+  font-family: var(--ff-medina) !important;
+}
+[data-theme="islamic"] #q:focus {
+  border-color: var(--medina-gold);
+  box-shadow: 0 0 20px rgba(212,168,67,0.2);
+}
+[data-theme="islamic"] .action-btn {
+  border-radius: 10px;
+  font-family: var(--ff-medina) !important;
+  border-color: rgba(212,168,67,0.2);
+}
+[data-theme="islamic"] .action-btn:hover {
+  border-color: var(--medina-gold);
+}
+
+/* ── View toggle ── */
+[data-theme="islamic"] .view-toggle {
+  border-radius: 10px;
+  border-color: rgba(212,168,67,0.2);
+}
+[data-theme="islamic"] .view-btn.active {
+  background: var(--medina-gold);
+  color: var(--medina-night);
+}
+
+/* ── Language & theme switcher ── */
+[data-theme="islamic"] .lang-switcher,
+[data-theme="islamic"] .theme-switcher {
+  border-radius: 10px;
+  border-color: rgba(212,168,67,0.15);
+}
+[data-theme="islamic"] .lang-btn.active,
+[data-theme="islamic"] .theme-btn.active {
+  background: var(--medina-gold);
+  box-shadow: 0 0 12px rgba(212,168,67,0.4);
+}
+
+/* ── Ornamental divider before grid ── */
+[data-theme="islamic"] .mode-selector-container {
+  position: relative;
+  padding-bottom: 18px;
+}
+[data-theme="islamic"] .mode-selector-container::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212,168,67,0.3), var(--medina-gold), rgba(212,168,67,0.3), transparent);
+}
+
+/* ── Joke bar — elegant ── */
+[data-theme="islamic"] .joke-bar {
+  font-family: var(--ff-medina) !important;
+  position: relative;
+  padding-top: 24px;
+}
+[data-theme="islamic"] .joke-bar::before {
+  content: "✧ ─── ❋ ─── ✧";
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  color: var(--medina-gold);
+  font-size: 0.65rem;
+  letter-spacing: 4px;
+  opacity: 0.4;
+}
+
+/* ── Explorer bar ── */
+[data-theme="islamic"] .explorer-bar {
+  font-family: var(--ff-medina) !important;
+  color: var(--medina-gold-light);
+}
+
+/* ── Footer — ornamental border ── */
+[data-theme="islamic"] .kids-footer {
+  border-top: none;
+  position: relative;
+  font-family: var(--ff-medina) !important;
+  padding-top: 28px;
+}
+[data-theme="islamic"] .kids-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--medina-gold), transparent);
+}
+[data-theme="islamic"] .kids-footer::after {
+  content: "☽";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  color: var(--medina-gold);
+  text-shadow: 0 0 8px rgba(212,168,67,0.4);
+}
+
+/* ── Scroll-to-top — golden crescent ── */
+[data-theme="islamic"] .scroll-top-btn {
+  border-color: var(--medina-gold);
+  border-radius: 10px;
+  background: var(--bg-card);
+}
+[data-theme="islamic"] .scroll-top-btn:hover {
+  box-shadow: 0 4px 20px rgba(212,168,67,0.3);
+  border-color: var(--medina-gold-light);
+}
+
+/* ── Fav button ── */
+[data-theme="islamic"] .fav-btn.favorited {
+  text-shadow: 0 0 10px rgba(212,168,67,0.6);
+}
+
+/* ── Logo glow ── */
+[data-theme="islamic"] .site-logo {
+  filter: drop-shadow(0 0 10px rgba(212,168,67,0.4)) sepia(0.5) hue-rotate(-10deg) saturate(1.5);
+}
+
+/* ── Sound toggle ── */
+[data-theme="islamic"] .icon-btn {
+  border-color: rgba(212,168,67,0.15);
+  border-radius: 10px;
+}
+
+/* ── Custom scrollbar ── */
+[data-theme="islamic"] ::-webkit-scrollbar { width: 8px; }
+[data-theme="islamic"] ::-webkit-scrollbar-track { background: var(--bg-primary); }
+[data-theme="islamic"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--medina-gold), var(--medina-teal-deep));
+  border-radius: 4px;
+}
+
+/* ── Floating star decorations on body ── */
+[data-theme="islamic"] .rows-container {
+  position: relative;
+}
+[data-theme="islamic"] .rows-container::before,
+[data-theme="islamic"] .rows-container::after {
+  position: fixed;
+  font-size: 2rem;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+  color: var(--medina-gold);
+}
+[data-theme="islamic"] .rows-container::before {
+  content: "✦";
+  top: 15%;
+  left: 3%;
+  animation: medinaStar 6s ease-in-out infinite;
+}
+[data-theme="islamic"] .rows-container::after {
+  content: "✦";
+  bottom: 20%;
+  right: 3%;
+  font-size: 1.5rem;
+  animation: medinaStar 6s ease-in-out 3s infinite;
+}
+@keyframes medinaStar {
+  0%, 100% { opacity: 0.04; transform: rotate(0deg) scale(1); }
+  50% { opacity: 0.1; transform: rotate(180deg) scale(1.3); }
+}
+
+/* ================================================================
+   🏰 ALHAMBRA — Nasrid Palace
+   Carved stucco, terracotta warmth, burnished gold, cream yesería
+   ================================================================ */
+[data-theme="alhambra"] {
+  --bg-primary: #1a0f08;
+  --bg-secondary: #261a0e;
+  --bg-card: #2e1f12;
+  --bg-card-hover: #3a2918;
+  --text-primary: #f5e6cc;
+  --text-secondary: #c4a882;
+  --accent: #e8922e;
+  --accent2: #c46a1a;
+  --accent3: #f0c75e;
+  --border: rgba(232,146,46,0.15);
+  --glow: rgba(232,146,46,0.28);
+  --input-bg: #1e1409;
+  --badge-new: #f0c75e;
+  --badge-popular: #e8922e;
+  --badge-hub: #c46a1a;
+  --cat-microbit: #e8922e;
+  --cat-camera: #f0c75e;
+  --cat-arabic: #d4a843;
+  --cat-classroom: #c46a1a;
+  --cat-education: #e8b84e;
+  --cat-tools: #c46a1a;
+  --particle-color: rgba(232,146,46,0.15);
+  --alh-gold: #e8922e;
+  --alh-cream: #f5e6cc;
+  --alh-terracotta: #a0522d;
+  --alh-night: #1a0f08;
+  --ff-alhambra: 'Scheherazade New', 'Amiri', serif;
+}
+
+/* Nasrid star lattice background */
+[data-theme="alhambra"] .app { position: relative; }
+[data-theme="alhambra"] .app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23e8922e' stroke-width='0.5'%3E%3Crect x='10' y='10' width='40' height='40' transform='rotate(45 30 30)'/%3E%3Crect x='15' y='15' width='30' height='30' transform='rotate(45 30 30)'/%3E%3Ccircle cx='30' cy='30' r='5'/%3E%3Cline x1='0' y1='30' x2='60' y2='30'/%3E%3Cline x1='30' y1='0' x2='30' y2='60'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+/* Typography */
+[data-theme="alhambra"] .site-title {
+  font-family: var(--ff-alhambra) !important;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #f0c75e 0%, #e8922e 50%, #c46a1a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+[data-theme="alhambra"] .subtitle,
+[data-theme="alhambra"] .greeting-bar {
+  font-family: var(--ff-alhambra) !important;
+  color: var(--alh-gold);
+}
+[data-theme="alhambra"] .greeting-bar {
+  font-size: 1.25rem;
+  text-shadow: 0 0 18px rgba(232,146,46,0.25);
+}
+
+/* Header — warm stucco arch */
+[data-theme="alhambra"] .header {
+  background: linear-gradient(180deg, rgba(232,146,46,0.08) 0%, var(--bg-secondary) 100%);
+  border: 1px solid rgba(232,146,46,0.2);
+  border-radius: 4px 4px 50% 50% / 4px 4px 20px 20px;
+}
+[data-theme="alhambra"] .header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--alh-gold), transparent);
+}
+
+/* Stars divider */
+[data-theme="alhambra"] .stats-bar {
+  position: relative;
+  padding-bottom: 18px;
+  font-family: var(--ff-alhambra) !important;
+}
+[data-theme="alhambra"] .stats-bar::after {
+  content: "✸ ── ✦ ── ✸";
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--alh-gold);
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  opacity: 0.45;
+}
+
+/* Cards — horseshoe arch */
+[data-theme="alhambra"] .kids-card {
+  border: 1px solid rgba(232,146,46,0.18);
+  border-top: none;
+  border-radius: 0 0 14px 14px;
+  overflow: visible;
+  position: relative;
+}
+[data-theme="alhambra"] .kids-card::before {
+  content: "";
+  position: absolute;
+  top: -26px;
+  left: -1px;
+  right: -1px;
+  height: 30px;
+  background: var(--bg-card);
+  border: 1px solid rgba(232,146,46,0.18);
+  border-bottom: none;
+  border-radius: 40% 40% 0 0 / 100% 100% 0 0;
+  z-index: 0;
+  transition: all var(--transition);
+}
+[data-theme="alhambra"] .kids-card::after {
+  content: "✸";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.55rem;
+  color: var(--alh-gold);
+  opacity: 0.4;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+[data-theme="alhambra"] .kids-card:hover::after {
+  opacity: 1;
+  font-size: 0.75rem;
+  top: -22px;
+  text-shadow: 0 0 8px rgba(232,146,46,0.5);
+}
+[data-theme="alhambra"] .kids-card:hover {
+  border-color: var(--alh-gold);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.4), 0 0 25px rgba(232,146,46,0.1);
+  transform: translateY(-6px);
+}
+[data-theme="alhambra"] .kids-card:hover::before {
+  border-color: var(--alh-gold);
+  background: var(--bg-card-hover);
+}
+[data-theme="alhambra"] .kids-grid {
+  gap: 36px 18px;
+  padding-top: 30px;
+}
+
+/* Card number — diamond */
+[data-theme="alhambra"] .card-number {
+  background: linear-gradient(145deg, var(--alh-gold), var(--alh-terracotta));
+  color: var(--alh-night);
+  font-family: var(--ff-alhambra) !important;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  min-width: 38px;
+  height: 38px;
+  border-radius: 2px;
+}
+[data-theme="alhambra"] .kids-card:hover .card-number {
+  transform: rotate(90deg) scale(1.15);
+}
+
+/* Title & name */
+[data-theme="alhambra"] .kids-card h3 { font-family: var(--ff-alhambra) !important; padding-top: 14px; }
+[data-theme="alhambra"] .kids-name {
+  background: linear-gradient(135deg, var(--alh-cream), #e8b84e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Buttons & inputs */
+[data-theme="alhambra"] .kids-link { border-radius: 8px; font-family: var(--ff-alhambra) !important; }
+[data-theme="alhambra"] .kids-link.primary {
+  background: linear-gradient(135deg, var(--alh-gold), var(--alh-terracotta));
+  color: var(--alh-night);
+}
+[data-theme="alhambra"] .mode-btn { border-radius: 8px; font-family: var(--ff-alhambra) !important; }
+[data-theme="alhambra"] .mode-btn.active {
+  background: linear-gradient(135deg, var(--alh-gold), var(--alh-terracotta));
+  color: var(--alh-night);
+}
+[data-theme="alhambra"] #q { border-radius: 12px; font-family: var(--ff-alhambra) !important; }
+[data-theme="alhambra"] .action-btn { border-radius: 10px; font-family: var(--ff-alhambra) !important; }
+[data-theme="alhambra"] .card-badge { border-radius: 6px; font-family: var(--ff-alhambra) !important; }
+[data-theme="alhambra"] .status-badge { border-radius: 4px; font-family: var(--ff-alhambra) !important; }
+[data-theme="alhambra"] .kids-tag { font-family: var(--ff-alhambra) !important; }
+[data-theme="alhambra"] .joke-bar,
+[data-theme="alhambra"] .explorer-bar { font-family: var(--ff-alhambra) !important; }
+[data-theme="alhambra"] .lang-btn.active,
+[data-theme="alhambra"] .theme-btn.active { background: var(--alh-gold); }
+[data-theme="alhambra"] .view-btn.active { background: var(--alh-gold); color: var(--alh-night); }
+
+/* Footer */
+[data-theme="alhambra"] .kids-footer {
+  border-top: none;
+  position: relative;
+  font-family: var(--ff-alhambra) !important;
+  padding-top: 26px;
+}
+[data-theme="alhambra"] .kids-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--alh-gold), transparent);
+}
+[data-theme="alhambra"] .kids-footer::after {
+  content: "✸";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: var(--alh-gold);
+}
+
+/* Logo */
+[data-theme="alhambra"] .site-logo {
+  filter: drop-shadow(0 0 10px rgba(232,146,46,0.4)) sepia(0.7) hue-rotate(-20deg) saturate(2);
+}
+
+/* Scrollbar */
+[data-theme="alhambra"] ::-webkit-scrollbar { width: 8px; }
+[data-theme="alhambra"] ::-webkit-scrollbar-track { background: var(--bg-primary); }
+[data-theme="alhambra"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--alh-gold), var(--alh-terracotta));
+  border-radius: 4px;
+}
+
+
+/* ================================================================
+   🔷 IZNIK — Ottoman Ceramic Tiles
+   Deep cobalt blue, turquoise flowers, coral red, white porcelain
+   ================================================================ */
+[data-theme="iznik"] {
+  --bg-primary: #050d1a;
+  --bg-secondary: #0a1832;
+  --bg-card: #0e2040;
+  --bg-card-hover: #142a52;
+  --text-primary: #e8f0ff;
+  --text-secondary: #8aa8d4;
+  --accent: #00bcd4;
+  --accent2: #e84040;
+  --accent3: #f5f5f5;
+  --border: rgba(0,188,212,0.15);
+  --glow: rgba(0,188,212,0.28);
+  --input-bg: #081428;
+  --badge-new: #00bcd4;
+  --badge-popular: #e84040;
+  --badge-hub: #1a73e8;
+  --cat-microbit: #00bcd4;
+  --cat-camera: #e84040;
+  --cat-arabic: #f5f5f5;
+  --cat-classroom: #1a73e8;
+  --cat-education: #00bcd4;
+  --cat-tools: #1a73e8;
+  --particle-color: rgba(0,188,212,0.14);
+  --izn-turq: #00bcd4;
+  --izn-coral: #e84040;
+  --izn-cobalt: #1a3a7a;
+  --izn-white: #f0f4ff;
+  --izn-night: #050d1a;
+  --ff-iznik: 'Reem Kufi', 'Amiri', sans-serif;
+}
+
+/* Tulip tile lattice */
+[data-theme="iznik"] .app { position: relative; }
+[data-theme="iznik"] .app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 70 70'%3E%3Cg fill='none' stroke='%2300bcd4' stroke-width='0.5'%3E%3Ccircle cx='35' cy='35' r='20'/%3E%3Ccircle cx='35' cy='35' r='12'/%3E%3Ccircle cx='35' cy='35' r='4'/%3E%3Cpath d='M35 5 L35 15 M35 55 L35 65 M5 35 L15 35 M55 35 L65 35'/%3E%3Cpath d='M15 15 L22 22 M48 48 L55 55 M55 15 L48 22 M15 55 L22 48'/%3E%3C/g%3E%3Cg fill='%23e84040' opacity='0.3'%3E%3Ccircle cx='35' cy='35' r='2'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 70px 70px;
+  animation: iznikShift 120s linear infinite;
+}
+@keyframes iznikShift {
+  from { background-position: 0 0; }
+  to { background-position: 70px 70px; }
+}
+
+/* Typography */
+[data-theme="iznik"] .site-title {
+  font-family: var(--ff-iznik) !important;
+  font-size: 1.9rem;
+  background: linear-gradient(135deg, var(--izn-turq), var(--izn-white), var(--izn-turq));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: goldShimmer 5s ease-in-out infinite;
+}
+[data-theme="iznik"] .subtitle,
+[data-theme="iznik"] .greeting-bar {
+  font-family: var(--ff-iznik) !important;
+}
+[data-theme="iznik"] .greeting-bar {
+  color: var(--izn-turq);
+  font-size: 1.2rem;
+  text-shadow: 0 0 15px rgba(0,188,212,0.3);
+}
+
+/* Header — blue dome */
+[data-theme="iznik"] .header {
+  background: linear-gradient(180deg, rgba(0,188,212,0.08) 0%, var(--bg-secondary) 100%);
+  border: 1px solid rgba(0,188,212,0.2);
+  border-radius: 6px 6px 45px 45px;
+}
+[data-theme="iznik"] .header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--izn-turq), var(--izn-coral), var(--izn-turq), transparent);
+}
+
+/* Dividers */
+[data-theme="iznik"] .stats-bar {
+  position: relative;
+  padding-bottom: 18px;
+  font-family: var(--ff-iznik) !important;
+}
+[data-theme="iznik"] .stats-bar::after {
+  content: "◆ ─── ❖ ─── ◆";
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--izn-turq);
+  font-size: 0.65rem;
+  letter-spacing: 4px;
+  opacity: 0.5;
+}
+
+/* Cards — pointed dome with coral accent */
+[data-theme="iznik"] .kids-card {
+  border: 1px solid rgba(0,188,212,0.15);
+  border-top: 3px solid var(--izn-turq);
+  border-radius: 0 0 14px 14px;
+  overflow: visible;
+  position: relative;
+}
+[data-theme="iznik"] .kids-card::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: -1px;
+  right: -1px;
+  height: 27px;
+  background: var(--bg-card);
+  border: 1px solid rgba(0,188,212,0.15);
+  border-bottom: none;
+  border-top: 3px solid var(--izn-turq);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  z-index: 0;
+  transition: all var(--transition);
+}
+[data-theme="iznik"] .kids-card::after {
+  content: "◆";
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.5rem;
+  color: var(--izn-coral);
+  opacity: 0.5;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+[data-theme="iznik"] .kids-card:hover::after {
+  opacity: 1;
+  font-size: 0.7rem;
+  color: var(--izn-coral);
+  text-shadow: 0 0 8px rgba(232,64,64,0.5);
+}
+[data-theme="iznik"] .kids-card:hover {
+  border-color: var(--izn-turq);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.45), 0 0 20px rgba(0,188,212,0.1);
+  transform: translateY(-6px);
+}
+[data-theme="iznik"] .kids-card:hover::before {
+  border-color: var(--izn-turq);
+  background: var(--bg-card-hover);
+}
+[data-theme="iznik"] .kids-grid {
+  gap: 34px 18px;
+  padding-top: 28px;
+}
+
+/* Card number — circle with coral ring */
+[data-theme="iznik"] .card-number {
+  background: var(--izn-cobalt);
+  color: var(--izn-white);
+  font-family: var(--ff-iznik) !important;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--izn-coral), 0 3px 10px rgba(0,188,212,0.3);
+}
+[data-theme="iznik"] .kids-card:hover .card-number {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 3px var(--izn-coral), 0 0 16px rgba(0,188,212,0.5);
+}
+
+/* Title */
+[data-theme="iznik"] .kids-card h3 { font-family: var(--ff-iznik) !important; padding-top: 14px; }
+[data-theme="iznik"] .kids-name {
+  background: linear-gradient(135deg, var(--izn-white), var(--izn-turq));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+[data-theme="iznik"] .kids-card:hover .kids-name {
+  background: linear-gradient(135deg, var(--izn-turq), #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Buttons & controls */
+[data-theme="iznik"] .kids-link { border-radius: 10px; font-family: var(--ff-iznik) !important; }
+[data-theme="iznik"] .kids-link.primary { background: linear-gradient(135deg, var(--izn-turq), var(--izn-cobalt)); }
+[data-theme="iznik"] .kids-link.primary:hover { box-shadow: 0 4px 20px rgba(0,188,212,0.4); }
+[data-theme="iznik"] .mode-btn { border-radius: 10px; font-family: var(--ff-iznik) !important; }
+[data-theme="iznik"] .mode-btn.active {
+  background: linear-gradient(135deg, var(--izn-turq), var(--izn-cobalt));
+  color: var(--izn-white);
+}
+[data-theme="iznik"] #q { border-radius: 14px; font-family: var(--ff-iznik) !important; }
+[data-theme="iznik"] .action-btn { border-radius: 12px; font-family: var(--ff-iznik) !important; }
+[data-theme="iznik"] .card-badge { border-radius: 8px; font-family: var(--ff-iznik) !important; }
+[data-theme="iznik"] .card-badge.popular { background: var(--izn-coral); }
+[data-theme="iznik"] .status-badge { border-radius: 4px; font-family: var(--ff-iznik) !important; }
+[data-theme="iznik"] .kids-tag { font-family: var(--ff-iznik) !important; }
+[data-theme="iznik"] .kids-card:hover .kids-tag { border-color: var(--izn-turq); color: var(--izn-turq); }
+[data-theme="iznik"] .joke-bar,
+[data-theme="iznik"] .explorer-bar { font-family: var(--ff-iznik) !important; }
+[data-theme="iznik"] .explorer-bar { color: var(--izn-turq); }
+[data-theme="iznik"] .lang-btn.active,
+[data-theme="iznik"] .theme-btn.active { background: var(--izn-turq); }
+[data-theme="iznik"] .view-toggle { border-radius: 12px; }
+[data-theme="iznik"] .view-btn.active { background: var(--izn-turq); color: var(--izn-night); }
+[data-theme="iznik"] .lang-switcher,
+[data-theme="iznik"] .theme-switcher { border-radius: 12px; }
+
+/* Footer */
+[data-theme="iznik"] .kids-footer {
+  border-top: none;
+  position: relative;
+  font-family: var(--ff-iznik) !important;
+  padding-top: 26px;
+}
+[data-theme="iznik"] .kids-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--izn-turq), var(--izn-coral), var(--izn-turq), transparent);
+}
+[data-theme="iznik"] .kids-footer::after {
+  content: "◆";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--izn-coral);
+  font-size: 0.8rem;
+}
+
+/* Logo */
+[data-theme="iznik"] .site-logo {
+  filter: drop-shadow(0 0 10px rgba(0,188,212,0.4)) hue-rotate(160deg) saturate(1.5);
+}
+
+/* Scrollbar */
+[data-theme="iznik"] ::-webkit-scrollbar { width: 8px; }
+[data-theme="iznik"] ::-webkit-scrollbar-track { background: var(--bg-primary); }
+[data-theme="iznik"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--izn-turq), var(--izn-cobalt));
+  border-radius: 4px;
+}
+
+
+/* ================================================================
+   🧩 ZELLIGE — Moroccan Mosaic Tilework
+   Emerald, amber, sapphire, terracotta tesserae
+   ================================================================ */
+[data-theme="zellige"] {
+  --bg-primary: #08120d;
+  --bg-secondary: #0e1e16;
+  --bg-card: #142a1f;
+  --bg-card-hover: #1c3a2c;
+  --text-primary: #e8f0e0;
+  --text-secondary: #90b898;
+  --accent: #e8a832;
+  --accent2: #1a8c50;
+  --accent3: #2a78c8;
+  --border: rgba(232,168,50,0.14);
+  --glow: rgba(232,168,50,0.25);
+  --input-bg: #0c1a12;
+  --badge-new: #e8a832;
+  --badge-popular: #1a8c50;
+  --badge-hub: #2a78c8;
+  --cat-microbit: #1a8c50;
+  --cat-camera: #e8a832;
+  --cat-arabic: #2a78c8;
+  --cat-classroom: #3aaf70;
+  --cat-education: #e8a832;
+  --cat-tools: #2a78c8;
+  --particle-color: rgba(26,140,80,0.14);
+  --zel-emerald: #1a8c50;
+  --zel-amber: #e8a832;
+  --zel-sapphire: #2a78c8;
+  --zel-terra: #c46028;
+  --zel-night: #08120d;
+  --ff-zellige: 'Reem Kufi', 'Amiri', sans-serif;
+}
+
+/* Mosaic tessellation pattern */
+[data-theme="zellige"] .app { position: relative; }
+[data-theme="zellige"] .app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='none' stroke-width='0.5'%3E%3Crect x='0' y='0' width='20' height='20' stroke='%231a8c50'/%3E%3Crect x='20' y='20' width='20' height='20' stroke='%231a8c50'/%3E%3Crect x='5' y='5' width='10' height='10' stroke='%23e8a832' transform='rotate(45 10 10)'/%3E%3Crect x='25' y='25' width='10' height='10' stroke='%23e8a832' transform='rotate(45 30 30)'/%3E%3Crect x='25' y='5' width='10' height='10' stroke='%232a78c8' transform='rotate(45 30 10)'/%3E%3Crect x='5' y='25' width='10' height='10' stroke='%232a78c8' transform='rotate(45 10 30)'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 40px 40px;
+}
+
+/* Typography */
+[data-theme="zellige"] .site-title {
+  font-family: var(--ff-zellige) !important;
+  font-size: 1.9rem;
+  background: linear-gradient(135deg, var(--zel-amber), var(--zel-emerald), var(--zel-sapphire), var(--zel-amber));
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: zelligeShimmer 6s ease-in-out infinite;
+}
+@keyframes zelligeShimmer {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 300% center; }
+}
+[data-theme="zellige"] .subtitle,
+[data-theme="zellige"] .greeting-bar {
+  font-family: var(--ff-zellige) !important;
+}
+[data-theme="zellige"] .greeting-bar {
+  color: var(--zel-amber);
+  font-size: 1.2rem;
+}
+
+/* Header */
+[data-theme="zellige"] .header {
+  background: linear-gradient(180deg, rgba(26,140,80,0.06) 0%, var(--bg-secondary) 100%);
+  border: 1px solid rgba(26,140,80,0.2);
+  border-radius: 6px;
+  position: relative;
+}
+[data-theme="zellige"] .header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 8%;
+  right: 8%;
+  height: 2px;
+  background: repeating-linear-gradient(90deg,
+    var(--zel-emerald) 0px, var(--zel-emerald) 8px,
+    transparent 8px, transparent 12px,
+    var(--zel-amber) 12px, var(--zel-amber) 20px,
+    transparent 20px, transparent 24px,
+    var(--zel-sapphire) 24px, var(--zel-sapphire) 32px,
+    transparent 32px, transparent 36px
+  );
+  opacity: 0.5;
+}
+
+/* Mosaic divider */
+[data-theme="zellige"] .stats-bar {
+  position: relative;
+  padding-bottom: 20px;
+  font-family: var(--ff-zellige) !important;
+}
+[data-theme="zellige"] .stats-bar::after {
+  content: "◇ ◈ ◇ ◈ ◇ ◈ ◇";
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  color: var(--zel-emerald);
+  font-size: 0.55rem;
+  letter-spacing: 6px;
+  opacity: 0.5;
+}
+
+/* Cards — keyhole arch */
+[data-theme="zellige"] .kids-card {
+  border: 1.5px solid rgba(26,140,80,0.18);
+  border-top: none;
+  border-radius: 0 0 14px 14px;
+  overflow: visible;
+  position: relative;
+}
+[data-theme="zellige"] .kids-card::before {
+  content: "";
+  position: absolute;
+  top: -28px;
+  left: -1.5px;
+  right: -1.5px;
+  height: 32px;
+  background: var(--bg-card);
+  border: 1.5px solid rgba(26,140,80,0.18);
+  border-bottom: none;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  z-index: 0;
+  transition: all var(--transition);
+}
+[data-theme="zellige"] .kids-card::after {
+  content: "◈";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.55rem;
+  color: var(--zel-amber);
+  opacity: 0.4;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+[data-theme="zellige"] .kids-card:hover::after {
+  opacity: 1;
+  font-size: 0.75rem;
+  color: var(--zel-amber);
+  text-shadow: 0 0 8px rgba(232,168,50,0.5);
+}
+[data-theme="zellige"] .kids-card:hover {
+  border-color: var(--zel-emerald);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.4), 0 0 20px rgba(26,140,80,0.1);
+  transform: translateY(-6px);
+}
+[data-theme="zellige"] .kids-card:hover::before {
+  border-color: var(--zel-emerald);
+  background: var(--bg-card-hover);
+}
+[data-theme="zellige"] .kids-grid {
+  gap: 38px 18px;
+  padding-top: 32px;
+}
+
+/* Card number — rotated square (tessera) */
+[data-theme="zellige"] .card-number {
+  background: var(--zel-emerald);
+  color: #fff;
+  font-family: var(--ff-zellige) !important;
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  min-width: 40px;
+  height: 40px;
+  border-radius: 2px;
+}
+[data-theme="zellige"] .kids-card:hover .card-number {
+  transform: rotate(60deg) scale(1.15);
+  background: var(--zel-amber);
+  color: var(--zel-night);
+}
+
+/* Title */
+[data-theme="zellige"] .kids-card h3 { font-family: var(--ff-zellige) !important; padding-top: 14px; }
+[data-theme="zellige"] .kids-name {
+  background: linear-gradient(135deg, #e8f0e0, var(--zel-amber));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Buttons & controls */
+[data-theme="zellige"] .kids-link { border-radius: 8px; font-family: var(--ff-zellige) !important; }
+[data-theme="zellige"] .kids-link.primary { background: linear-gradient(135deg, var(--zel-emerald), #0f5e35); }
+[data-theme="zellige"] .mode-btn { border-radius: 8px; font-family: var(--ff-zellige) !important; }
+[data-theme="zellige"] .mode-btn.active {
+  background: linear-gradient(135deg, var(--zel-emerald), var(--zel-sapphire));
+  color: #fff;
+}
+[data-theme="zellige"] #q { border-radius: 10px; font-family: var(--ff-zellige) !important; }
+[data-theme="zellige"] .action-btn { border-radius: 10px; font-family: var(--ff-zellige) !important; }
+[data-theme="zellige"] .card-badge { border-radius: 5px; font-family: var(--ff-zellige) !important; }
+[data-theme="zellige"] .status-badge { border-radius: 4px; font-family: var(--ff-zellige) !important; }
+[data-theme="zellige"] .kids-tag { font-family: var(--ff-zellige) !important; }
+[data-theme="zellige"] .joke-bar,
+[data-theme="zellige"] .explorer-bar { font-family: var(--ff-zellige) !important; }
+[data-theme="zellige"] .lang-btn.active,
+[data-theme="zellige"] .theme-btn.active { background: var(--zel-emerald); }
+[data-theme="zellige"] .view-btn.active { background: var(--zel-emerald); color: #fff; }
+
+/* Mosaic stripe on category filter */
+[data-theme="zellige"] .mode-selector-container {
+  position: relative;
+  padding-bottom: 20px;
+}
+[data-theme="zellige"] .mode-selector-container::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background: repeating-linear-gradient(90deg,
+    var(--zel-emerald) 0 6px, transparent 6px 10px,
+    var(--zel-amber) 10px 16px, transparent 16px 20px,
+    var(--zel-sapphire) 20px 26px, transparent 26px 30px
+  );
+  opacity: 0.4;
+}
+
+/* Footer */
+[data-theme="zellige"] .kids-footer {
+  border-top: none;
+  position: relative;
+  font-family: var(--ff-zellige) !important;
+  padding-top: 26px;
+}
+[data-theme="zellige"] .kids-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background: repeating-linear-gradient(90deg,
+    var(--zel-amber) 0 6px, transparent 6px 10px,
+    var(--zel-emerald) 10px 16px, transparent 16px 20px
+  );
+  opacity: 0.35;
+}
+
+/* Logo */
+[data-theme="zellige"] .site-logo {
+  filter: drop-shadow(0 0 10px rgba(26,140,80,0.4)) hue-rotate(100deg) saturate(1.4);
+}
+
+/* Scrollbar */
+[data-theme="zellige"] ::-webkit-scrollbar { width: 8px; }
+[data-theme="zellige"] ::-webkit-scrollbar-track { background: var(--bg-primary); }
+[data-theme="zellige"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--zel-emerald), var(--zel-amber), var(--zel-sapphire));
+  border-radius: 4px;
+}
+
+
+/* ================================================================
+   🌿 ARABESQUE — Flowing Vine Tendrils
+   Midnight indigo, moonlight silver, sage green, organic curves
+   ================================================================ */
+[data-theme="arabesque"] {
+  --bg-primary: #080812;
+  --bg-secondary: #0e1020;
+  --bg-card: #141830;
+  --bg-card-hover: #1c2240;
+  --text-primary: #e0e4f0;
+  --text-secondary: #8890b8;
+  --accent: #b0b8d0;
+  --accent2: #5a8068;
+  --accent3: #d0d8e8;
+  --border: rgba(176,184,208,0.12);
+  --glow: rgba(176,184,208,0.22);
+  --input-bg: #0a0c1a;
+  --badge-new: #b0b8d0;
+  --badge-popular: #5a8068;
+  --badge-hub: #7880a0;
+  --cat-microbit: #5a8068;
+  --cat-camera: #b0b8d0;
+  --cat-arabic: #d0d8e8;
+  --cat-classroom: #7880a0;
+  --cat-education: #5a8068;
+  --cat-tools: #7880a0;
+  --particle-color: rgba(176,184,208,0.10);
+  --arb-silver: #b0b8d0;
+  --arb-moon: #d8dce8;
+  --arb-sage: #5a8068;
+  --arb-indigo: #2a2e50;
+  --arb-night: #080812;
+  --ff-arabesque: 'Amiri', 'Scheherazade New', serif;
+}
+
+/* Vine arabesque pattern */
+[data-theme="arabesque"] .app { position: relative; }
+[data-theme="arabesque"] .app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23b0b8d0' stroke-width='0.4'%3E%3Cpath d='M0 50 Q25 25 50 50 Q75 75 100 50'/%3E%3Cpath d='M0 50 Q25 75 50 50 Q75 25 100 50'/%3E%3Ccircle cx='50' cy='50' r='3'/%3E%3Ccircle cx='0' cy='50' r='2'/%3E%3Ccircle cx='100' cy='50' r='2'/%3E%3Cpath d='M50 0 Q25 25 50 50 Q75 75 50 100'/%3E%3Cpath d='M50 0 Q75 25 50 50 Q25 75 50 100'/%3E%3Ccircle cx='50' cy='0' r='2'/%3E%3Ccircle cx='50' cy='100' r='2'/%3E%3C/g%3E%3Cg fill='%235a8068' opacity='0.3'%3E%3Ccircle cx='50' cy='50' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100px 100px;
+  animation: arabesqueFloat 80s linear infinite;
+}
+@keyframes arabesqueFloat {
+  from { background-position: 0 0; }
+  to { background-position: 100px 100px; }
+}
+
+/* Typography — elegant serifs */
+[data-theme="arabesque"] .site-title {
+  font-family: var(--ff-arabesque) !important;
+  font-size: 2.1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--arb-moon) 0%, var(--arb-silver) 40%, var(--arb-sage) 70%, var(--arb-moon) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: goldShimmer 6s ease-in-out infinite;
+  letter-spacing: 0.03em;
+}
+[data-theme="arabesque"] .subtitle {
+  font-family: var(--ff-arabesque) !important;
+  font-style: italic;
+  color: var(--arb-sage);
+  opacity: 0.8;
+}
+[data-theme="arabesque"] .greeting-bar {
+  font-family: var(--ff-arabesque) !important;
+  font-size: 1.3rem;
+  color: var(--arb-moon);
+  text-shadow: 0 0 20px rgba(176,184,208,0.2);
+}
+
+/* Header — soft arch */
+[data-theme="arabesque"] .header {
+  background: linear-gradient(180deg, rgba(90,128,104,0.06) 0%, var(--bg-secondary) 100%);
+  border: 1px solid rgba(176,184,208,0.12);
+  border-radius: 6px 6px 35px 35px;
+}
+[data-theme="arabesque"] .header::before {
+  content: "❦";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: var(--arb-sage);
+  opacity: 0.5;
+  z-index: 5;
+}
+[data-theme="arabesque"] .header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--arb-silver), var(--arb-sage), var(--arb-silver), transparent);
+}
+
+/* Vine divider */
+[data-theme="arabesque"] .stats-bar {
+  position: relative;
+  padding-bottom: 18px;
+  font-family: var(--ff-arabesque) !important;
+}
+[data-theme="arabesque"] .stats-bar::after {
+  content: "╌ ❧ ─── ❦ ─── ❧ ╌";
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--arb-sage);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  opacity: 0.4;
+}
+
+/* Cards — gentle pointed arch */
+[data-theme="arabesque"] .kids-card {
+  border: 1px solid rgba(176,184,208,0.10);
+  border-top: none;
+  border-radius: 0 0 16px 16px;
+  overflow: visible;
+  position: relative;
+}
+[data-theme="arabesque"] .kids-card::before {
+  content: "";
+  position: absolute;
+  top: -26px;
+  left: -1px;
+  right: -1px;
+  height: 30px;
+  background: var(--bg-card);
+  border: 1px solid rgba(176,184,208,0.10);
+  border-bottom: none;
+  border-radius: 45% 45% 0 0 / 100% 100% 0 0;
+  z-index: 0;
+  transition: all var(--transition);
+}
+[data-theme="arabesque"] .kids-card::after {
+  content: "❦";
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.5rem;
+  color: var(--arb-sage);
+  opacity: 0.3;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+[data-theme="arabesque"] .kids-card:hover::after {
+  opacity: 0.8;
+  font-size: 0.65rem;
+  color: var(--arb-moon);
+  text-shadow: 0 0 10px rgba(176,184,208,0.4);
+}
+[data-theme="arabesque"] .kids-card:hover {
+  border-color: rgba(176,184,208,0.25);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35), 0 0 25px rgba(90,128,104,0.08);
+  transform: translateY(-5px);
+}
+[data-theme="arabesque"] .kids-card:hover::before {
+  border-color: rgba(176,184,208,0.25);
+  background: var(--bg-card-hover);
+}
+[data-theme="arabesque"] .kids-grid {
+  gap: 36px 18px;
+  padding-top: 30px;
+}
+
+/* Card number — leaf/organic shape */
+[data-theme="arabesque"] .card-number {
+  background: linear-gradient(145deg, var(--arb-sage), #3a5a44);
+  color: var(--arb-moon);
+  font-family: var(--ff-arabesque) !important;
+  font-weight: 700;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  min-width: 38px;
+  height: 38px;
+  box-shadow: 0 2px 10px rgba(90,128,104,0.3);
+}
+[data-theme="arabesque"] .kids-card:hover .card-number {
+  transform: scale(1.2) rotate(-12deg);
+  border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  box-shadow: 0 4px 16px rgba(90,128,104,0.4);
+}
+
+/* Title */
+[data-theme="arabesque"] .kids-card h3 { font-family: var(--ff-arabesque) !important; padding-top: 14px; }
+[data-theme="arabesque"] .kids-name {
+  background: linear-gradient(135deg, var(--arb-moon), var(--arb-sage));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+[data-theme="arabesque"] .kids-card:hover .kids-name {
+  background: linear-gradient(135deg, #fff, var(--arb-silver));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Emoji — moonlit glow */
+[data-theme="arabesque"] .kids-emoji {
+  filter: drop-shadow(0 2px 6px rgba(176,184,208,0.2));
+}
+[data-theme="arabesque"] .kids-card:hover .kids-emoji {
+  filter: drop-shadow(0 0 12px rgba(176,184,208,0.4));
+}
+
+/* Buttons & controls */
+[data-theme="arabesque"] .kids-link { border-radius: 12px; font-family: var(--ff-arabesque) !important; }
+[data-theme="arabesque"] .kids-link.primary {
+  background: linear-gradient(135deg, var(--arb-sage), #3a5a44);
+}
+[data-theme="arabesque"] .kids-link:not(.primary):hover {
+  border-color: var(--arb-sage);
+  color: var(--arb-moon);
+}
+[data-theme="arabesque"] .mode-btn { border-radius: 12px; font-family: var(--ff-arabesque) !important; }
+[data-theme="arabesque"] .mode-btn.active {
+  background: linear-gradient(135deg, var(--arb-sage), var(--arb-indigo));
+  color: var(--arb-moon);
+}
+[data-theme="arabesque"] #q { border-radius: 16px; font-family: var(--ff-arabesque) !important; }
+[data-theme="arabesque"] .action-btn { border-radius: 14px; font-family: var(--ff-arabesque) !important; }
+[data-theme="arabesque"] .card-badge { border-radius: 10px; font-family: var(--ff-arabesque) !important; }
+[data-theme="arabesque"] .card-badge.new { background: var(--arb-sage); }
+[data-theme="arabesque"] .card-badge.popular { background: var(--arb-indigo); }
+[data-theme="arabesque"] .status-badge { border-radius: 6px; font-family: var(--ff-arabesque) !important; }
+[data-theme="arabesque"] .kids-tag { font-family: var(--ff-arabesque) !important; }
+[data-theme="arabesque"] .kids-card:hover .kids-tag {
+  border-color: var(--arb-sage);
+  color: var(--arb-sage);
+}
+[data-theme="arabesque"] .joke-bar,
+[data-theme="arabesque"] .explorer-bar { font-family: var(--ff-arabesque) !important; }
+[data-theme="arabesque"] .explorer-bar { color: var(--arb-sage); }
+[data-theme="arabesque"] .lang-btn.active,
+[data-theme="arabesque"] .theme-btn.active { background: var(--arb-sage); }
+[data-theme="arabesque"] .view-toggle { border-radius: 14px; }
+[data-theme="arabesque"] .view-btn.active { background: var(--arb-sage); color: #fff; }
+[data-theme="arabesque"] .lang-switcher,
+[data-theme="arabesque"] .theme-switcher { border-radius: 14px; }
+
+/* Vine divider on filter */
+[data-theme="arabesque"] .mode-selector-container {
+  position: relative;
+  padding-bottom: 18px;
+}
+[data-theme="arabesque"] .mode-selector-container::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--arb-sage), var(--arb-silver), var(--arb-sage), transparent);
+  opacity: 0.3;
+}
+
+/* Footer */
+[data-theme="arabesque"] .kids-footer {
+  border-top: none;
+  position: relative;
+  font-family: var(--ff-arabesque) !important;
+  padding-top: 28px;
+}
+[data-theme="arabesque"] .kids-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--arb-silver), transparent);
+  opacity: 0.3;
+}
+[data-theme="arabesque"] .kids-footer::after {
+  content: "❦";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: var(--arb-sage);
+  opacity: 0.5;
+}
+
+/* Joke bar */
+[data-theme="arabesque"] .joke-bar {
+  position: relative;
+  padding-top: 22px;
+}
+[data-theme="arabesque"] .joke-bar::before {
+  content: "❧ ── ❦ ── ❧";
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  color: var(--arb-sage);
+  font-size: 0.55rem;
+  letter-spacing: 3px;
+  opacity: 0.3;
+}
+
+/* Logo */
+[data-theme="arabesque"] .site-logo {
+  filter: drop-shadow(0 0 10px rgba(90,128,104,0.3)) saturate(0.5) brightness(1.2);
+}
+
+/* Scrollbar */
+[data-theme="arabesque"] ::-webkit-scrollbar { width: 6px; }
+[data-theme="arabesque"] ::-webkit-scrollbar-track { background: var(--bg-primary); }
+[data-theme="arabesque"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--arb-sage), var(--arb-indigo));
+  border-radius: 3px;
+}
+
+/* Subtle floating vines */
+[data-theme="arabesque"] .rows-container { position: relative; }
+[data-theme="arabesque"] .rows-container::before,
+[data-theme="arabesque"] .rows-container::after {
+  position: fixed;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+  color: var(--arb-sage);
+}
+[data-theme="arabesque"] .rows-container::before {
+  content: "❦";
+  top: 12%;
+  left: 4%;
+  font-size: 2.5rem;
+  animation: arabesqueVine 8s ease-in-out infinite;
+}
+[data-theme="arabesque"] .rows-container::after {
+  content: "❧";
+  bottom: 18%;
+  right: 4%;
+  font-size: 2rem;
+  animation: arabesqueVine 8s ease-in-out 4s infinite;
+}
+@keyframes arabesqueVine {
+  0%, 100% { opacity: 0.03; transform: rotate(0deg) scale(1); }
+  50% { opacity: 0.08; transform: rotate(10deg) scale(1.15); }
+}
+
 /* ============================================================
    PARTICLE CANVAS
    ============================================================ */
@@ -605,28 +2235,28 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   animation: badgePop 0.4s ease-out both;
 }
 
-/* Card number — inline in title */
+/* Card number — big, bold, fun */
 .card-number {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 28px;
-  height: 28px;
-  padding: 0 6px;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
   font-family: var(--ff-heading);
-  font-size: 0.7rem;
+  font-size: 0.95rem;
   font-weight: 900;
   color: #fff;
   background: var(--card-color, var(--accent));
   border-radius: 50px;
-  box-shadow: 0 2px 8px color-mix(in srgb, var(--card-color) 50%, transparent);
+  box-shadow: 0 3px 12px color-mix(in srgb, var(--card-color) 55%, transparent);
   transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.3s;
   letter-spacing: -0.5px;
   flex-shrink: 0;
 }
 .kids-card:hover .card-number {
-  transform: scale(1.15) rotate(-6deg);
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--card-color) 60%, transparent);
+  transform: scale(1.25) rotate(-8deg);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--card-color) 65%, transparent);
 }
 .card-badge.new { background: var(--badge-new); }
 .card-badge.popular { background: var(--badge-popular); }
@@ -939,4 +2569,34 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   .site-title { font-size: 1.3rem; }
   .lang-switcher, .theme-switcher { gap: 2px; padding: 3px; }
   .lang-btn, .theme-btn { padding: 4px 6px; font-size: 0.95rem; }
+}/* ============================================================
+   STATUS BADGES — inline next to app name
+   ============================================================ */
+
+.status-badge {
+  display: inline-block;
+  font-size: 0.55rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: #fff;
+  margin-inline-start: 8px;
+  vertical-align: middle;
+  animation: badgePop 0.4s ease-out both;
+}
+
+.status-badge.beta {
+  background: #f59e0b;
+  color: #1a1a1a;
+}
+.status-badge.dev {
+  background: #8b5cf6;
+}
+.status-badge.offline {
+  background: #ef4444;
+}
+.status-badge.custom {
+  background: #06b6d4;
 }
