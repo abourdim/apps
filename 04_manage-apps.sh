@@ -17,8 +17,20 @@ fi
 
 # ─── Parse apps from app.js ───
 get_apps() {
-  grep -oP 'name:"([^"]+)".*?category:"([^"]+)".*?status:"([^"]+)"' "$APPJS" \
-    | sed 's/name:"//;s/".*category:"/|/;s/".*status:"/|/;s/"//'
+  python3 -c "
+import re
+with open('$APPJS') as f:
+    block = f.read().split('const INLINE_APPS')[1].split('];')[0]
+for line in block.split('\n'):
+    m_name = re.search(r'name:\"([^\"]+)\"', line)
+    m_cats = re.search(r'categories:\[([^\]]*)\]', line)
+    m_status = re.search(r'status:\"([^\"]+)\"', line)
+    if m_name and m_status:
+        name = m_name.group(1)
+        cats = m_cats.group(1).replace('\"','').replace(\"'\",\"\") if m_cats else 'tools'
+        status = m_status.group(1)
+        print(f'{name}|{cats}|{status}')
+"
 }
 
 # ─── Color a status ───
@@ -293,7 +305,7 @@ add_app() {
   local tags=$(echo "$tags_raw" | sed 's/[[:space:]]*,[[:space:]]*/","/g; s/^/"/; s/$/"/')
 
   # Build the app entry lines
-  local line1="  { name:\"${name}\", emoji:\"${emoji}\", category:\"${category}\", badge:\"new\", status:\"${new_status}\","
+  local line1="  { name:\"${name}\", emoji:\"${emoji}\", categories:[\"${category}\"], badge:\"new\", status:\"${new_status}\","
   local line2="    tags:[${tags}],"
   local line3="    desc:{ en:\"${desc_en}\", fr:\"${desc_en}\", ar:\"${desc_en}\" }},"
 

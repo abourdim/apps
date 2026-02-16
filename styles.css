@@ -2071,40 +2071,6 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
 }
 .mode-btn.active .filter-count { background: rgba(255,255,255,0.3); }
 
-/* ───── Status toggles (compact, next to shuffle) ───── */
-.status-toggles {
-  display: flex;
-  gap: 3px;
-  padding: 3px;
-  background: var(--bg-card);
-  border: 1.5px solid var(--border);
-  border-radius: 50px;
-}
-.st-tog {
-  all: unset;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  font-size: 0.85rem;
-  border-radius: 50%;
-  transition: all 0.2s;
-  opacity: 0.4;
-}
-.st-tog:hover { opacity: 0.8; transform: scale(1.15); }
-.st-tog.active {
-  opacity: 1;
-  background: rgba(255,255,255,0.1);
-  box-shadow: 0 0 8px rgba(255,255,255,0.15);
-  transform: scale(1.1);
-}
-.st-tog[data-status="stable"].active  { background: rgba(23,165,137,0.25); box-shadow: 0 0 8px rgba(23,165,137,0.3); }
-.st-tog[data-status="beta"].active    { background: rgba(245,158,11,0.25); box-shadow: 0 0 8px rgba(245,158,11,0.3); }
-.st-tog[data-status="dev"].active     { background: rgba(139,92,246,0.25); box-shadow: 0 0 8px rgba(139,92,246,0.3); }
-.st-tog[data-status="offline"].active { background: rgba(239,68,68,0.25); box-shadow: 0 0 8px rgba(239,68,68,0.3); }
-
 /* ============================================================
    SEARCH ROW
    ============================================================ */
@@ -2308,6 +2274,40 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
 .card-badge.popular { background: var(--badge-popular); }
 .card-badge.hub { background: var(--badge-hub); }
 .card-badge.stable { background: var(--badge-stable); }
+
+/* ───── Status toggles (compact, next to shuffle) ───── */
+.status-toggles {
+  display: flex;
+  gap: 3px;
+  padding: 3px;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: 50px;
+}
+.st-tog {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 0.85rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+  opacity: 0.4;
+}
+.st-tog:hover { opacity: 0.8; transform: scale(1.15); }
+.st-tog.active {
+  opacity: 1;
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 0 8px rgba(255,255,255,0.15);
+  transform: scale(1.1);
+}
+.st-tog[data-status="stable"].active  { background: rgba(23,165,137,0.25); box-shadow: 0 0 8px rgba(23,165,137,0.3); }
+.st-tog[data-status="beta"].active    { background: rgba(245,158,11,0.25); box-shadow: 0 0 8px rgba(245,158,11,0.3); }
+.st-tog[data-status="dev"].active     { background: rgba(139,92,246,0.25); box-shadow: 0 0 8px rgba(139,92,246,0.3); }
+.st-tog[data-status="offline"].active { background: rgba(239,68,68,0.25); box-shadow: 0 0 8px rgba(239,68,68,0.3); }
 
 /* Favorite star */
 .fav-btn {

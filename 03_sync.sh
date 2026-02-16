@@ -204,7 +204,7 @@ for name in added:
     new_app = {
         "name": name,
         "emoji": emoji,
-        "category": cat,
+        "categories": [cat],
         "badge": "new",
         "status": "stable",
         "tags": [t for t in name.split('-') if len(t) > 2][:3],
@@ -239,7 +239,10 @@ lines = ["const INLINE_APPS = ["]
 for i, app in enumerate(data['apps']):
     name = app['name']
     emoji = app['emoji']
-    cat = app.get('category', 'tools')
+    cats = app.get('categories', app.get('category', ['tools']))
+    if isinstance(cats, str):
+        cats = [cats]
+    cats_str = json.dumps(cats)
     badge = app.get('badge', '')
     status = app.get('status', 'stable')
     tags = app.get('tags', [])
@@ -247,10 +250,10 @@ for i, app in enumerate(data['apps']):
     en = desc.get('en', '').replace('"', '\\"')
     fr = desc.get('fr', '').replace('"', '\\"')
     ar = desc.get('ar', '').replace('"', '\\"')
-    tags_str = ','.join([f'"{t}"' for t in tags[:5]])
+    tags_str = ','.join([f'"{t}"' for t in tags[:6]])
     badge_str = f'"{badge}"' if badge else '"stable"'
 
-    lines.append(f'  {{ name:"{name}", emoji:"{emoji}", category:"{cat}", badge:{badge_str}, status:"{status}", tags:[{tags_str}],')
+    lines.append(f'  {{ name:"{name}", emoji:"{emoji}", categories:{cats_str}, badge:{badge_str}, status:"{status}", tags:[{tags_str}],')
     lines.append(f'    desc:{{ en:"{en}", fr:"{fr}", ar:"{ar}" }}}},')
 
 lines.append("];")
