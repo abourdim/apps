@@ -50,7 +50,8 @@
       "emoji": "🕵️",
       "categories": [
         "camera",
-        "ai"
+        "ai",
+        "microbit"
       ],
       "badge": "popular",
       "status": "stable",

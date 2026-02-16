@@ -130,7 +130,7 @@ const I18N = {
 /* ──────── LOAD APP DATA ──────── */
 let APPS = [];
 let LANG = localStorage.getItem("wdiy-lang") || "en";
-let THEME = localStorage.getItem("wdiy-theme") || "dark";
+let THEME = localStorage.getItem("wdiy-theme") || "islamic";
 let SOUND = localStorage.getItem("wdiy-sound") !== "off";
 let FAVS = JSON.parse(localStorage.getItem("wdiy-favs") || "[]");
 let EXPLORED = JSON.parse(localStorage.getItem("wdiy-explored") || "[]");
@@ -158,8 +158,8 @@ const siteLogo = document.getElementById("site-logo");
 const particleCanvas = document.getElementById("particles");
 const confettiCanvas = document.getElementById("confetti-canvas");
 
-let currentFilter = "";
-let currentStatusFilter = "";
+let currentFilter = "microbit";
+let currentStatusFilter = "stable";
 
 /* ============================================================
    INLINE APP DATA
@@ -170,7 +170,7 @@ const INLINE_APPS = [
     desc:{ en:"Drive a Bit:Bot robot from your browser over Bluetooth — virtual joystick, line-follow test and obstacle mode.", fr:"Pilotez un robot Bit:Bot depuis votre navigateur en Bluetooth — joystick virtuel, suivi de ligne et mode obstacles.", ar:"قُد روبوت Bit:Bot من متصفحك عبر البلوتوث — عصا تحكم افتراضية، اختبار تتبع الخط ووضع العوائق." }},
   { name:"magic-hands", emoji:"🪄", categories:["camera", "ai"], badge:"popular", status:"stable", tags:["camera","hand-tracking","mediapipe","effects","fun"],
     desc:{ en:"Wave your hands in front of the camera to trigger magic effects — confetti, trails, neon glow — powered by MediaPipe hand tracking.", fr:"Agitez vos mains devant la caméra pour déclencher des effets magiques — confettis, traînées, lueur néon — grâce au suivi de mains MediaPipe.", ar:"لوّح بيديك أمام الكاميرا لإطلاق تأثيرات سحرية — قصاصات ملونة، مسارات، توهج نيون — بفضل تتبع اليد MediaPipe." }},
-  { name:"face-quest", emoji:"🕵️", categories:["camera", "ai"], badge:"popular", status:"stable", tags:["camera","face-detection","game","privacy","local"],
+  { name:"face-quest", emoji:"🕵️", categories:["camera","ai","microbit"], badge:"popular", status:"stable", tags:["camera","face-detection","game","privacy","local"],
     desc:{ en:"A face-detection game you play with your webcam — smile, blink, turn your head to score points. Privacy-first: runs 100% locally.", fr:"Un jeu de détection faciale avec votre webcam — souriez, clignez, tournez la tête pour marquer des points. Respect de la vie privée : 100% local.", ar:"لعبة كشف الوجه بكاميرا الويب — ابتسم، اغمز، أدر رأسك لتسجيل النقاط. الخصوصية أولاً: تعمل 100% محلياً." }},
   { name:"talking-robot", emoji:"💬", categories:["microbit", "ai"], badge:"stable", status:"stable", tags:["robot","speech","TTS","STT","BLE","emotions"],
     desc:{ en:"A browser robot that speaks, listens and shows emotions — send text or voice commands to a micro:bit over BLE.", fr:"Un robot navigateur qui parle, écoute et montre des émotions — envoyez du texte ou des commandes vocales à un micro:bit en BLE.", ar:"روبوت متصفح يتحدث ويستمع ويُظهر المشاعر — أرسل نصوصاً أو أوامر صوتية إلى micro:bit عبر BLE." }},
