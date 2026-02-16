@@ -33,6 +33,20 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
 [dir="rtl"] .search-row { flex-direction: row-reverse; }
 [dir="rtl"] .card-badge { left: 12px; right: auto; }
 
+/* ───── Bismillah ───── */
+.bismillah {
+  flex-basis: 100%;
+  order: -1;
+  text-align: center;
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  opacity: 0.4;
+  margin: -8px 0 -4px;
+  letter-spacing: 0.5px;
+  user-select: none;
+}
+
 /* ============================================================
    THEME VARIABLES
    ============================================================ */
