@@ -206,6 +206,7 @@ for name in added:
         "emoji": emoji,
         "category": cat,
         "badge": "new",
+        "status": "stable",
         "tags": [t for t in name.split('-') if len(t) > 2][:3],
         "desc": {
             "en": desc_en,
@@ -240,15 +241,16 @@ for i, app in enumerate(data['apps']):
     emoji = app['emoji']
     cat = app.get('category', 'tools')
     badge = app.get('badge', '')
+    status = app.get('status', 'stable')
     tags = app.get('tags', [])
     desc = app.get('desc', {})
     en = desc.get('en', '').replace('"', '\\"')
     fr = desc.get('fr', '').replace('"', '\\"')
     ar = desc.get('ar', '').replace('"', '\\"')
     tags_str = ','.join([f'"{t}"' for t in tags[:5]])
-    badge_str = f'"{badge}"' if badge else '""'
+    badge_str = f'"{badge}"' if badge else '"stable"'
 
-    lines.append(f'  {{ name:"{name}", emoji:"{emoji}", category:"{cat}", badge:{badge_str}, tags:[{tags_str}],')
+    lines.append(f'  {{ name:"{name}", emoji:"{emoji}", category:"{cat}", badge:{badge_str}, status:"{status}", tags:[{tags_str}],')
     lines.append(f'    desc:{{ en:"{en}", fr:"{fr}", ar:"{ar}" }}}},')
 
 lines.append("];")

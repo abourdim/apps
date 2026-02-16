@@ -54,6 +54,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #2ecc71;
   --badge-popular: #f39c12;
   --badge-hub: #0090ff;
+  --badge-stable: #17a589;
   --cat-microbit: #00d4ff;
   --cat-camera: #f39c12;
   --cat-arabic: #2ecc71;
@@ -80,6 +81,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #27ae60;
   --badge-popular: #e67e22;
   --badge-hub: #2980b9;
+  --badge-stable: #17a589;
   --cat-microbit: #e74c3c;
   --cat-camera: #f39c12;
   --cat-arabic: #27ae60;
@@ -106,6 +108,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #1de9b6;
   --badge-popular: #ffab40;
   --badge-hub: #00b0ff;
+  --badge-stable: #17a589;
   --cat-microbit: #00e5ff;
   --cat-camera: #ffab40;
   --cat-arabic: #1de9b6;
@@ -132,6 +135,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #ffd700;
   --badge-popular: #00ff88;
   --badge-hub: #00ccff;
+  --badge-stable: #17a589;
   --cat-microbit: #00ff88;
   --cat-camera: #ffd700;
   --cat-arabic: #00ccff;
@@ -158,6 +162,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #00ff66;
   --badge-popular: #ffe600;
   --badge-hub: #00b4ff;
+  --badge-stable: #17a589;
   --cat-microbit: #ffe600;
   --cat-camera: #ff8800;
   --cat-arabic: #00ff66;
@@ -184,6 +189,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #ffd54f;
   --badge-popular: #4caf50;
   --badge-hub: #8bc34a;
+  --badge-stable: #17a589;
   --cat-microbit: #4caf50;
   --cat-camera: #ffcc80;
   --cat-arabic: #aed581;
@@ -210,6 +216,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #ffd700;
   --badge-popular: #ff4500;
   --badge-hub: #ff8c00;
+  --badge-stable: #17a589;
   --cat-microbit: #ff4500;
   --cat-camera: #ff8c00;
   --cat-arabic: #ffd700;
@@ -236,6 +243,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #f0c75e;
   --badge-popular: #d4a843;
   --badge-hub: #1b8c6a;
+  --badge-stable: #17a589;
   --cat-microbit: #1b8c6a;
   --cat-camera: #d4a843;
   --cat-arabic: #f0c75e;
@@ -741,6 +749,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #f0c75e;
   --badge-popular: #e8922e;
   --badge-hub: #c46a1a;
+  --badge-stable: #17a589;
   --cat-microbit: #e8922e;
   --cat-camera: #f0c75e;
   --cat-arabic: #d4a843;
@@ -982,6 +991,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #00bcd4;
   --badge-popular: #e84040;
   --badge-hub: #1a73e8;
+  --badge-stable: #17a589;
   --cat-microbit: #00bcd4;
   --cat-camera: #e84040;
   --cat-arabic: #f5f5f5;
@@ -1240,6 +1250,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #e8a832;
   --badge-popular: #1a8c50;
   --badge-hub: #2a78c8;
+  --badge-stable: #17a589;
   --cat-microbit: #1a8c50;
   --cat-camera: #e8a832;
   --cat-arabic: #2a78c8;
@@ -1510,6 +1521,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   --badge-new: #b0b8d0;
   --badge-popular: #5a8068;
   --badge-hub: #7880a0;
+  --badge-stable: #17a589;
   --cat-microbit: #5a8068;
   --cat-camera: #b0b8d0;
   --cat-arabic: #d0d8e8;
@@ -2059,6 +2071,69 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
 }
 .mode-btn.active .filter-count { background: rgba(255,255,255,0.3); }
 
+/* ───── Status filter bar ───── */
+.status-selector-container {
+  padding: 4px 0 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.status-selector-container::-webkit-scrollbar { display: none; }
+.status-selector {
+  display: flex;
+  gap: 6px;
+  padding: 2px 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.status-btn {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  font-family: var(--ff-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: 50px;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.status-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  color: var(--text-primary);
+  box-shadow: 0 4px 12px var(--glow);
+}
+.status-btn:hover[data-status="stable"]  { border-color: #17a589; }
+.status-btn:hover[data-status="beta"]    { border-color: #f59e0b; }
+.status-btn:hover[data-status="dev"]     { border-color: #8b5cf6; }
+.status-btn:hover[data-status="offline"] { border-color: #ef4444; }
+.status-btn.active {
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 16px var(--glow);
+  transform: translateY(-1px);
+}
+.status-btn.active[data-status=""]        { background: linear-gradient(135deg, var(--accent), var(--accent2)); }
+.status-btn.active[data-status="stable"]  { background: linear-gradient(135deg, #17a589, #1abc9c); }
+.status-btn.active[data-status="beta"]    { background: linear-gradient(135deg, #f59e0b, #fbbf24); }
+.status-btn.active[data-status="dev"]     { background: linear-gradient(135deg, #8b5cf6, #a78bfa); }
+.status-btn.active[data-status="offline"] { background: linear-gradient(135deg, #ef4444, #f87171); }
+.status-icon { font-size: 0.95rem; }
+.status-count {
+  font-size: 0.65rem;
+  background: rgba(255,255,255,0.2);
+  padding: 1px 6px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+.status-btn.active .status-count { background: rgba(255,255,255,0.3); }
+[dir="rtl"] .status-selector { direction: rtl; }
+
 /* ============================================================
    SEARCH ROW
    ============================================================ */
@@ -2261,6 +2336,7 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
 .card-badge.new { background: var(--badge-new); }
 .card-badge.popular { background: var(--badge-popular); }
 .card-badge.hub { background: var(--badge-hub); }
+.card-badge.stable { background: var(--badge-stable); }
 
 /* Favorite star */
 .fav-btn {
