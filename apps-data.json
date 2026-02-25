@@ -812,7 +812,7 @@
     },
     {
       "name": "amthal",
-      "emoji": "🛠️",
+      "emoji": "📖",
       "categories": [
         "tools"
       ],
@@ -827,7 +827,7 @@
     },
     {
       "name": "apps",
-      "emoji": "🛠️",
+      "emoji": "🏠",
       "categories": [
         "tools",
         "camera",
@@ -858,7 +858,7 @@
     },
     {
       "name": "arabic-keyboard",
-      "emoji": "🗣️",
+      "emoji": "⌨️",
       "categories": [
         "arabic"
       ],
@@ -873,7 +873,7 @@
     },
     {
       "name": "avahi",
-      "emoji": "🛠️",
+      "emoji": "🔎",
       "categories": [
         "tools"
       ],
@@ -888,7 +888,7 @@
     },
     {
       "name": "bonjour",
-      "emoji": "📚",
+      "emoji": "👋",
       "categories": [
         "learning"
       ],
@@ -909,7 +909,7 @@
     },
     {
       "name": "cowsay",
-      "emoji": "🛠️",
+      "emoji": "🐄",
       "categories": [
         "tools"
       ],
@@ -924,7 +924,7 @@
     },
     {
       "name": "dhcp-lab",
-      "emoji": "📚",
+      "emoji": "🔗",
       "categories": [
         "learning",
         "tools",
@@ -949,7 +949,7 @@
     },
     {
       "name": "docker-lab",
-      "emoji": "📚",
+      "emoji": "🐳",
       "categories": [
         "learning"
       ],
@@ -964,7 +964,7 @@
     },
     {
       "name": "elarabya",
-      "emoji": "🛠️",
+      "emoji": "🕌",
       "categories": [
         "tools"
       ],
@@ -979,7 +979,7 @@
     },
     {
       "name": "emojis",
-      "emoji": "🛠️",
+      "emoji": "😀",
       "categories": [
         "tools"
       ],
@@ -994,7 +994,7 @@
     },
     {
       "name": "firebase",
-      "emoji": "🛠️",
+      "emoji": "🔥",
       "categories": [
         "tools"
       ],
@@ -1009,7 +1009,7 @@
     },
     {
       "name": "ierab",
-      "emoji": "🛠️",
+      "emoji": "✏️",
       "categories": [
         "tools"
       ],
@@ -1024,7 +1024,7 @@
     },
     {
       "name": "mdns",
-      "emoji": "🛠️",
+      "emoji": "🌐",
       "categories": [
         "tools"
       ],
@@ -1039,7 +1039,7 @@
     },
     {
       "name": "morse-code",
-      "emoji": "🤖",
+      "emoji": "📟",
       "categories": [
         "microbit",
         "learning",
@@ -1070,7 +1070,7 @@
     },
     {
       "name": "mqtt-lab",
-      "emoji": "📚",
+      "emoji": "📨",
       "categories": [
         "learning",
         "hardware",
@@ -1094,7 +1094,7 @@
     },
     {
       "name": "ngrok",
-      "emoji": "🛠️",
+      "emoji": "🚇",
       "categories": [
         "tools"
       ],
@@ -1109,7 +1109,7 @@
     },
     {
       "name": "nodered-lab",
-      "emoji": "📚",
+      "emoji": "🔴",
       "categories": [
         "learning"
       ],
@@ -1124,7 +1124,7 @@
     },
     {
       "name": "ocpp",
-      "emoji": "🛠️",
+      "emoji": "⛽",
       "categories": [
         "tools",
         "learning",
@@ -1145,7 +1145,7 @@
     },
     {
       "name": "ollama-bot",
-      "emoji": "🛠️",
+      "emoji": "🦙",
       "categories": [
         "tools"
       ],
@@ -1160,7 +1160,7 @@
     },
     {
       "name": "openbot",
-      "emoji": "🛠️",
+      "emoji": "🚗",
       "categories": [
         "tools"
       ],
@@ -1175,7 +1175,7 @@
     },
     {
       "name": "ota",
-      "emoji": "🛠️",
+      "emoji": "📲",
       "categories": [
         "tools"
       ],
@@ -1190,7 +1190,7 @@
     },
     {
       "name": "playwright",
-      "emoji": "🛠️",
+      "emoji": "🎬",
       "categories": [
         "tools"
       ],
@@ -1205,7 +1205,7 @@
     },
     {
       "name": "prompt-example",
-      "emoji": "🧠",
+      "emoji": "💭",
       "categories": [
         "ai"
       ],
@@ -1220,7 +1220,7 @@
     },
     {
       "name": "pyshark",
-      "emoji": "🛠️",
+      "emoji": "🦈",
       "categories": [
         "tools"
       ],
@@ -1235,7 +1235,7 @@
     },
     {
       "name": "python3",
-      "emoji": "🛠️",
+      "emoji": "🐍",
       "categories": [
         "tools"
       ],
@@ -1250,7 +1250,7 @@
     },
     {
       "name": "qrcodes",
-      "emoji": "🛠️",
+      "emoji": "📱",
       "categories": [
         "tools"
       ],
@@ -1265,7 +1265,7 @@
     },
     {
       "name": "reddis",
-      "emoji": "🛠️",
+      "emoji": "🗄️",
       "categories": [
         "tools"
       ],
@@ -1280,7 +1280,7 @@
     },
     {
       "name": "salat-times",
-      "emoji": "🤖",
+      "emoji": "🕐",
       "categories": [
         "microbit",
         "arabic",
@@ -1306,7 +1306,7 @@
     },
     {
       "name": "scapy",
-      "emoji": "🛠️",
+      "emoji": "🕸️",
       "categories": [
         "tools"
       ],
@@ -1321,7 +1321,7 @@
     },
     {
       "name": "sdr-lab",
-      "emoji": "📚",
+      "emoji": "📻",
       "categories": [
         "learning",
         "microbit",
@@ -1349,7 +1349,7 @@
     },
     {
       "name": "template",
-      "emoji": "🛠️",
+      "emoji": "📄",
       "categories": [
         "tools"
       ],
@@ -1364,7 +1364,7 @@
     },
     {
       "name": "tesbih",
-      "emoji": "🛠️",
+      "emoji": "📿",
       "categories": [
         "tools"
       ],
@@ -1379,7 +1379,7 @@
     },
     {
       "name": "tethkir",
-      "emoji": "🤖",
+      "emoji": "✅",
       "categories": [
         "microbit",
         "arabic",
@@ -1403,7 +1403,7 @@
     },
     {
       "name": "time-machine",
-      "emoji": "📚",
+      "emoji": "⏳",
       "categories": [
         "learning",
         "arabic",
@@ -1424,7 +1424,7 @@
     },
     {
       "name": "tshark",
-      "emoji": "🛠️",
+      "emoji": "🐋",
       "categories": [
         "tools"
       ],
@@ -1439,7 +1439,7 @@
     },
     {
       "name": "tty",
-      "emoji": "🤖",
+      "emoji": "🖥️",
       "categories": [
         "microbit"
       ],
@@ -1461,7 +1461,7 @@
     },
     {
       "name": "workshop-diy-logos",
-      "emoji": "🛠️",
+      "emoji": "🖼️",
       "categories": [
         "tools"
       ],
