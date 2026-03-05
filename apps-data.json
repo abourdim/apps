@@ -787,8 +787,8 @@
       ],
       "desc": {
         "en": "A fun, multilingual hub for all Workshop-Diy mini-apps — built for kids, beginners, and STEM classrooms.",
-        "fr": "Apps — explorez et expérimentez !",
-        "ar": "Apps — استكشف وجرّب!"
+        "fr": "Hub multilingue et ludique pour toutes les mini-apps Workshop-Diy — conçu pour les enfants, débutants et classes STEM.",
+        "ar": "مركز متعدد اللغات وممتع لجميع تطبيقات Workshop-Diy المصغرة — مصمم للأطفال والمبتدئين وفصول STEM."
       }
     },
     {
@@ -808,8 +808,8 @@
       ],
       "desc": {
         "en": "Learn mDNS/Bonjour networking — discover devices, send queries, register services and explore local network protocols.",
-        "fr": "Bonjour — explorez et expérimentez !",
-        "ar": "Bonjour — استكشف وجرّب!"
+        "fr": "Apprenez le réseau mDNS/Bonjour — découvrez des appareils, envoyez des requêtes, enregistrez des services et explorez les protocoles réseau locaux.",
+        "ar": "تعلم شبكات mDNS/Bonjour — اكتشف الأجهزة، أرسل الاستعلامات، سجّل الخدمات واستكشف بروتوكولات الشبكة المحلية."
       }
     },
     {
@@ -828,8 +828,8 @@
       ],
       "desc": {
         "en": "A fun ASCII cow that solves math expressions and shares amazing facts — pick a category and learn!",
-        "fr": "Cowsay — explorez et expérimentez !",
-        "ar": "Cowsay — استكشف وجرّب!"
+        "fr": "Une vache ASCII amusante qui résout des expressions mathématiques et partage des faits étonnants — choisissez une catégorie et apprenez !",
+        "ar": "بقرة ASCII مرحة تحل التعبيرات الرياضية وتشارك حقائق مذهلة — اختر فئة وتعلم!"
       }
     },
     {
@@ -849,8 +849,8 @@
       ],
       "desc": {
         "en": "Zero-dependency Python DHCP server with real-time web dashboard.",
-        "fr": "Dhcp Lab — explorez et expérimentez !",
-        "ar": "Dhcp Lab — استكشف وجرّب!"
+        "fr": "Serveur DHCP Python sans dépendances avec tableau de bord web en temps réel.",
+        "ar": "خادم DHCP بلغة Python بدون تبعيات مع لوحة تحكم ويب في الوقت الفعلي."
       }
     },
     {
@@ -869,8 +869,8 @@
       ],
       "desc": {
         "en": "EmojiFlow — learn programming concepts through emoji-based coding challenges and visual blocks.",
-        "fr": "Emojis — explorez et expérimentez !",
-        "ar": "Emojis — استكشف وجرّب!"
+        "fr": "EmojiFlow — apprenez les concepts de programmation à travers des défis de codage basés sur les emojis et des blocs visuels.",
+        "ar": "EmojiFlow — تعلم مفاهيم البرمجة من خلال تحديات الترميز بالرموز التعبيرية والكتل المرئية."
       }
     },
     {
@@ -892,8 +892,8 @@
       ],
       "desc": {
         "en": "Learn Morse code interactively — alphabet trainer, encoder/decoder, audio playback, challenge quizzes and micro:bit BLE communication.",
-        "fr": "Morse Code — explorez et expérimentez !",
-        "ar": "Morse Code — استكشف وجرّب!"
+        "fr": "Apprenez le code Morse de façon interactive — entraîneur d'alphabet, encodeur/décodeur, lecture audio, quiz et communication BLE micro:bit.",
+        "ar": "تعلم شفرة مورس بشكل تفاعلي — مدرب الأبجدية، مشفر/فاك شفرة، تشغيل صوتي، اختبارات وتواصل BLE مع micro:bit."
       }
     },
     {
@@ -914,8 +914,8 @@
       ],
       "desc": {
         "en": "Learn MQTT hands-on — connect to a broker, publish/subscribe to topics, explore IoT security and chat with an AI assistant.",
-        "fr": "Mqtt Lab — explorez et expérimentez !",
-        "ar": "Mqtt Lab — استكشف وجرّب!"
+        "fr": "Apprenez MQTT en pratique — connectez-vous à un broker, publiez/abonnez-vous à des sujets, explorez la sécurité IoT et chattez avec un assistant IA.",
+        "ar": "تعلم MQTT عمليًا — اتصل بوسيط، انشر/اشترك في المواضيع، استكشف أمان إنترنت الأشياء ودردش مع مساعد ذكاء اصطناعي."
       }
     },
     {
@@ -936,8 +936,8 @@
       ],
       "desc": {
         "en": "A complete, production-quality OCPP 1.6J simulation ecosystem for learning, testing, and development. Includes a CSMS, Charging Station, and EV Battery simulator — all with real-time web UIs —...",
-        "fr": "Ocpp — explorez et expérimentez !",
-        "ar": "Ocpp — استكشف وجرّب!"
+        "fr": "Écosystème complet de simulation OCPP 1.6J pour l'apprentissage, les tests et le développement — CSMS, station de charge et simulateur de batterie avec interfaces web en temps réel.",
+        "ar": "منظومة محاكاة OCPP 1.6J كاملة للتعلم والاختبار والتطوير — CSMS ومحطة شحن ومحاكي بطارية مع واجهات ويب في الوقت الفعلي."
       }
     },
     {
@@ -958,8 +958,8 @@
       ],
       "desc": {
         "en": "Chat with a local AI running on your computer via Ollama — private, offline, no cloud needed.",
-        "fr": "Ollama Bot — explorez et expérimentez !",
-        "ar": "Ollama Bot — استكشف وجرّب!"
+        "fr": "Discutez avec une IA locale sur votre ordinateur via Ollama — privé, hors ligne, sans cloud.",
+        "ar": "تحدث مع ذكاء اصطناعي محلي على حاسوبك عبر Ollama — خاص، بدون إنترنت، بدون سحابة."
       }
     },
     {
@@ -981,8 +981,8 @@
       ],
       "desc": {
         "en": "A single-file Islamic prayer times web app with micro:bit V2 Adhan Lantern support.",
-        "fr": "Salat Times — explorez et expérimentez !",
-        "ar": "Salat Times — استكشف وجرّب!"
+        "fr": "Application web de horaires de prière islamique en fichier unique avec support micro:bit V2 Adhan Lantern.",
+        "ar": "تطبيق ويب لمواقيت الصلاة الإسلامية في ملف واحد مع دعم فانوس الأذان micro:bit V2."
       }
     },
     {
@@ -1002,8 +1002,8 @@
       ],
       "desc": {
         "en": "Scapy Kids Lab — 16 interactive demos to build, inspect and visualize network packets layer by layer.",
-        "fr": "Scapy — explorez et expérimentez !",
-        "ar": "Scapy — استكشف وجرّب!"
+        "fr": "Scapy Kids Lab — 16 démos interactives pour construire, inspecter et visualiser les paquets réseau couche par couche.",
+        "ar": "Scapy Kids Lab — 16 عرضًا تفاعليًا لبناء وفحص وتصور حزم الشبكة طبقة بطبقة."
       }
     },
     {
@@ -1024,8 +1024,8 @@
       ],
       "desc": {
         "en": "SDR Kids Lab — learn Software Defined Radio with interactive lessons on radio waves, frequencies and signal decoding.",
-        "fr": "Sdr Lab — explorez et expérimentez !",
-        "ar": "Sdr Lab — استكشف وجرّب!"
+        "fr": "SDR Kids Lab — apprenez la Radio Logicielle avec des leçons interactives sur les ondes radio, les fréquences et le décodage de signaux.",
+        "ar": "SDR Kids Lab — تعلم الراديو المعرّف بالبرمجيات مع دروس تفاعلية عن موجات الراديو والترددات وفك تشفير الإشارات."
       }
     },
     {
@@ -1043,8 +1043,8 @@
       ],
       "desc": {
         "en": "Starter template for new Workshop-DIY apps — boilerplate HTML with i18n, themes and standard layout.",
-        "fr": "Template — explorez et expérimentez !",
-        "ar": "Template — استكشف وجرّب!"
+        "fr": "Modèle de démarrage pour les nouvelles apps Workshop-DIY — HTML standard avec i18n, thèmes et mise en page.",
+        "ar": "قالب بداية لتطبيقات Workshop-DIY الجديدة — HTML جاهز مع i18n، سمات وتخطيط قياسي."
       }
     },
     {
@@ -1065,8 +1065,8 @@
       ],
       "desc": {
         "en": "A digital tasbih (prayer bead counter) with dhikr tracking — tap to count, fully offline PWA.",
-        "fr": "Tesbih — explorez et expérimentez !",
-        "ar": "Tesbih — استكشف وجرّب!"
+        "fr": "Tasbih numérique (compteur de perles de prière) avec suivi du dhikr — tapez pour compter, PWA entièrement hors ligne.",
+        "ar": "تسبيح رقمي (عداد مسبحة) مع تتبع الذكر — اضغط للعدّ، تطبيق PWA يعمل بدون إنترنت."
       }
     },
     {
@@ -1087,8 +1087,8 @@
       ],
       "desc": {
         "en": "Islamic Task Manager & Secure Notes",
-        "fr": "Tethkir — explorez et expérimentez !",
-        "ar": "Tethkir — استكشف وجرّب!"
+        "fr": "Gestionnaire de tâches islamique et notes sécurisées.",
+        "ar": "مدير مهام إسلامي وملاحظات مشفّرة."
       }
     },
     {
@@ -1109,8 +1109,8 @@
       ],
       "desc": {
         "en": "An interactive educational game about Muslim scientists who changed the world.",
-        "fr": "Time Machine — explorez et expérimentez !",
-        "ar": "Time Machine — استكشف وجرّب!"
+        "fr": "Jeu éducatif interactif sur les scientifiques musulmans qui ont changé le monde.",
+        "ar": "لعبة تعليمية تفاعلية عن العلماء المسلمين الذين غيّروا العالم."
       }
     },
     {
@@ -1131,8 +1131,8 @@
       ],
       "desc": {
         "en": "A web-based tool to send and execute bash scripts on a Linux board over serial — terminal, session recording, hex display and profiles.",
-        "fr": "Tty — explorez et expérimentez !",
-        "ar": "Tty — استكشف وجرّب!"
+        "fr": "Outil web pour envoyer et exécuter des scripts bash sur une carte Linux via série — terminal, enregistrement de session, affichage hex et profils.",
+        "ar": "أداة ويب لإرسال وتنفيذ سكريبتات bash على لوحة Linux عبر المنفذ التسلسلي — طرفية، تسجيل جلسات، عرض hex وملفات تعريف."
       }
     },
     {
@@ -1151,8 +1151,8 @@
       ],
       "desc": {
         "en": "Official Workshop-DIY logo pack — SVG, PNG, ICO and AI formats for all platforms.",
-        "fr": "Workshop Diy Logos — explorez et expérimentez !",
-        "ar": "Workshop Diy Logos — استكشف وجرّب!"
+        "fr": "Pack officiel de logos Workshop-DIY — formats SVG, PNG, ICO et AI pour toutes les plateformes.",
+        "ar": "حزمة شعارات Workshop-DIY الرسمية — صيغ SVG وPNG وICO وAI لجميع المنصات."
       }
     },
     {
@@ -1173,8 +1173,8 @@
       ],
       "desc": {
         "en": "A kid-friendly real-time flight tracker that turns the sky into an interactive classroom.",
-        "fr": "Flight Tracker — explorez et expérimentez !",
-        "ar": "Flight Tracker — استكشف وجرّب!"
+        "fr": "Suivi de vols en temps réel adapté aux enfants — transforme le ciel en classe interactive.",
+        "ar": "متتبع رحلات جوية في الوقت الفعلي للأطفال — يحوّل السماء إلى فصل دراسي تفاعلي."
       }
     },
     {
@@ -1193,8 +1193,8 @@
       ],
       "desc": {
         "en": "Promotional flyer templates and social media posts for Workshop-DIY apps.",
-        "fr": "Flyers — explorez et expérimentez !",
-        "ar": "Flyers — استكشف وجرّب!"
+        "fr": "Modèles de flyers promotionnels et publications réseaux sociaux pour les apps Workshop-DIY.",
+        "ar": "قوالب منشورات ترويجية ومنشورات وسائل التواصل الاجتماعي لتطبيقات Workshop-DIY."
       }
     },
     {
@@ -1213,8 +1213,8 @@
       ],
       "desc": {
         "en": "The complete GitHub repository manager — CLI + Web UI",
-        "fr": "Git Pulse — explorez et expérimentez !",
-        "ar": "Git Pulse — استكشف وجرّب!"
+        "fr": "Le gestionnaire complet de dépôts GitHub — CLI + interface web.",
+        "ar": "مدير مستودعات GitHub الكامل — سطر أوامر + واجهة ويب."
       }
     },
     {
@@ -1236,8 +1236,8 @@
       ],
       "desc": {
         "en": "An interactive educational journey through the Islamic Golden Age — explore algebra, medicine, optics, engineering and more.",
-        "fr": "Golden Age — explorez et expérimentez !",
-        "ar": "Golden Age — استكشف وجرّب!"
+        "fr": "Voyage éducatif interactif à travers l'Âge d'Or islamique — explorez l'algèbre, la médecine, l'optique, l'ingénierie et plus encore.",
+        "ar": "رحلة تعليمية تفاعلية عبر العصر الذهبي الإسلامي — استكشف الجبر والطب والبصريات والهندسة والمزيد."
       }
     },
     {
@@ -1257,8 +1257,8 @@
       ],
       "desc": {
         "en": "A playful cybersecurity roleplay for kids — fake hacker terminal, prank missions, poster generator and spy-themed mini-games.",
-        "fr": "Hacktivist Kids — explorez et expérimentez !",
-        "ar": "Hacktivist Kids — استكشف وجرّب!"
+        "fr": "Jeu de rôle cybersécurité ludique pour enfants — faux terminal hacker, missions de farces, générateur d'affiches et mini-jeux d'espionnage.",
+        "ar": "لعب أدوار أمن سيبراني مرح للأطفال — طرفية قرصنة وهمية، مهام مقالب، مولّد ملصقات وألعاب تجسس مصغرة."
       }
     },
     {
@@ -1296,9 +1296,9 @@
         "PWA"
       ],
       "desc": {
-        "en": "Outil multi-mode de création de visuels pour Workshop-DIY (Chelles 77500). Application 100% client-side, fichier HTML unique, zéro dépendance serveur. PWA installable.",
-        "fr": "Posts — explorez et expérimentez !",
-        "ar": "Posts — استكشف وجرّب!"
+        "en": "Multi-mode visual creator for Workshop-DIY — 58 styles, cowsay art, chat mockups, memes and notifications. 100% client-side, single HTML file, installable PWA.",
+        "fr": "Outil multi-mode de création de visuels pour Workshop-DIY — 58 styles, art cowsay, maquettes de chat, mèmes et notifications. 100% client-side, fichier HTML unique, PWA installable.",
+        "ar": "منشئ مرئيات متعدد الأوضاع لـ Workshop-DIY — 58 نمطًا، فن cowsay، محاكاة محادثات، ميمات وإشعارات. 100% من جانب العميل، ملف HTML واحد، PWA قابل للتثبيت."
       }
     },
     {
@@ -1317,8 +1317,8 @@
       ],
       "desc": {
         "en": "A showcase of 115 Workshop-DIY files — the complete suite index in one page.",
-        "fr": "Pranky Kids — explorez et expérimentez !",
-        "ar": "Pranky Kids — استكشف وجرّب!"
+        "fr": "Vitrine de 115 fichiers Workshop-DIY — l'index complet de la suite en une seule page.",
+        "ar": "عرض لـ 115 ملفًا من Workshop-DIY — فهرس المجموعة الكامل في صفحة واحدة."
       }
     },
     {
@@ -1337,8 +1337,8 @@
       ],
       "desc": {
         "en": "Curated Islamic YouTube channel roadmaps and learning paths.",
-        "fr": "Roadmaps — explorez et expérimentez !",
-        "ar": "Roadmaps — استكشف وجرّب!"
+        "fr": "Parcours d'apprentissage et roadmaps de chaînes YouTube islamiques sélectionnées.",
+        "ar": "خرائط طريق ومسارات تعلم لقنوات يوتيوب إسلامية منتقاة."
       }
     },
     {
@@ -1358,8 +1358,8 @@
       ],
       "desc": {
         "en": "564 self-contained HTML files across 3 languages (EN/FR/AR) for the Workshop-DIY educational ecosystem.",
-        "fr": "Sada — explorez et expérimentez !",
-        "ar": "Sada — استكشف وجرّب!"
+        "fr": "564 fichiers HTML autonomes en 3 langues (EN/FR/AR) pour l'écosystème éducatif Workshop-DIY.",
+        "ar": "564 ملف HTML مستقل بـ 3 لغات (EN/FR/AR) للمنظومة التعليمية Workshop-DIY."
       }
     },
     {
@@ -1378,8 +1378,8 @@
       ],
       "desc": {
         "en": "Bash toolkit to sanitize and normalize file and folder names — simple and advanced modes.",
-        "fr": "Sanitize Names Toolkit — explorez et expérimentez !",
-        "ar": "Sanitize Names Toolkit — استكشف وجرّب!"
+        "fr": "Boîte à outils Bash pour assainir et normaliser les noms de fichiers et dossiers — modes simple et avancé.",
+        "ar": "مجموعة أدوات Bash لتنظيف وتوحيد أسماء الملفات والمجلدات — وضع بسيط ومتقدم."
       }
     },
     {
@@ -1401,8 +1401,8 @@
       ],
       "desc": {
         "en": "An interactive educational experience about satellites, orbital mechanics, and the Arab astronomical heritage that made it all possible.",
-        "fr": "Satellites — explorez et expérimentez !",
-        "ar": "Satellites — استكشف وجرّب!"
+        "fr": "Expérience éducative interactive sur les satellites, la mécanique orbitale et l'héritage astronomique arabe qui a rendu tout cela possible.",
+        "ar": "تجربة تعليمية تفاعلية عن الأقمار الصناعية وميكانيكا المدارات والتراث الفلكي العربي الذي جعل كل ذلك ممكنًا."
       }
     },
     {
@@ -1422,8 +1422,8 @@
       ],
       "desc": {
         "en": "Self-hosted browser-based remote access hub. SSH terminal, SFTP file browser, VNC viewer, network scanner, encrypted credential vault, AI copilot, DHCP server, session recording, workflow...",
-        "fr": "Termlite — explorez et expérimentez !",
-        "ar": "Termlite — استكشف وجرّب!"
+        "fr": "Hub d'accès distant auto-hébergé dans le navigateur — terminal SSH, navigateur SFTP, client VNC, scanner réseau, coffre-fort chiffré, copilote IA, serveur DHCP et enregistrement de sessions.",
+        "ar": "مركز وصول عن بُعد ذاتي الاستضافة في المتصفح — طرفية SSH، متصفح SFTP، عارض VNC، ماسح شبكة، خزنة مشفرة، مساعد ذكاء اصطناعي، خادم DHCP وتسجيل جلسات."
       }
     }
   ]
