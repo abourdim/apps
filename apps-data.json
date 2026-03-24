@@ -29,11 +29,9 @@
       "categories": [
         "ai",
         "learning",
-        "microbit",
         "hardware",
         "tools",
-        "camera",
-        "classroom"
+        "camera"
       ],
       "badge": "new",
       "status": "stable",
@@ -122,9 +120,8 @@
       "emoji": "🔊",
       "categories": [
         "arabic",
-        "tools",
-        "microbit",
-        "ai"
+        "ai",
+        "tools"
       ],
       "badge": "new",
       "status": "stable",
@@ -307,10 +304,7 @@
       "categories": [
         "learning",
         "arabic",
-        "tools",
-        "classroom",
-        "microbit",
-        "hardware"
+        "classroom"
       ],
       "badge": "new",
       "status": "stable",
@@ -512,10 +506,7 @@
       "name": "dir-pulse",
       "emoji": "📁",
       "categories": [
-        "microbit",
-        "tools",
-        "hardware",
-        "learning"
+        "tools"
       ],
       "badge": "new",
       "status": "stable",
@@ -651,9 +642,7 @@
       "categories": [
         "tools",
         "learning",
-        "microbit",
-        "arabic",
-        "hardware"
+        "arabic"
       ],
       "badge": "new",
       "status": "stable",
@@ -725,7 +714,6 @@
       "name": "git-date-rewrite",
       "emoji": "🕓",
       "categories": [
-        "microbit",
         "tools"
       ],
       "badge": "new",
@@ -954,8 +942,6 @@
       "categories": [
         "learning",
         "arabic",
-        "hardware",
-        "microbit",
         "ai"
       ],
       "badge": "new",
@@ -1052,7 +1038,6 @@
       "emoji": "🧭",
       "categories": [
         "tools",
-        "microbit",
         "hardware"
       ],
       "badge": "new",
@@ -1453,7 +1438,6 @@
       "emoji": "⛓️",
       "categories": [
         "tools",
-        "microbit",
         "learning"
       ],
       "badge": "new",
@@ -1922,8 +1906,7 @@
       "name": "true-crypt",
       "emoji": "🔑",
       "categories": [
-        "tools",
-        "microbit"
+        "tools"
       ],
       "badge": "new",
       "status": "dev",
@@ -2012,10 +1995,7 @@
       "emoji": "🕷️",
       "categories": [
         "learning",
-        "microbit",
-        "tools",
-        "arabic",
-        "hardware"
+        "arabic"
       ],
       "badge": "new",
       "status": "stable",
@@ -2040,7 +2020,7 @@
       "emoji": "🖱️",
       "categories": [
         "tools",
-        "microbit"
+        "hardware"
       ],
       "badge": "new",
       "status": "stable",
