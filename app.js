@@ -658,6 +658,12 @@ function card(app, index) {
   else if (app.badge === "hub") badgeHTML = `<span class="card-badge hub">${t("badge_hub")}</span>`;
   else if (app.badge === "stable") badgeHTML = `<span class="card-badge stable">${t("badge_stable")}</span>`;
 
+  // Visibility badge (public 🌐 / private 🔒)
+  const isPublic = (app.visibility || "private") === "public";
+  const visHTML = isPublic
+    ? `<span class="vis-badge public" title="Public repo">🌐</span>`
+    : `<span class="vis-badge private" title="Private repo">🔒</span>`;
+
   // Status badge (Beta / Dev / Offline / custom — stable shows nothing)
   let statusHTML = "";
   if (app.status === "beta") statusHTML = `<span class="status-badge beta">${t("status_beta")}</span>`;
@@ -667,11 +673,15 @@ function card(app, index) {
 
   el.innerHTML = `
     ${badgeHTML}
+    ${visHTML}
     <button class="fav-btn ${isFav ? 'favorited' : ''}" data-fav="${app.name}" title="Favorite" aria-label="Toggle favorite">🔥</button>
     <h3><span class="card-number">#${num}</span><span class="kids-emoji">${app.emoji}</span><span class="kids-name">${app.name}</span>${statusHTML}</h3>
     <p class="kids-desc">${desc}</p>
     <div class="kids-actions">
-      <a class="kids-link" href="${app.github}" target="_blank" rel="noreferrer">${t("github")}</a>
+      ${isPublic
+        ? `<a class="kids-link" href="${app.github}" target="_blank" rel="noreferrer">${t("github")}</a>`
+        : `<span class="kids-link disabled" title="Private repo">🔒 Private</span>`
+      }
       <a class="kids-link primary view-link" href="${app.view}" target="_blank" rel="noreferrer" data-app="${app.name}">${t("view_btn")}</a>
     </div>
     <div class="kids-tags">
@@ -751,10 +761,15 @@ function updateGreeting() {
    ============================================================ */
 function updateStats() {
   const cats = new Set(APPS.flatMap(a => a.categories || []));
+  const pubCount  = APPS.filter(a => (a.visibility || "private") === "public").length;
+  const privCount = APPS.filter(a => (a.visibility || "private") === "private").length;
   statsBar.innerHTML = `
     <span class="stat-item"><span class="stat-num">${APPS.length}</span> ${t("stats_apps")}</span>
     <span class="stat-item">•</span>
     <span class="stat-item"><span class="stat-num">${cats.size}</span> ${t("stats_cats")}</span>
+    <span class="stat-item">•</span>
+    <span class="stat-item" title="Public repos">🌐 <span class="stat-num">${pubCount}</span></span>
+    <span class="stat-item" title="Private repos" style="opacity:0.6">🔒 <span class="stat-num">${privCount}</span></span>
     <span class="stat-item">•</span>
     <span class="stat-item">${t("stats_made")}</span>
   `;
