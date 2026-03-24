@@ -122,7 +122,7 @@
     },
     {
       "name": "face-tracking",
-      "emoji": "😎",
+      "emoji": "👁️",
       "categories": [
         "camera",
         "microbit"
@@ -145,7 +145,7 @@
     },
     {
       "name": "bitmoji-lab",
-      "emoji": "😄",
+      "emoji": "🎪",
       "categories": [
         "microbit"
       ],
@@ -167,7 +167,7 @@
     },
     {
       "name": "mission-control",
-      "emoji": "🚀",
+      "emoji": "🛸",
       "categories": [
         "classroom",
         "microbit"
@@ -190,7 +190,7 @@
     },
     {
       "name": "bit-playground",
-      "emoji": "🧩",
+      "emoji": "🕹️",
       "categories": [
         "microbit"
       ],
@@ -214,7 +214,7 @@
     },
     {
       "name": "rxy",
-      "emoji": "🎛️",
+      "emoji": "🎮",
       "categories": [
         "microbit"
       ],
@@ -236,7 +236,7 @@
     },
     {
       "name": "pixel-gateway",
-      "emoji": "🎨",
+      "emoji": "🟥",
       "categories": [
         "microbit"
       ],
@@ -457,7 +457,7 @@
     },
     {
       "name": "ble-logger",
-      "emoji": "📡",
+      "emoji": "📶",
       "categories": [
         "microbit"
       ],
@@ -479,7 +479,7 @@
     },
     {
       "name": "claude-toolkit",
-      "emoji": "🧰",
+      "emoji": "💎",
       "categories": [
         "ai",
         "tools"
@@ -741,7 +741,7 @@
     },
     {
       "name": "bit-54-activities",
-      "emoji": "🤖",
+      "emoji": "🎯",
       "categories": [
         "microbit",
         "learning"
@@ -808,7 +808,7 @@
     },
     {
       "name": "bonjour",
-      "emoji": "👋",
+      "emoji": "📡",
       "categories": [
         "learning"
       ],
@@ -894,7 +894,7 @@
     },
     {
       "name": "morse-code",
-      "emoji": "📟",
+      "emoji": "📯",
       "categories": [
         "microbit",
         "learning",
@@ -987,7 +987,7 @@
     },
     {
       "name": "salat-times",
-      "emoji": "🕐",
+      "emoji": "🕌",
       "categories": [
         "microbit",
         "arabic"
@@ -1079,7 +1079,7 @@
     },
     {
       "name": "tethkir",
-      "emoji": "✅",
+      "emoji": "📔",
       "categories": [
         "arabic",
         "tools"
@@ -1102,7 +1102,7 @@
     },
     {
       "name": "time-machine",
-      "emoji": "⏳",
+      "emoji": "🕰️",
       "categories": [
         "learning",
         "arabic"
@@ -1171,7 +1171,7 @@
     },
     {
       "name": "flyers",
-      "emoji": "📰",
+      "emoji": "📄",
       "categories": [
         "tools"
       ],
@@ -1280,7 +1280,7 @@
     },
     {
       "name": "posts",
-      "emoji": "📝",
+      "emoji": "✍️",
       "categories": [
         "tools"
       ],
@@ -1301,7 +1301,7 @@
     },
     {
       "name": "sada",
-      "emoji": "📖",
+      "emoji": "🌊",
       "categories": [
         "learning",
         "arabic"
@@ -1368,7 +1368,7 @@
     },
     {
       "name": "termlite",
-      "emoji": "🔧",
+      "emoji": "⌨️",
       "categories": [
         "tools"
       ],
@@ -1390,7 +1390,7 @@
     },
     {
       "name": "AI-hacker-lab",
-      "emoji": "🧠",
+      "emoji": "🤯",
       "categories": [
         "ai",
         "learning",
@@ -1420,7 +1420,7 @@
     },
     {
       "name": "al-maqlub-",
-      "emoji": "🗣️",
+      "emoji": "🔄",
       "categories": [
         "arabic",
         "ai",
@@ -1449,7 +1449,7 @@
     },
     {
       "name": "arabic-tts",
-      "emoji": "🗣️",
+      "emoji": "🔊",
       "categories": [
         "arabic",
         "tools",
@@ -1476,7 +1476,7 @@
     },
     {
       "name": "builders-of-light",
-      "emoji": "📚",
+      "emoji": "💫",
       "categories": [
         "learning",
         "arabic",
@@ -1506,7 +1506,7 @@
     },
     {
       "name": "callgraph",
-      "emoji": "🛠️",
+      "emoji": "📊",
       "categories": [
         "tools"
       ],
@@ -1529,7 +1529,7 @@
     },
     {
       "name": "dir-pulse",
-      "emoji": "🤖",
+      "emoji": "📁",
       "categories": [
         "microbit",
         "tools",
@@ -1552,7 +1552,7 @@
     },
     {
       "name": "fihris",
-      "emoji": "🛠️",
+      "emoji": "📂",
       "categories": [
         "tools",
         "learning",
@@ -1584,7 +1584,7 @@
     },
     {
       "name": "git-date-rewrite",
-      "emoji": "🤖",
+      "emoji": "🕓",
       "categories": [
         "microbit",
         "tools"
@@ -1607,7 +1607,7 @@
     },
     {
       "name": "jisr",
-      "emoji": "🗣️",
+      "emoji": "🌉",
       "categories": [
         "arabic",
         "learning",
@@ -1658,7 +1658,7 @@
     },
     {
       "name": "luminaries-of-islam",
-      "emoji": "📚",
+      "emoji": "🌟",
       "categories": [
         "learning",
         "arabic",
@@ -1691,7 +1691,7 @@
     },
     {
       "name": "meridian",
-      "emoji": "🛠️",
+      "emoji": "🧭",
       "categories": [
         "tools",
         "microbit",
@@ -1716,7 +1716,7 @@
     },
     {
       "name": "production-chain",
-      "emoji": "🏭",
+      "emoji": "⛓️",
       "categories": [
         "tools",
         "microbit",
@@ -1741,7 +1741,7 @@
     },
     {
       "name": "tools",
-      "emoji": "🛠️",
+      "emoji": "🧰",
       "categories": [
         "tools"
       ],
@@ -1757,7 +1757,7 @@
     },
     {
       "name": "true-crypt",
-      "emoji": "🛠️",
+      "emoji": "🔑",
       "categories": [
         "tools",
         "microbit"
@@ -1780,7 +1780,7 @@
     },
     {
       "name": "warsha",
-      "emoji": "⚡",
+      "emoji": "🔩",
       "categories": [
         "hardware"
       ],
@@ -1801,7 +1801,7 @@
     },
     {
       "name": "web-kids",
-      "emoji": "📚",
+      "emoji": "🕷️",
       "categories": [
         "learning",
         "microbit",
@@ -1829,7 +1829,7 @@
     },
     {
       "name": "web-kvm",
-      "emoji": "🛠️",
+      "emoji": "🖱️",
       "categories": [
         "tools",
         "microbit"
