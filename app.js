@@ -158,8 +158,8 @@ const siteLogo = document.getElementById("site-logo");
 const particleCanvas = document.getElementById("particles");
 const confettiCanvas = document.getElementById("confetti-canvas");
 
-let currentFilter = "microbit";
-let currentStatusFilter = "stable";
+let currentFilter = "";
+let currentStatusFilter = "";
 
 /* ============================================================
    INLINE APP DATA
