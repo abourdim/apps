@@ -4,7 +4,7 @@
    ============================================================ */
 
 const USER = "abourdim";
-const VIEW = (repo) => `https://raw.githack.com/${USER}/${repo}/main/index.html`;
+const VIEW = (repo) => `https://${USER}.github.io/${repo}/`;
 
 /* ──────── i18n STRINGS ──────── */
 const I18N = {

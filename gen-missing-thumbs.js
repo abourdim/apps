@@ -14,7 +14,7 @@ const fs = require("fs");
 const path = require("path");
 
 const USER = "abourdim";
-const VIEW = (repo) => `https://raw.githack.com/${USER}/${repo}/main/index.html`;
+const VIEW = (repo) => `https://${USER}.github.io/${repo}/`;
 const OUT_DIR = path.join(__dirname, "thumbs");
 const DATA_FILE = path.join(__dirname, "apps-data.json");
 const TIMEOUT = 25000;
