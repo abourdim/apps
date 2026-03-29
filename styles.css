@@ -1958,10 +1958,11 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   color: var(--text-secondary);
 }
 .version {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: var(--text-secondary);
-  opacity: 0.5;
+  opacity: 0.3;
   letter-spacing: 0.5px;
+  margin-left: 6px;
 }
 .header-controls {
   display: flex;
