@@ -21,7 +21,7 @@
         "fr": "Explorez la 3D dans le navigateur — créez, faites pivoter et éclairez des objets avec Three.js.",
         "ar": "استكشف التصميم ثلاثي الأبعاد في المتصفح — أنشئ، أدر وأضئ أشكالاً بـ Three.js."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "AI-hacker-lab",
@@ -49,7 +49,7 @@
         "fr": "Ai Hacker Lab — explorez et expérimentez !",
         "ar": "Ai Hacker Lab — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "al-maqlub",
@@ -139,7 +139,7 @@
         "fr": "Arabic Tts — explorez et expérimentez !",
         "ar": "Arabic Tts — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "bit-54-activities",
@@ -162,7 +162,7 @@
         "fr": "54 activités pratiques pour BBC micro:bit — du clignotement de LEDs aux robots BLE, débutant à avancé.",
         "ar": "54 نشاطاً عملياً لـ BBC micro:bit — من إضاءة LEDs إلى روبوتات BLE، من المبتدئ إلى المتقدم."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "bit-bot",
@@ -184,7 +184,7 @@
         "fr": "Compagnon robot parlant alimenté par IA pour enfants — chat vocal, personnalités personnalisables, connexion micro:bit via Bluetooth.",
         "ar": "رفيق روبوت ناطق بالذكاء الاصطناعي للأطفال — دردشة صوتية، شخصيات قابلة للتخصيص، اتصال بـ micro:bit عبر البلوتوث."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "bit-playground",
@@ -208,7 +208,7 @@
         "fr": "Le terrain de jeu ultime micro:bit BLE — LEDs, capteurs, servos, jeux et graphiques depuis le navigateur.",
         "ar": "ملعب micro:bit BLE المطلق — تحكم في LEDs، اقرأ المستشعرات، حرّك المحركات، العب وارسم مخططات من المتصفح."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "bitmoji-lab",
@@ -230,7 +230,7 @@
         "fr": "Choisissez des emojis, peignez-les et envoyez les designs vers une matrice LED NeoPixel 8×8 ou 16×16 via micro:bit USB Serial.",
         "ar": "اختر رموزاً تعبيرية، لوّنها وأرسل التصاميم إلى مصفوفة LED NeoPixel بحجم 8×8 أو 16×16 عبر micro:bit USB Serial."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "ble-dashboard",
@@ -274,7 +274,7 @@
         "fr": "Enregistreur et débogueur Bluetooth pour micro:bit — connectez, inspectez les services, lisez les capteurs et logguez en temps réel.",
         "ar": "مسجل وأداة تصحيح بلوتوث لـ micro:bit — اتصل، تفحّص الخدمات، اقرأ المستشعرات وسجّل البيانات."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "bonjour",
@@ -296,7 +296,7 @@
         "fr": "Apprenez le réseau mDNS/Bonjour — découvrez des appareils, envoyez des requêtes, enregistrez des services et explorez les protocoles réseau locaux.",
         "ar": "تعلم شبكات mDNS/Bonjour — اكتشف الأجهزة، أرسل الاستعلامات، سجّل الخدمات واستكشف بروتوكولات الشبكة المحلية."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "builders-of-light",
@@ -323,7 +323,7 @@
         "fr": "Builders Of Light — explorez et expérimentez !",
         "ar": "Builders Of Light — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "callgraph",
@@ -369,7 +369,7 @@
         "fr": "Construisez et simulez des circuits électroniques dans le navigateur — câblez des LEDs, résistances, capteurs et visualisez le courant.",
         "ar": "ابنِ وحاكِ دوائر إلكترونية في المتصفح — وصّل LEDs، مقاومات، مستشعرات وشاهد تدفق التيار."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "classroom",
@@ -391,7 +391,7 @@
         "fr": "Classe cloud PeerJS — créez une salle avec un code, partagez l'écran, discutez et collaborez avec jusqu'à 12 élèves.",
         "ar": "فصل سحابي PeerJS — أنشئ غرفة برمز، شارك الشاشة، تحدث وتعاون مع حتى 12 طالب."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "claude-toolkit",
@@ -414,7 +414,7 @@
         "fr": "Boîte à outils pour créer des apps et workflows avec Claude AI — modèles de prompts, appels chaînés et formatage.",
         "ar": "مجموعة أدوات لبناء تطبيقات وسير عمل مع Claude AI — قوالب أوامر، استدعاءات متسلسلة وتنسيق المخرجات."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "cowsay",
@@ -456,7 +456,7 @@
         "fr": "Plateforme éducative interactive de cryptographie — apprenez le chiffrement, le hachage, les signatures numériques, la PKI et le TLS avec l'API Web Crypto.",
         "ar": "منصة تعليمية تفاعلية للتشفير — تعلّم التشفير والتجزئة والتوقيعات الرقمية وPKI وTLS باستخدام Web Crypto API."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "crypto-vault",
@@ -478,7 +478,7 @@
         "fr": "Apprenez la cryptographie en pratique — chiffrez des messages, hachez des mots de passe, générez des clés et vérifiez des signatures.",
         "ar": "تعلّم أساسيات التشفير عملياً — شفّر رسائل، جزّئ كلمات مرور، ولّد مفاتيح وتحقق من التوقيعات الرقمية."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "dhcp-lab",
@@ -500,7 +500,7 @@
         "fr": "Serveur DHCP Python sans dépendances avec tableau de bord web en temps réel.",
         "ar": "خادم DHCP بلغة Python بدون تبعيات مع لوحة تحكم ويب في الوقت الفعلي."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "dir-pulse",
@@ -520,7 +520,7 @@
         "fr": "Dir Pulse — explorez et expérimentez !",
         "ar": "Dir Pulse — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "eid",
@@ -563,7 +563,7 @@
         "fr": "EmojiFlow — apprenez les concepts de programmation à travers des défis de codage basés sur les emojis et des blocs visuels.",
         "ar": "EmojiFlow — تعلم مفاهيم البرمجة من خلال تحديات الترميز بالرموز التعبيرية والكتل المرئية."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "esp32-c3-kids-lab",
@@ -587,7 +587,7 @@
         "fr": "Labo pratique ESP32-C3 — faites clignoter des LEDs, lisez des capteurs, connectez-vous au WiFi et créez des projets IoT depuis le navigateur.",
         "ar": "مختبر ESP32-C3 عملي — أضئ LEDs، اقرأ مستشعرات الحرارة، اتصل بالواي فاي وأنشئ مشاريع IoT من المتصفح."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "face-quest",
@@ -611,7 +611,7 @@
         "fr": "Un jeu de détection faciale avec votre webcam — souriez, clignez, tournez la tête pour marquer des points. Respect de la vie privée : 100% local.",
         "ar": "لعبة كشف الوجه بكاميرا الويب — ابتسم، اغمز، أدر رأسك لتسجيل النقاط. الخصوصية أولاً: تعمل 100% محلياً."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "face-tracking",
@@ -634,7 +634,7 @@
         "fr": "Suivi de visage pour enfants avec déclencheurs d'événements — envoyez optionnellement les données au micro:bit en BLE.",
         "ar": "تتبع وجه للأطفال مع مشغلات أحداث — أرسل اختيارياً بيانات موضع الوجه إلى micro:bit عبر BLE."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "fihris",
@@ -664,7 +664,7 @@
         "fr": "Fihris — explorez et expérimentez !",
         "ar": "Fihris — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "flight-tracker",
@@ -687,7 +687,7 @@
         "fr": "Suivi de vols en temps réel adapté aux enfants — transforme le ciel en classe interactive.",
         "ar": "متتبع رحلات جوية في الوقت الفعلي للأطفال — يحوّل السماء إلى فصل دراسي تفاعلي."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "flyers",
@@ -708,7 +708,7 @@
         "fr": "Modèles de flyers promotionnels et publications réseaux sociaux pour les apps Workshop-DIY.",
         "ar": "قوالب منشورات ترويجية ومنشورات وسائل التواصل الاجتماعي لتطبيقات Workshop-DIY."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "git-date-rewrite",
@@ -730,7 +730,7 @@
         "fr": "Git Date Rewrite — explorez et expérimentez !",
         "ar": "Git Date Rewrite — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "git-lab",
@@ -751,7 +751,7 @@
         "fr": "Apprenez Git pas à pas — leçons interactives sur commit, branch, merge et pull requests.",
         "ar": "تعلّم Git خطوة بخطوة — دروس تفاعلية حول commit و branch و merge و pull requests."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "git-pulse",
@@ -772,7 +772,7 @@
         "fr": "Le gestionnaire complet de dépôts GitHub — CLI + interface web.",
         "ar": "مدير مستودعات GitHub الكامل — سطر أوامر + واجهة ويب."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "golden-age",
@@ -796,7 +796,7 @@
         "fr": "Voyage éducatif interactif à travers l'Âge d'Or islamique — explorez l'algèbre, la médecine, l'optique, l'ingénierie et plus encore.",
         "ar": "رحلة تعليمية تفاعلية عبر العصر الذهبي الإسلامي — استكشف الجبر والطب والبصريات والهندسة والمزيد."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "hackrf-one",
@@ -840,7 +840,7 @@
         "fr": "Jeu de rôle cybersécurité ludique pour enfants — faux terminal hacker, missions de farces, générateur d'affiches et mini-jeux d'espionnage.",
         "ar": "لعب أدوار أمن سيبراني مرح للأطفال — طرفية قرصنة وهمية، مهام مقالب، مولّد ملصقات وألعاب تجسس مصغرة."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "jisr",
@@ -865,7 +865,7 @@
         "fr": "Jisr — explorez et expérimentez !",
         "ar": "Jisr — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "kalami",
@@ -891,7 +891,7 @@
         "fr": "Kalami — explorez et expérimentez !",
         "ar": "Kalami — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "linkedin",
@@ -912,7 +912,7 @@
         "fr": "Portfolio de recherche d'emploi multi-pays — 111+ documents, 4 marchés, 3 langues, recherche d'emplois en direct via l'API Adzuna.",
         "ar": "ملف بحث عن عمل متعدد الدول — 111+ وثيقة، 4 أسواق، 3 لغات، بحث مباشر عن وظائف عبر Adzuna API."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "linux-kids-lab",
@@ -934,7 +934,7 @@
         "fr": "Apprenez les commandes Linux dans un bac à sable navigateur — naviguez dans les fichiers, utilisez les pipes, écrivez des scripts.",
         "ar": "تعلّم أوامر لينكس في بيئة آمنة بالمتصفح — تنقل بين الملفات، استخدم الأنابيب، اكتب السكريبتات."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "luminaries-of-islam",
@@ -965,7 +965,7 @@
         "fr": "Luminaries Of Islam — explorez et expérimentez !",
         "ar": "Luminaries Of Islam — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "mac-weird-keys",
@@ -1009,7 +1009,7 @@
         "fr": "Agitez vos mains devant la caméra pour déclencher des effets magiques — confettis, traînées, lueur néon — grâce au suivi de mains MediaPipe.",
         "ar": "لوّح بيديك أمام الكاميرا لإطلاق تأثيرات سحرية — قصاصات ملونة، مسارات، توهج نيون — بفضل تتبع اليد MediaPipe."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "makecode-adventures",
@@ -1031,7 +1031,7 @@
         "fr": "Aventures de programmation par blocs avec MakeCode — projets guidés qui enseignent la programmation via des défis micro:bit.",
         "ar": "مغامرات برمجة بالكتل مع MakeCode — مشاريع موجهة تعلّم البرمجة عبر تحديات micro:bit."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "meridian",
@@ -1055,7 +1055,7 @@
         "fr": "Meridian — explorez et expérimentez !",
         "ar": "Meridian — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "mission-control",
@@ -1102,7 +1102,7 @@
         "fr": "Apprenez le code Morse de façon interactive — entraîneur d'alphabet, encodeur/décodeur, lecture audio, quiz et communication BLE micro:bit.",
         "ar": "تعلم شفرة مورس بشكل تفاعلي — مدرب الأبجدية، مشفر/فاك شفرة، تشغيل صوتي، اختبارات وتواصل BLE مع micro:bit."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "mqtt-lab",
@@ -1125,7 +1125,7 @@
         "fr": "Apprenez MQTT en pratique — connectez-vous à un broker, publiez/abonnez-vous à des sujets, explorez la sécurité IoT et chattez avec un assistant IA.",
         "ar": "تعلم MQTT عمليًا — اتصل بوسيط، انشر/اشترك في المواضيع، استكشف أمان إنترنت الأشياء ودردش مع مساعد ذكاء اصطناعي."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "nusuk",
@@ -1170,7 +1170,7 @@
         "fr": "Écosystème complet de simulation OCPP 1.6J pour l'apprentissage, les tests et le développement — CSMS, station de charge et simulateur de batterie avec interfaces web en temps réel.",
         "ar": "منظومة محاكاة OCPP 1.6J كاملة للتعلم والاختبار والتطوير — CSMS ومحطة شحن ومحاكي بطارية مع واجهات ويب في الوقت الفعلي."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "ollama-bot",
@@ -1193,7 +1193,7 @@
         "fr": "Discutez avec une IA locale sur votre ordinateur via Ollama — privé, hors ligne, sans cloud.",
         "ar": "تحدث مع ذكاء اصطناعي محلي على حاسوبك عبر Ollama — خاص، بدون إنترنت، بدون سحابة."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "ops-catalog",
@@ -1346,7 +1346,7 @@
         "fr": "Un bac à sable de test d'intrusion pour débutants — apprenez la cybersécurité à travers des défis guidés et des exercices de type CTF.",
         "ar": "بيئة اختبار اختراق للمبتدئين — تعلّم أساسيات الأمن السيبراني من خلال تحديات موجهة وتمارين CTF."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "piper-arabic-tts",
@@ -1369,7 +1369,7 @@
         "fr": "Synthèse vocale arabe haute qualité avec Piper TTS neuronal compilé en WebAssembly — fonctionne dans le navigateur.",
         "ar": "تحويل نص إلى كلام عربي عالي الجودة بتقنية Piper TTS العصبية عبر WebAssembly — يعمل في المتصفح."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "pixel-gateway",
@@ -1390,7 +1390,7 @@
         "fr": "Envoyez des emojis colorés vers une matrice LED NeoPixel connectée à un micro:bit — USB Serial et Bluetooth LE.",
         "ar": "أرسل رسومات إيموجي ملونة إلى مصفوفة LED NeoPixel متصلة بـ micro:bit — عبر USB Serial وBluetooth LE."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "PlanPilot",
@@ -1431,7 +1431,7 @@
         "fr": "Outil multi-mode de création de visuels pour Workshop-DIY — 58 styles, art cowsay, maquettes de chat, mèmes et notifications. 100% client-side, fichier HTML unique, PWA installable.",
         "ar": "منشئ مرئيات متعدد الأوضاع لـ Workshop-DIY — 58 نمطًا، فن cowsay، محاكاة محادثات، ميمات وإشعارات. 100% من جانب العميل، ملف HTML واحد، PWA قابل للتثبيت."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "production-chain",
@@ -1455,7 +1455,7 @@
         "fr": "Production Chain — explorez et expérimentez !",
         "ar": "Production Chain — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "prompt-hero",
@@ -1478,7 +1478,7 @@
         "fr": "Maîtrisez l'art du prompting IA — techniques pour écrire des prompts efficaces pour ChatGPT, Claude et autres.",
         "ar": "أتقن كتابة الأوامر للذكاء الاصطناعي — تقنيات لكتابة أوامر فعّالة لـ ChatGPT و Claude وغيرها."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "puppeteer-playground",
@@ -1500,7 +1500,7 @@
         "fr": "Expérimentez l'automatisation navigateur avec Puppeteer — scraping, captures d'écran et tests headless.",
         "ar": "جرّب أتمتة المتصفح مع Puppeteer — كشط صفحات، التقاط لقطات شاشة واختبارات بدون واجهة."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "rocket-shield-vpn",
@@ -1521,7 +1521,7 @@
         "fr": "Guide visuel des VPN et de la sécurité réseau — visualisez les tunnels chiffrés qui protègent vos données.",
         "ar": "دليل مرئي للشبكات الافتراضية وأمن الشبكات — شاهد كيف تحمي الأنفاق المشفرة بياناتك."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "rxy",
@@ -1543,7 +1543,7 @@
         "fr": "Créez une télécommande Bluetooth personnalisée pour micro:bit — glissez des boutons, curseurs et D-pads. Sans code.",
         "ar": "أنشئ جهاز تحكم بلوتوث مخصص لـ micro:bit — اسحب أزراراً ومنزلقات ولوحات اتجاه. بدون برمجة."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "sada",
@@ -1565,7 +1565,7 @@
         "fr": "564 fichiers HTML autonomes en 3 langues (EN/FR/AR) pour l'écosystème éducatif Workshop-DIY.",
         "ar": "564 ملف HTML مستقل بـ 3 لغات (EN/FR/AR) للمنظومة التعليمية Workshop-DIY."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "salat-times",
@@ -1610,7 +1610,7 @@
         "fr": "Boîte à outils Bash pour assainir et normaliser les noms de fichiers et dossiers — modes simple et avancé.",
         "ar": "مجموعة أدوات Bash لتنظيف وتوحيد أسماء الملفات والمجلدات — وضع بسيط ومتقدم."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "satellites",
@@ -1634,7 +1634,7 @@
         "fr": "Expérience éducative interactive sur les satellites, la mécanique orbitale et l'héritage astronomique arabe qui a rendu tout cela possible.",
         "ar": "تجربة تعليمية تفاعلية عن الأقمار الصناعية وميكانيكا المدارات والتراث الفلكي العربي الذي جعل كل ذلك ممكنًا."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "save-our-planet",
@@ -1677,7 +1677,7 @@
         "fr": "Scapy Kids Lab — 16 démos interactives pour construire, inspecter et visualiser les paquets réseau couche par couche.",
         "ar": "Scapy Kids Lab — 16 عرضًا تفاعليًا لبناء وفحص وتصور حزم الشبكة طبقة بطبقة."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "sdr-lab",
@@ -1768,7 +1768,7 @@
         "fr": "Un robot navigateur qui parle, écoute et montre des émotions — envoyez du texte ou des commandes vocales à un micro:bit en BLE.",
         "ar": "روبوت متصفح يتحدث ويستمع ويُظهر المشاعر — أرسل نصوصاً أو أوامر صوتية إلى micro:bit عبر BLE."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "teachable-machine",
@@ -1793,7 +1793,7 @@
         "fr": "Entraînez des gestes ou sons dans le navigateur avec Teachable Machine, puis envoyez les résultats à un micro:bit en Bluetooth en temps réel.",
         "ar": "درّب إيماءات أو أصوات في المتصفح مع Teachable Machine، ثم أرسل النتائج إلى micro:bit عبر البلوتوث في الوقت الحقيقي."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "termlite",
@@ -1815,7 +1815,7 @@
         "fr": "Hub d'accès distant auto-hébergé dans le navigateur — terminal SSH, navigateur SFTP, client VNC, scanner réseau, coffre-fort chiffré, copilote IA, serveur DHCP et enregistrement de sessions.",
         "ar": "مركز وصول عن بُعد ذاتي الاستضافة في المتصفح — طرفية SSH، متصفح SFTP، عارض VNC، ماسح شبكة، خزنة مشفرة، مساعد ذكاء اصطناعي، خادم DHCP وتسجيل جلسات."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "tesbih",
@@ -1838,7 +1838,7 @@
         "fr": "Tasbih numérique (compteur de perles de prière) avec suivi du dhikr — tapez pour compter, PWA entièrement hors ligne.",
         "ar": "تسبيح رقمي (عداد مسبحة) مع تتبع الذكر — اضغط للعدّ، تطبيق PWA يعمل بدون إنترنت."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "tethkir",
@@ -1861,7 +1861,7 @@
         "fr": "Gestionnaire de tâches islamique et notes sécurisées.",
         "ar": "مدير مهام إسلامي وملاحظات مشفّرة."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "time-machine",
@@ -1884,7 +1884,7 @@
         "fr": "Jeu éducatif interactif sur les scientifiques musulmans qui ont changé le monde.",
         "ar": "لعبة تعليمية تفاعلية عن العلماء المسلمين الذين غيّروا العالم."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "tools",
@@ -1900,7 +1900,7 @@
         "fr": "Tools — explorez et expérimentez !",
         "ar": "Tools — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "true-crypt",
@@ -1922,7 +1922,7 @@
         "fr": "True Crypt — explorez et expérimentez !",
         "ar": "True Crypt — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "tty",
@@ -1945,7 +1945,7 @@
         "fr": "Outil web pour envoyer et exécuter des scripts bash sur une carte Linux via série — terminal, enregistrement de session, affichage hex et profils.",
         "ar": "أداة ويب لإرسال وتنفيذ سكريبتات bash على لوحة Linux عبر المنفذ التسلسلي — طرفية، تسجيل جلسات، عرض hex وملفات تعريف."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "usb-logger",
@@ -1967,7 +1967,7 @@
         "fr": "Communiquez avec votre micro:bit via USB série depuis le navigateur — commandes, données et tests de vitesse via WebSerial.",
         "ar": "تواصل مع micro:bit عبر USB التسلسلي من المتصفح — أرسل أوامر، استقبل بيانات واختبر السرعة عبر WebSerial."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "warsha",
@@ -1988,7 +1988,7 @@
         "fr": "Warsha — explorez et expérimentez !",
         "ar": "Warsha — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "web-kids",
@@ -2013,7 +2013,7 @@
         "fr": "Web Kids — explorez et expérimentez !",
         "ar": "Web Kids — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "web-kvm",
@@ -2039,7 +2039,7 @@
         "fr": "Web Kvm — explorez et expérimentez !",
         "ar": "Web Kvm — استكشف وجرّب!"
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "wifi-dashboard",
@@ -2084,7 +2084,7 @@
         "fr": "Contrôlez des rubans LED WS2812 / Neopixel avec WLED — couleurs, effets et luminosité. Introduction ludique aux LEDs adressables.",
         "ar": "تحكم في شرائط LED WS2812 / Neopixel مع WLED — ألوان، تأثيرات وسطوع. مقدمة ممتعة لأضواء LED القابلة للعنونة."
       },
-      "visibility": "private"
+      "visibility": "public"
     },
     {
       "name": "workshop-diy",
