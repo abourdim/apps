@@ -1957,6 +1957,12 @@ body { min-height: 100vh; overflow-x: hidden; transition: background 0.5s, color
   font-size: 0.85rem;
   color: var(--text-secondary);
 }
+.version {
+  font-size: 0.6rem;
+  color: var(--text-secondary);
+  opacity: 0.35;
+  letter-spacing: 0.5px;
+}
 .header-controls {
   display: flex;
   align-items: center;
