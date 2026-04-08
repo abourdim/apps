@@ -10,10 +10,10 @@ A **fun, multilingual hub** for all Workshop-Diy mini-apps — built for kids, b
 
 ## ✨ Features / Fonctionnalités / الميزات
 
-- 🎨 **7 Themes** — Dark, Light, Ocean, Space, Rainbow, Forest, Candy
+- 🎨 **12 Themes** — Dark, Light, Ocean, Space, Electric, Forest, Lava, Islamic, Alhambra, Iznik, Zellige, Arabesque
 - 🌍 **3 Languages** — English, Français, العربية (with full RTL support)
 - 🔍 **Smart Search** — Fuzzy search across all apps
-- 📂 **6 Categories** — micro:bit, Camera, Arabic, Classroom, Education, Tools
+- 📂 **8 Categories** — micro:bit, Camera, Arabic, Classroom, Hardware, Learning, AI, Tools
 - ⭐ **Favorites** — Star your favorite apps (saved locally)
 - 🎉 **Fun Interactions** — Confetti, sound effects, jokes, easter eggs
 - 🖼️ **Auto Thumbnails** — Screenshots generated automatically via Puppeteer
@@ -71,12 +71,14 @@ manifest.json       ← Thumbnail manifest
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| 🤖 micro:bit & Robotics | 8 | Robot control, BLE, sensors |
-| 📸 Camera & Vision | 3 | Face tracking, hand tracking |
-| 🗣️ Arabic Language | 3 | TTS, STT, translation |
+| 🤖 micro:bit | 10 | Robot control, BLE, sensors |
+| 📸 Camera | 3 | Face tracking, hand tracking |
+| 🗣️ Arabic | 15 | TTS, STT, translation, Islamic apps |
 | 🏫 Classroom | 2 | WebRTC, PeerJS |
-| 📚 Education | 3 | Crypto, security, simulation |
-| 🛠️ Tools | 3 | Hub, AI toolkit, automation |
+| 🔩 Hardware | 8 | ESP32, circuits, IoT |
+| 📚 Learning | 20 | Crypto, security, coding, education |
+| 🧠 AI | 6 | Claude, Ollama, ML |
+| 🛠️ Tools | 22 | Hub, DevOps, utilities |
 
 ## 🧒 Target Audience
 

@@ -177,7 +177,7 @@ const INLINE_APPS = [
   { name:"arabic-translator", emoji:"🌐", categories:["arabic"], badge:"stable", status:"stable", visibility:"public", tags:["arabic", "translate", "browser-only", "no-server"],
     desc:{ en:"Translate text to and from Arabic directly in the browser — no server, no API key, fully offline-capable.", fr:"Traduisez du texte vers et depuis l'arabe dans le navigateur — sans serveur, sans clé API, fonctionne hors ligne.", ar:"ترجم النصوص من وإلى العربية مباشرة في المتصفح — بدون خادم، بدون مفتاح API، يعمل بدون إنترنت." }},
   { name:"arabic-tts", emoji:"🔊", categories:["arabic", "ai", "tools"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "TTS", "game", "git", "linux", "HTML", "LED"],
-    desc:{ en:"> Modern Standard Arabic Text-to-Speech · VITS + HiFi-GAN · FastAPI · PyTorch", fr:"Arabic Tts — explorez et expérimentez !", ar:"Arabic Tts — استكشف وجرّب!" }},
+    desc:{ en:"Modern Standard Arabic Text-to-Speech system using VITS + HiFi-GAN, FastAPI and PyTorch.", fr:"Synthèse vocale arabe standard moderne avec VITS + HiFi-GAN, FastAPI et PyTorch.", ar:"نظام تحويل النص إلى كلام بالعربية الفصحى باستخدام VITS + HiFi-GAN و FastAPI و PyTorch." }},
   { name:"bit-54-activities", emoji:"🎯", categories:["microbit", "learning"], badge:"dev", status:"beta", visibility:"public", tags:["micro:bit", "activities", "projects", "beginner", "advanced"],
     desc:{ en:"54 hands-on activities for BBC micro:bit — from blinking LEDs to BLE robots, beginner to advanced.", fr:"54 activités pratiques pour BBC micro:bit — du clignotement de LEDs aux robots BLE, débutant à avancé.", ar:"54 نشاطاً عملياً لـ BBC micro:bit — من إضاءة LEDs إلى روبوتات BLE، من المبتدئ إلى المتقدم." }},
   { name:"bit-bot", emoji:"🤖", categories:["microbit"], badge:"popular", status:"stable", visibility:"public", tags:["robot", "micro:bit", "BLE", "AI", "chatbot"],
@@ -241,15 +241,15 @@ const INLINE_APPS = [
   { name:"hacktivist-kids", emoji:"🥷", categories:["learning"], badge:"stable", status:"stable", visibility:"public", tags:["cybersecurity", "pranks", "crypto", "hacker-culture", "kids"],
     desc:{ en:"A playful cybersecurity roleplay for kids — fake hacker terminal, prank missions, poster generator and spy-themed mini-games.", fr:"Jeu de rôle cybersécurité ludique pour enfants — faux terminal hacker, missions de farces, générateur d'affiches et mini-jeux d'espionnage.", ar:"لعب أدوار أمن سيبراني مرح للأطفال — طرفية قرصنة وهمية، مهام مقالب، مولّد ملصقات وألعاب تجسس مصغرة." }},
   { name:"jisr", emoji:"🌉", categories:["arabic", "learning", "hardware"], badge:"new", status:"stable", visibility:"public", tags:["TTS", "WLED", "IoT", "game", "HTML", "LED"],
-    desc:{ en:"> \"Le pont entre les civilisations\" · The bridge between civilizations · الجسر بين الحضارات", fr:"Jisr — explorez et expérimentez !", ar:"Jisr — استكشف وجرّب!" }},
+    desc:{ en:"Arabic etymology dictionary — trace the origins of words shared between Arabic, French and English.", fr:"Dictionnaire étymologique arabe — retracez les origines des mots partagés entre arabe, français et anglais.", ar:"قاموس أصول الكلمات العربية — تتبّع أصول الكلمات المشتركة بين العربية والفرنسية والإنجليزية." }},
   { name:"kalami", emoji:"🗣️", categories:["arabic", "microbit", "ai"], badge:"new", status:"dev", visibility:"public", tags:["BLE", "TTS", "STT", "git", "linux", "HTML", "LED"],
-    desc:{ en:"<div align=\"center\">", fr:"Kalami — explorez et expérimentez !", ar:"Kalami — استكشف وجرّب!" }},
+    desc:{ en:"Arabic voice translator — speak in Arabic and get real-time translation to French and English.", fr:"Traducteur vocal arabe — parlez en arabe et obtenez une traduction en temps réel vers le français et l'anglais.", ar:"مترجم صوتي عربي — تحدث بالعربية واحصل على ترجمة فورية إلى الفرنسية والإنجليزية." }},
   { name:"linkedin", emoji:"💼", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["portfolio", "job-search", "CV", "multilingual"],
     desc:{ en:"Multi-country job search portfolio — 111+ documents, 4 markets, 3 languages, live job search via Adzuna API.", fr:"Portfolio de recherche d'emploi multi-pays — 111+ documents, 4 marchés, 3 langues, recherche d'emplois en direct via l'API Adzuna.", ar:"ملف بحث عن عمل متعدد الدول — 111+ وثيقة، 4 أسواق، 3 لغات، بحث مباشر عن وظائف عبر Adzuna API." }},
   { name:"linux-kids-lab", emoji:"🐧", categories:["learning"], badge:"stable", status:"beta", visibility:"public", tags:["linux", "terminal", "bash", "commands", "sandbox"],
     desc:{ en:"Learn Linux commands in a safe browser sandbox — navigate files, use pipes, write scripts and become a terminal ninja.", fr:"Apprenez les commandes Linux dans un bac à sable navigateur — naviguez dans les fichiers, utilisez les pipes, écrivez des scripts.", ar:"تعلّم أوامر لينكس في بيئة آمنة بالمتصفح — تنقل بين الملفات، استخدم الأنابيب، اكتب السكريبتات." }},
   { name:"luminaries-of-islam", emoji:"🌟", categories:["learning", "arabic", "ai"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "TTS", "STT", "WLED", "game", "git", "linux", "security", "HTML", "robot", "LED", "kids"],
-    desc:{ en:"> أنوار الإسلام — علماء العصر الذهبي", fr:"Luminaries Of Islam — explorez et expérimentez !", ar:"Luminaries Of Islam — استكشف وجرّب!" }},
+    desc:{ en:"Interactive trilingual app about 12 Muslim scientists of the Islamic Golden Age.", fr:"Application trilingue interactive sur 12 scientifiques musulmans de l'Âge d'Or islamique.", ar:"تطبيق تفاعلي ثلاثي اللغات عن 12 عالماً مسلماً من العصر الذهبي الإسلامي." }},
   { name:"mac-weird-keys", emoji:"🖐️", categories:["tools"], badge:"dev", status:"dev", visibility:"public", tags:["mac", "keyboard", "shortcuts", "tools"],
     desc:{ en:"Mac keyboard shortcuts and weird key combos reference.", fr:"Référence des raccourcis clavier Mac.", ar:"مرجع اختصارات لوحة مفاتيح Mac." }},
   { name:"magic-hands", emoji:"🪄", categories:["camera", "ai"], badge:"popular", status:"stable", visibility:"public", tags:["camera", "hand-tracking", "mediapipe", "effects", "fun"],
@@ -257,7 +257,7 @@ const INLINE_APPS = [
   { name:"makecode-adventures", emoji:"🧱", categories:["microbit", "learning"], badge:"dev", status:"beta", visibility:"public", tags:["makecode", "blocks", "micro:bit", "beginner"],
     desc:{ en:"Block-based coding adventures with MakeCode — guided projects that teach programming through micro:bit challenges.", fr:"Aventures de programmation par blocs avec MakeCode — projets guidés qui enseignent la programmation via des défis micro:bit.", ar:"مغامرات برمجة بالكتل مع MakeCode — مشاريع موجهة تعلّم البرمجة عبر تحديات micro:bit." }},
   { name:"meridian", emoji:"🧭", categories:["tools", "hardware"], badge:"new", status:"dev", visibility:"public", tags:["BLE", "ESP32", "git", "linux", "HTML", "LED"],
-    desc:{ en:"<div align=\"center\">", fr:"Meridian — explorez et expérimentez !", ar:"Meridian — استكشف وجرّب!" }},
+    desc:{ en:"A self-hosted, privacy-first video platform — own your content, audience and data.", fr:"Plateforme vidéo auto-hébergée respectueuse de la vie privée — gardez le contrôle de votre contenu.", ar:"منصة فيديو مستضافة ذاتياً تحترم الخصوصية — تحكّم في محتواك وجمهورك وبياناتك." }},
   { name:"mission-control", emoji:"🛸", categories:["classroom", "microbit"], badge:"stable", status:"stable", visibility:"public", tags:["webrtc", "video", "chat", "BLE", "commands"],
     desc:{ en:"Mission control dashboard with live video/chat via WebRTC — send button commands to a micro:bit over BLE.", fr:"Tableau de bord mission control avec vidéo/chat en direct via WebRTC — envoyez des commandes au micro:bit en BLE.", ar:"لوحة تحكم المهام مع فيديو/دردشة مباشرة عبر WebRTC — أرسل أوامر إلى micro:bit عبر BLE." }},
   { name:"morse-code", emoji:"📯", categories:["microbit", "learning", "hardware"], badge:"new", status:"dev", visibility:"public", tags:["morse-code", "BLE", "micro:bit", "audio", "kids"],
@@ -663,6 +663,12 @@ const CARD_COLORS = [
   "#16a34a","#d97706","#9333ea"
 ];
 
+function escapeHtml(s) {
+  const d = document.createElement("div");
+  d.textContent = s;
+  return d.innerHTML;
+}
+
 function card(app, index) {
   const el = document.createElement("article");
   const num = app._num || (index + 1);
@@ -701,8 +707,8 @@ function card(app, index) {
     ${badgeHTML}
     ${visHTML}
     <button class="fav-btn ${isFav ? 'favorited' : ''}" data-fav="${app.name}" title="Favorite" aria-label="Toggle favorite">🔥</button>
-    <h3><span class="card-number">#${num}</span><span class="kids-emoji">${app.emoji}</span><span class="kids-name">${app.name}</span>${statusHTML}</h3>
-    <p class="kids-desc">${desc}</p>
+    <h3><span class="card-number">#${num}</span><span class="kids-emoji">${escapeHtml(app.emoji)}</span><span class="kids-name">${escapeHtml(app.name)}</span>${statusHTML}</h3>
+    <p class="kids-desc">${escapeHtml(desc)}</p>
     <div class="kids-actions">
       ${isPublic
         ? `<a class="kids-link" href="${app.github}" target="_blank" rel="noreferrer">${t("github")}</a>`
@@ -714,7 +720,7 @@ function card(app, index) {
       }
     </div>
     <div class="kids-tags">
-      ${(app.tags || []).slice(0, 5).map(tag => `<span class="kids-tag">${tag}</span>`).join("")}
+      ${(app.tags || []).slice(0, 5).map(tag => `<span class="kids-tag">${escapeHtml(tag)}</span>`).join("")}
     </div>
   `;
 

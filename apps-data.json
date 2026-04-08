@@ -135,9 +135,9 @@
         "LED"
       ],
       "desc": {
-        "en": "> Modern Standard Arabic Text-to-Speech · VITS + HiFi-GAN · FastAPI · PyTorch",
-        "fr": "Arabic Tts — explorez et expérimentez !",
-        "ar": "Arabic Tts — استكشف وجرّب!"
+        "en": "Modern Standard Arabic Text-to-Speech system using VITS + HiFi-GAN, FastAPI and PyTorch.",
+        "fr": "Synthèse vocale arabe standard moderne avec VITS + HiFi-GAN, FastAPI et PyTorch.",
+        "ar": "نظام تحويل النص إلى كلام بالعربية الفصحى باستخدام VITS + HiFi-GAN و FastAPI و PyTorch."
       },
       "visibility": "public"
     },
@@ -861,9 +861,9 @@
         "LED"
       ],
       "desc": {
-        "en": "> \"Le pont entre les civilisations\" · The bridge between civilizations · الجسر بين الحضارات",
-        "fr": "Jisr — explorez et expérimentez !",
-        "ar": "Jisr — استكشف وجرّب!"
+        "en": "Arabic etymology dictionary — trace the origins of words shared between Arabic, French and English.",
+        "fr": "Dictionnaire étymologique arabe — retracez les origines des mots partagés entre arabe, français et anglais.",
+        "ar": "قاموس أصول الكلمات العربية — تتبّع أصول الكلمات المشتركة بين العربية والفرنسية والإنجليزية."
       },
       "visibility": "public"
     },
@@ -887,9 +887,9 @@
         "LED"
       ],
       "desc": {
-        "en": "<div align=\"center\">",
-        "fr": "Kalami — explorez et expérimentez !",
-        "ar": "Kalami — استكشف وجرّب!"
+        "en": "Arabic voice translator — speak in Arabic and get real-time translation to French and English.",
+        "fr": "Traducteur vocal arabe — parlez en arabe et obtenez une traduction en temps réel vers le français et l'anglais.",
+        "ar": "مترجم صوتي عربي — تحدث بالعربية واحصل على ترجمة فورية إلى الفرنسية والإنجليزية."
       },
       "visibility": "public"
     },
@@ -961,9 +961,9 @@
         "kids"
       ],
       "desc": {
-        "en": "> أنوار الإسلام — علماء العصر الذهبي",
-        "fr": "Luminaries Of Islam — explorez et expérimentez !",
-        "ar": "Luminaries Of Islam — استكشف وجرّب!"
+        "en": "Interactive trilingual app about 12 Muslim scientists of the Islamic Golden Age.",
+        "fr": "Application trilingue interactive sur 12 scientifiques musulmans de l'Âge d'Or islamique.",
+        "ar": "تطبيق تفاعلي ثلاثي اللغات عن 12 عالماً مسلماً من العصر الذهبي الإسلامي."
       },
       "visibility": "public"
     },
@@ -1051,9 +1051,9 @@
         "LED"
       ],
       "desc": {
-        "en": "<div align=\"center\">",
-        "fr": "Meridian — explorez et expérimentez !",
-        "ar": "Meridian — استكشف وجرّب!"
+        "en": "A self-hosted, privacy-first video platform — own your content, audience and data.",
+        "fr": "Plateforme vidéo auto-hébergée respectueuse de la vie privée — gardez le contrôle de votre contenu.",
+        "ar": "منصة فيديو مستضافة ذاتياً تحترم الخصوصية — تحكّم في محتواك وجمهورك وبياناتك."
       },
       "visibility": "public"
     },
