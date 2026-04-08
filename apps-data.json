@@ -1020,27 +1020,6 @@
       "visibility": "public"
     },
     {
-      "name": "mushkilat",
-      "emoji": "📖",
-      "categories": [
-        "tools"
-      ],
-      "badge": "stable",
-      "status": "stable",
-      "tags": [
-        "HTML",
-        "PWA",
-        "developer-tool",
-        "web-app"
-      ],
-      "desc": {
-        "en": "📖 مشكلات في طريق الحياة الإسلامية — Problems on the Islamic Path",
-        "fr": "Mushkilat — application Workshop-DIY.",
-        "ar": "مشكلات في طريق الحياة الإسلامية"
-      },
-      "visibility": "public"
-    },
-    {
       "name": "nearpay",
       "emoji": "🛠️",
       "categories": [
@@ -1721,27 +1700,6 @@
         "fr": "Utilitaire Python de synchronisation de fichiers.",
         "ar": "أداة Python لمزامنة الملفات والأتمتة."
       }
-    },
-    {
-      "name": "taamulat",
-      "emoji": "🌿",
-      "categories": [
-        "tools"
-      ],
-      "badge": "stable",
-      "status": "stable",
-      "tags": [
-        "HTML",
-        "PWA",
-        "developer-tool",
-        "web-app"
-      ],
-      "desc": {
-        "en": "🌿 Reflections on Religion & Life — تأملات في الدين والحياة",
-        "fr": "Taamulat — application Workshop-DIY.",
-        "ar": "تأملات في الدين والحياة"
-      },
-      "visibility": "public"
     },
     {
       "name": "talking-robot",
