@@ -158,7 +158,7 @@ const siteLogo = document.getElementById("site-logo");
 const particleCanvas = document.getElementById("particles");
 const confettiCanvas = document.getElementById("confetti-canvas");
 
-let currentFilter = "";
+let currentFilter = "microbit";
 let currentStatusFilter = "";
 
 /* ============================================================
