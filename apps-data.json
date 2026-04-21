@@ -111,7 +111,7 @@
       "visibility": "public"
     },
     {
-      "name": "bit-54-activities",
+      "name": "bit-activities",
       "emoji": "🎯",
       "categories": [
         "microbit",
@@ -127,9 +127,9 @@
         "advanced"
       ],
       "desc": {
-        "en": "54 hands-on activities for BBC micro:bit — from blinking LEDs to BLE robots, beginner to advanced.",
-        "fr": "54 activités pratiques pour BBC micro:bit — du clignotement de LEDs aux robots BLE, débutant à avancé.",
-        "ar": "54 نشاطاً عملياً لـ BBC micro:bit — من إضاءة LEDs إلى روبوتات BLE، من المبتدئ إلى المتقدم."
+        "en": "Hands-on activities for BBC micro:bit — from blinking LEDs to BLE robots, beginner to advanced.",
+        "fr": "Activités pratiques pour BBC micro:bit — du clignotement de LEDs aux robots BLE, débutant à avancé.",
+        "ar": "أنشطة عملية لـ BBC micro:bit — من إضاءة LEDs إلى روبوتات BLE، من المبتدئ إلى المتقدم."
       },
       "visibility": "public"
     },

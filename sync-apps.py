@@ -56,7 +56,7 @@ CATEGORY_MAP = {
     "crypto-academy": "learning", "pentest-lab": "learning", "linux-kids-lab": "learning",
     "production-chain": "learning", "circuit-lab": "learning", "3d-lab": "learning",
     "git-lab": "learning", "save-our-planet": "learning", "makecode-adventures": "learning",
-    "bit-54-activities": "learning", "crypto-vault": "learning", "web-kids": "learning",
+    "bit-activities": "learning", "crypto-vault": "learning", "web-kids": "learning",
     "AI-hacker-lab": "learning", "hacktivist-kids": "learning", "bonjour": "learning",
     # network / hardware
     "mqtt-lab": "hardware", "dhcp-lab": "hardware", "docker-lab": "hardware",
