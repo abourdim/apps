@@ -23,7 +23,7 @@ const MAX_RETRIES = 3;
 
 // Apps confirmed missing (65 apps as of 2026-03-24)
 const MISSING = [
-  "AI-hacker-lab","al-maqlub","apps","arabic-tts","bit-54-activities",
+  "AI-hacker-lab","al-maqlub","apps","arabic-tts","bit-activities",
   "ble-dashboard","bonjour","builders-of-light","callgraph","cowsay",
   "crypto-vault","dhcp-lab","dir-pulse","eid","emojis","fihris",
   "flight-tracker","flyers","git-date-rewrite","git-lab","git-pulse",

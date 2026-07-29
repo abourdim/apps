@@ -228,7 +228,7 @@ CAT_KEYWORDS = {
 # Also check app NAME for strong category hints
 NAME_CAT_HINTS = {
     "microbit": ["bit-bot", "bit-playground", "bitmoji", "ble-logger",
-                 "usb-logger", "rxy", "makecode", "bit-54",
+                 "usb-logger", "rxy", "makecode", "bit-",
                  "talking-robot", "mission-control"],
     "camera":   ["face-", "camera", "track", "magic-hands", "teachable"],
     "ai":       ["teachable", "claude", "prompt", "piper", "magic-hands"],
@@ -295,7 +295,7 @@ EMOJI_MAP = {
     "circuit-lab": "🔋", "rocket-shield-vpn": "🛡️", "3d-lab": "🧊",
     "git-lab": "🔀", "prompt-hero": "✨", "save-our-planet": "🌍",
     "ops-catalog": "📋", "code-kids": "💻", "smart-home": "🏡",
-    "makecode-adventures": "🧱", "bit-54-activities": "🤖", "crypto-vault": "💰",
+    "makecode-adventures": "🧱", "bit-activities": "🤖", "crypto-vault": "💰",
 }
 CAT_EMOJI = {
     "microbit": "🤖", "camera": "📸", "arabic": "🗣️",

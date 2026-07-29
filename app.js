@@ -158,7 +158,7 @@ const siteLogo = document.getElementById("site-logo");
 const particleCanvas = document.getElementById("particles");
 const confettiCanvas = document.getElementById("confetti-canvas");
 
-let currentFilter = "";
+let currentFilter = "microbit";
 let currentStatusFilter = "";
 
 /* ============================================================
@@ -170,16 +170,14 @@ const INLINE_APPS = [
     desc:{ en:"Explore 3D design in the browser — create, rotate and light up objects using Three.js.", fr:"Explorez la 3D dans le navigateur — créez, faites pivoter et éclairez des objets avec Three.js.", ar:"استكشف التصميم ثلاثي الأبعاد في المتصفح — أنشئ، أدر وأضئ أشكالاً بـ Three.js." }},
   { name:"AI-hacker-lab", emoji:"🤯", categories:["ai", "learning", "hardware", "tools", "camera"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "tensorflow", "micro:bit", "ESP32", "game", "git", "HTML"],
     desc:{ en:"Interactive workshops teaching AI & Machine Learning to all ages.", fr:"Ai Hacker Lab — explorez et expérimentez !", ar:"Ai Hacker Lab — استكشف وجرّب!" }},
-  { name:"al-maqlub", emoji:"↩️", categories:["arabic", "ai"], badge:"dev", status:"dev", visibility:"public", tags:["arabic", "reverse", "language"],
-    desc:{ en:"Arabic text reversal and transformation tool.", fr:"Outil de transformation de texte arabe.", ar:"أداة عكس وتحويل النص العربي." }},
   { name:"apps", emoji:"🏠", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["hub", "index", "multilingual", "kids", "STEM"],
     desc:{ en:"A fun, multilingual hub for all Workshop-Diy mini-apps — built for kids, beginners, and STEM classrooms.", fr:"Hub multilingue et ludique pour toutes les mini-apps Workshop-Diy — conçu pour les enfants, débutants et classes STEM.", ar:"مركز متعدد اللغات وممتع لجميع تطبيقات Workshop-Diy المصغرة — مصمم للأطفال والمبتدئين وفصول STEM." }},
-  { name:"arabic-translator", emoji:"🌐", categories:["arabic"], badge:"stable", status:"stable", visibility:"public", tags:["arabic", "translate", "browser-only", "no-server"],
-    desc:{ en:"Translate text to and from Arabic directly in the browser — no server, no API key, fully offline-capable.", fr:"Traduisez du texte vers et depuis l'arabe dans le navigateur — sans serveur, sans clé API, fonctionne hors ligne.", ar:"ترجم النصوص من وإلى العربية مباشرة في المتصفح — بدون خادم، بدون مفتاح API، يعمل بدون إنترنت." }},
-  { name:"arabic-tts", emoji:"🔊", categories:["arabic", "ai", "tools"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "TTS", "game", "git", "linux", "HTML", "LED"],
-    desc:{ en:"> Modern Standard Arabic Text-to-Speech · VITS + HiFi-GAN · FastAPI · PyTorch", fr:"Arabic Tts — explorez et expérimentez !", ar:"Arabic Tts — استكشف وجرّب!" }},
-  { name:"bit-54-activities", emoji:"🎯", categories:["microbit", "learning"], badge:"dev", status:"beta", visibility:"public", tags:["micro:bit", "activities", "projects", "beginner", "advanced"],
-    desc:{ en:"54 hands-on activities for BBC micro:bit — from blinking LEDs to BLE robots, beginner to advanced.", fr:"54 activités pratiques pour BBC micro:bit — du clignotement de LEDs aux robots BLE, débutant à avancé.", ar:"54 نشاطاً عملياً لـ BBC micro:bit — من إضاءة LEDs إلى روبوتات BLE، من المبتدئ إلى المتقدم." }},
+  { name:"avahi", emoji:"🔩", categories:["hardware"], badge:"new", status:"dev", visibility:"public", tags:["IoT", "networking"],
+    desc:{ en:"Avahi/mDNS service discovery educational tool.", fr:"Outil éducatif de découverte de services Avahi/mDNS.", ar:"أداة تعليمية لاكتشاف خدمات Avahi/mDNS." }},
+  { name:"bash-toolkit", emoji:"🛠️", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Collection of Bash scripts and CLI utilities for developers.", fr:"Collection de scripts Bash et utilitaires CLI pour développeurs.", ar:"مجموعة سكريبتات Bash وأدوات سطر أوامر للمطورين." }},
+  { name:"bit-activities", emoji:"🎯", categories:["microbit", "learning"], badge:"dev", status:"beta", visibility:"public", tags:["micro:bit", "activities", "projects", "beginner", "advanced"],
+    desc:{ en:"Hands-on activities for BBC micro:bit — from blinking LEDs to BLE robots, beginner to advanced.", fr:"Activités pratiques pour BBC micro:bit — du clignotement de LEDs aux robots BLE, débutant à avancé.", ar:"أنشطة عملية لـ BBC micro:bit — من إضاءة LEDs إلى روبوتات BLE، من المبتدئ إلى المتقدم." }},
   { name:"bit-bot", emoji:"🤖", categories:["microbit"], badge:"popular", status:"stable", visibility:"public", tags:["robot", "micro:bit", "BLE", "AI", "chatbot"],
     desc:{ en:"AI-powered talking robot companion for kids — chat with voice, customizable personalities, connects to micro:bit via Bluetooth.", fr:"Compagnon robot parlant alimenté par IA pour enfants — chat vocal, personnalités personnalisables, connexion micro:bit via Bluetooth.", ar:"رفيق روبوت ناطق بالذكاء الاصطناعي للأطفال — دردشة صوتية، شخصيات قابلة للتخصيص، اتصال بـ micro:bit عبر البلوتوث." }},
   { name:"bit-playground", emoji:"🕹️", categories:["microbit"], badge:"stable", status:"stable", visibility:"public", tags:["micro:bit", "BLE", "LEDs", "sensors", "servos", "gamepad", "charts"],
@@ -192,8 +190,8 @@ const INLINE_APPS = [
     desc:{ en:"Bluetooth logger and debug playground for micro:bit — connect, inspect services, read sensors and log data in real time.", fr:"Enregistreur et débogueur Bluetooth pour micro:bit — connectez, inspectez les services, lisez les capteurs et logguez en temps réel.", ar:"مسجل وأداة تصحيح بلوتوث لـ micro:bit — اتصل، تفحّص الخدمات، اقرأ المستشعرات وسجّل البيانات." }},
   { name:"bonjour", emoji:"📡", categories:["learning"], badge:"new", status:"dev", visibility:"public", tags:["mDNS", "Bonjour", "DNS-SD", "networking", "kids"],
     desc:{ en:"Learn mDNS/Bonjour networking — discover devices, send queries, register services and explore local network protocols.", fr:"Apprenez le réseau mDNS/Bonjour — découvrez des appareils, envoyez des requêtes, enregistrez des services et explorez les protocoles réseau locaux.", ar:"تعلم شبكات mDNS/Bonjour — اكتشف الأجهزة، أرسل الاستعلامات، سجّل الخدمات واستكشف بروتوكولات الشبكة المحلية." }},
-  { name:"builders-of-light", emoji:"💫", categories:["learning", "arabic", "classroom"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "TTS", "STT", "WLED", "game", "HTML", "LED", "kids"],
-    desc:{ en:"Version 1.0 · Single-file HTML app · 830 KB · 139 sections · 434+ functions · 3 languages · Zero dependencies", fr:"Builders Of Light — explorez et expérimentez !", ar:"Builders Of Light — استكشف وجرّب!" }},
+  { name:"browsers-secrets", emoji:"🔭", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["HTML", "developer-tool", "web-app"],
+    desc:{ en:"🔭 Browsers Secrets — Workshop DIY", fr:"Explorez ensemble les pages cachées de Chrome et Edge !", ar:"أداة من Workshop-DIY." }},
   { name:"callgraph", emoji:"📊", categories:["tools"], badge:"new", status:"stable", visibility:"private", tags:["BLE", "game", "git", "linux", "HTML", "LED"],
     desc:{ en:"Interactive call graph analyzer for C codebases. Designed for embedded systems handover — understand a new codebase fast.", fr:"Callgraph — explorez et expérimentez !", ar:"Callgraph — استكشف وجرّب!" }},
   { name:"circuit-lab", emoji:"🔋", categories:["hardware", "learning"], badge:"dev", status:"beta", visibility:"public", tags:["circuit", "electronics", "simulation", "LED", "resistor"],
@@ -211,19 +209,23 @@ const INLINE_APPS = [
   { name:"dhcp-lab", emoji:"🔗", categories:["tools", "hardware"], badge:"new", status:"dev", visibility:"public", tags:["DHCP", "networking", "Python", "dashboard"],
     desc:{ en:"Zero-dependency Python DHCP server with real-time web dashboard.", fr:"Serveur DHCP Python sans dépendances avec tableau de bord web en temps réel.", ar:"خادم DHCP بلغة Python بدون تبعيات مع لوحة تحكم ويب في الوقت الفعلي." }},
   { name:"dir-pulse", emoji:"📁", categories:["tools"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "game", "HTML"],
-    desc:{ en:"بسم الله الرحمن الرحيم", fr:"Dir Pulse — explorez et expérimentez !", ar:"Dir Pulse — استكشف وجرّب!" }},
-  { name:"eid", emoji:"🌙", categories:["arabic", "learning"], badge:"new", status:"stable", visibility:"public", tags:["Eid", "Islamic", "celebration", "kids"],
-    desc:{ en:"Eid celebration app for kids.", fr:"Application de célébration de l'Aïd pour enfants.", ar:"تطبيق احتفالات العيد للأطفال." }},
+    desc:{ en:"Directory structure analyzer with real-time web dashboard.", fr:"Analyseur de structure de répertoires avec tableau de bord web en temps réel.", ar:"محلّل هيكل المجلدات مع لوحة تحكم ويب في الوقت الفعلي." }},
+  { name:"docker-lab", emoji:"🔩", categories:["hardware"], badge:"new", status:"dev", visibility:"public", tags:["IoT", "lab", "networking"],
+    desc:{ en:"Docker container experiments and learning environment.", fr:"Expériences Docker et environnement d'apprentissage des conteneurs.", ar:"تجارب Docker وبيئة تعلم الحاويات." }},
   { name:"emojis", emoji:"😀", categories:["learning"], badge:"new", status:"dev", visibility:"public", tags:["emoji", "visual-coding", "programming", "kids"],
     desc:{ en:"EmojiFlow — learn programming concepts through emoji-based coding challenges and visual blocks.", fr:"EmojiFlow — apprenez les concepts de programmation à travers des défis de codage basés sur les emojis et des blocs visuels.", ar:"EmojiFlow — تعلم مفاهيم البرمجة من خلال تحديات الترميز بالرموز التعبيرية والكتل المرئية." }},
   { name:"esp32-c3-kids-lab", emoji:"⚡", categories:["hardware", "learning"], badge:"stable", status:"beta", visibility:"public", tags:["ESP32", "C3", "IoT", "sensors", "LED", "WiFi"],
     desc:{ en:"Hands-on ESP32-C3 lab — blink LEDs, read temperature sensors, connect to WiFi and build simple IoT projects from the browser.", fr:"Labo pratique ESP32-C3 — faites clignoter des LEDs, lisez des capteurs, connectez-vous au WiFi et créez des projets IoT depuis le navigateur.", ar:"مختبر ESP32-C3 عملي — أضئ LEDs، اقرأ مستشعرات الحرارة، اتصل بالواي فاي وأنشئ مشاريع IoT من المتصفح." }},
+  { name:"evic-toolkit", emoji:"🛠️", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"EV charger infrastructure toolkit for OCPP diagnostics.", fr:"Boîte à outils d'infrastructure de bornes de recharge pour diagnostics OCPP.", ar:"مجموعة أدوات البنية التحتية لشواحن السيارات الكهربائية لتشخيصات OCPP." }},
   { name:"face-quest", emoji:"🕵️", categories:["camera", "ai", "microbit"], badge:"popular", status:"stable", visibility:"public", tags:["camera", "face-detection", "game", "privacy", "local"],
     desc:{ en:"A face-detection game you play with your webcam — smile, blink, turn your head to score points. Privacy-first: runs 100% locally.", fr:"Un jeu de détection faciale avec votre webcam — souriez, clignez, tournez la tête pour marquer des points. Respect de la vie privée : 100% local.", ar:"لعبة كشف الوجه بكاميرا الويب — ابتسم، اغمز، أدر رأسك لتسجيل النقاط. الخصوصية أولاً: تعمل 100% محلياً." }},
   { name:"face-tracking", emoji:"👁️", categories:["camera", "microbit"], badge:"stable", status:"stable", visibility:"public", tags:["camera", "face-tracking", "BLE", "events", "kids"],
     desc:{ en:"Kids-friendly face tracking with event triggers — optionally send face position data to a micro:bit over BLE.", fr:"Suivi de visage pour enfants avec déclencheurs d'événements — envoyez optionnellement les données au micro:bit en BLE.", ar:"تتبع وجه للأطفال مع مشغلات أحداث — أرسل اختيارياً بيانات موضع الوجه إلى micro:bit عبر BLE." }},
-  { name:"fihris", emoji:"📂", categories:["tools", "learning", "arabic"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "camera", "micro:bit", "WLED", "IoT", "linux", "security", "HTML", "robot", "LED", "kids"],
-    desc:{ en:"The Workshop-DIY App Catalog", fr:"Fihris — explorez et expérimentez !", ar:"Fihris — استكشف وجرّب!" }},
+  { name:"firebase", emoji:"🛠️", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Firebase integration tools and authentication experiments.", fr:"Outils d'intégration Firebase et expériences d'authentification.", ar:"أدوات تكامل Firebase وتجارب المصادقة." }},
+  { name:"firmware-update", emoji:"🛠️", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Over-the-air firmware update tools for IoT devices.", fr:"Outils de mise à jour du firmware OTA pour appareils IoT.", ar:"أدوات تحديث البرامج الثابتة عبر الهواء لأجهزة IoT." }},
   { name:"flight-tracker", emoji:"✈️", categories:["learning", "microbit"], badge:"stable", status:"stable", visibility:"public", tags:["flight-tracking", "real-time", "micro:bit", "BLE", "kids"],
     desc:{ en:"A kid-friendly real-time flight tracker that turns the sky into an interactive classroom.", fr:"Suivi de vols en temps réel adapté aux enfants — transforme le ciel en classe interactive.", ar:"متتبع رحلات جوية في الوقت الفعلي للأطفال — يحوّل السماء إلى فصل دراسي تفاعلي." }},
   { name:"flyers", emoji:"📄", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["flyers", "social-media", "marketing", "design"],
@@ -234,82 +236,88 @@ const INLINE_APPS = [
     desc:{ en:"Learn Git step by step — interactive lessons on commit, branch, merge and pull requests.", fr:"Apprenez Git pas à pas — leçons interactives sur commit, branch, merge et pull requests.", ar:"تعلّم Git خطوة بخطوة — دروس تفاعلية حول commit و branch و merge و pull requests." }},
   { name:"git-pulse", emoji:"💓", categories:["tools"], badge:"dev", status:"offline", visibility:"public", tags:["GitHub", "repository-manager", "CLI", "developer-tool"],
     desc:{ en:"The complete GitHub repository manager — CLI + Web UI", fr:"Le gestionnaire complet de dépôts GitHub — CLI + interface web.", ar:"مدير مستودعات GitHub الكامل — سطر أوامر + واجهة ويب." }},
-  { name:"golden-age", emoji:"🏛️", categories:["learning", "arabic", "classroom"], badge:"stable", status:"stable", visibility:"public", tags:["Islamic-history", "Golden-Age", "interactive", "game", "kids"],
-    desc:{ en:"An interactive educational journey through the Islamic Golden Age — explore algebra, medicine, optics, engineering and more.", fr:"Voyage éducatif interactif à travers l'Âge d'Or islamique — explorez l'algèbre, la médecine, l'optique, l'ingénierie et plus encore.", ar:"رحلة تعليمية تفاعلية عبر العصر الذهبي الإسلامي — استكشف الجبر والطب والبصريات والهندسة والمزيد." }},
+  { name:"gmail-lab", emoji:"🛠️", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["HTML", "PWA", "developer-tool", "lab", "web-app"],
+    desc:{ en:"Gmail Lab — Workshop DIY", fr:"Gmail Lab — application Workshop-DIY.", ar:"أداة من Workshop-DIY." }},
   { name:"hackrf-one", emoji:"🔭", categories:["hardware", "learning"], badge:"dev", status:"dev", visibility:"public", tags:["HackRF", "SDR", "radio", "security"],
     desc:{ en:"HackRF One exploration and learning tool.", fr:"Outil d'exploration HackRF One.", ar:"أداة استكشاف HackRF One." }},
   { name:"hacktivist-kids", emoji:"🥷", categories:["learning"], badge:"stable", status:"stable", visibility:"public", tags:["cybersecurity", "pranks", "crypto", "hacker-culture", "kids"],
     desc:{ en:"A playful cybersecurity roleplay for kids — fake hacker terminal, prank missions, poster generator and spy-themed mini-games.", fr:"Jeu de rôle cybersécurité ludique pour enfants — faux terminal hacker, missions de farces, générateur d'affiches et mini-jeux d'espionnage.", ar:"لعب أدوار أمن سيبراني مرح للأطفال — طرفية قرصنة وهمية، مهام مقالب، مولّد ملصقات وألعاب تجسس مصغرة." }},
-  { name:"jisr", emoji:"🌉", categories:["arabic", "learning", "hardware"], badge:"new", status:"stable", visibility:"public", tags:["TTS", "WLED", "IoT", "game", "HTML", "LED"],
-    desc:{ en:"> \"Le pont entre les civilisations\" · The bridge between civilizations · الجسر بين الحضارات", fr:"Jisr — explorez et expérimentez !", ar:"Jisr — استكشف وجرّب!" }},
-  { name:"kalami", emoji:"🗣️", categories:["arabic", "microbit", "ai"], badge:"new", status:"dev", visibility:"public", tags:["BLE", "TTS", "STT", "git", "linux", "HTML", "LED"],
-    desc:{ en:"<div align=\"center\">", fr:"Kalami — explorez et expérimentez !", ar:"Kalami — استكشف وجرّب!" }},
   { name:"linkedin", emoji:"💼", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["portfolio", "job-search", "CV", "multilingual"],
     desc:{ en:"Multi-country job search portfolio — 111+ documents, 4 markets, 3 languages, live job search via Adzuna API.", fr:"Portfolio de recherche d'emploi multi-pays — 111+ documents, 4 marchés, 3 langues, recherche d'emplois en direct via l'API Adzuna.", ar:"ملف بحث عن عمل متعدد الدول — 111+ وثيقة، 4 أسواق، 3 لغات، بحث مباشر عن وظائف عبر Adzuna API." }},
   { name:"linux-kids-lab", emoji:"🐧", categories:["learning"], badge:"stable", status:"beta", visibility:"public", tags:["linux", "terminal", "bash", "commands", "sandbox"],
     desc:{ en:"Learn Linux commands in a safe browser sandbox — navigate files, use pipes, write scripts and become a terminal ninja.", fr:"Apprenez les commandes Linux dans un bac à sable navigateur — naviguez dans les fichiers, utilisez les pipes, écrivez des scripts.", ar:"تعلّم أوامر لينكس في بيئة آمنة بالمتصفح — تنقل بين الملفات، استخدم الأنابيب، اكتب السكريبتات." }},
-  { name:"luminaries-of-islam", emoji:"🌟", categories:["learning", "arabic", "ai"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "TTS", "STT", "WLED", "game", "git", "linux", "security", "HTML", "robot", "LED", "kids"],
-    desc:{ en:"> أنوار الإسلام — علماء العصر الذهبي", fr:"Luminaries Of Islam — explorez et expérimentez !", ar:"Luminaries Of Islam — استكشف وجرّب!" }},
+  { name:"loggy", emoji:"🛠️", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Bash log analyzer for EV charger RACC bundles.", fr:"Analyseur de logs Bash pour les bundles RACC de bornes de recharge.", ar:"محلّل سجلات Bash لحزم RACC الخاصة بشواحن السيارات الكهربائية." }},
   { name:"mac-weird-keys", emoji:"🖐️", categories:["tools"], badge:"dev", status:"dev", visibility:"public", tags:["mac", "keyboard", "shortcuts", "tools"],
     desc:{ en:"Mac keyboard shortcuts and weird key combos reference.", fr:"Référence des raccourcis clavier Mac.", ar:"مرجع اختصارات لوحة مفاتيح Mac." }},
   { name:"magic-hands", emoji:"🪄", categories:["camera", "ai"], badge:"popular", status:"stable", visibility:"public", tags:["camera", "hand-tracking", "mediapipe", "effects", "fun"],
     desc:{ en:"Wave your hands in front of the camera to trigger magic effects — confetti, trails, neon glow — powered by MediaPipe hand tracking.", fr:"Agitez vos mains devant la caméra pour déclencher des effets magiques — confettis, traînées, lueur néon — grâce au suivi de mains MediaPipe.", ar:"لوّح بيديك أمام الكاميرا لإطلاق تأثيرات سحرية — قصاصات ملونة، مسارات، توهج نيون — بفضل تتبع اليد MediaPipe." }},
   { name:"makecode-adventures", emoji:"🧱", categories:["microbit", "learning"], badge:"dev", status:"beta", visibility:"public", tags:["makecode", "blocks", "micro:bit", "beginner"],
     desc:{ en:"Block-based coding adventures with MakeCode — guided projects that teach programming through micro:bit challenges.", fr:"Aventures de programmation par blocs avec MakeCode — projets guidés qui enseignent la programmation via des défis micro:bit.", ar:"مغامرات برمجة بالكتل مع MakeCode — مشاريع موجهة تعلّم البرمجة عبر تحديات micro:bit." }},
+  { name:"mdns", emoji:"🔩", categories:["hardware"], badge:"new", status:"dev", visibility:"public", tags:["IoT", "networking"],
+    desc:{ en:"mDNS/DNS-SD discovery tool for local network services.", fr:"Outil de découverte mDNS/DNS-SD pour les services réseau locaux.", ar:"أداة اكتشاف mDNS/DNS-SD لخدمات الشبكة المحلية." }},
   { name:"meridian", emoji:"🧭", categories:["tools", "hardware"], badge:"new", status:"dev", visibility:"public", tags:["BLE", "ESP32", "git", "linux", "HTML", "LED"],
-    desc:{ en:"<div align=\"center\">", fr:"Meridian — explorez et expérimentez !", ar:"Meridian — استكشف وجرّب!" }},
+    desc:{ en:"A self-hosted, privacy-first video platform — own your content, audience and data.", fr:"Plateforme vidéo auto-hébergée respectueuse de la vie privée — gardez le contrôle de votre contenu.", ar:"منصة فيديو مستضافة ذاتياً تحترم الخصوصية — تحكّم في محتواك وجمهورك وبياناتك." }},
   { name:"mission-control", emoji:"🛸", categories:["classroom", "microbit"], badge:"stable", status:"stable", visibility:"public", tags:["webrtc", "video", "chat", "BLE", "commands"],
     desc:{ en:"Mission control dashboard with live video/chat via WebRTC — send button commands to a micro:bit over BLE.", fr:"Tableau de bord mission control avec vidéo/chat en direct via WebRTC — envoyez des commandes au micro:bit en BLE.", ar:"لوحة تحكم المهام مع فيديو/دردشة مباشرة عبر WebRTC — أرسل أوامر إلى micro:bit عبر BLE." }},
   { name:"morse-code", emoji:"📯", categories:["microbit", "learning", "hardware"], badge:"new", status:"dev", visibility:"public", tags:["morse-code", "BLE", "micro:bit", "audio", "kids"],
     desc:{ en:"Learn Morse code interactively — alphabet trainer, encoder/decoder, audio playback, challenge quizzes and micro:bit BLE communication.", fr:"Apprenez le code Morse de façon interactive — entraîneur d'alphabet, encodeur/décodeur, lecture audio, quiz et communication BLE micro:bit.", ar:"تعلم شفرة مورس بشكل تفاعلي — مدرب الأبجدية، مشفر/فاك شفرة، تشغيل صوتي، اختبارات وتواصل BLE مع micro:bit." }},
   { name:"mqtt-lab", emoji:"📨", categories:["learning", "hardware"], badge:"new", status:"dev", visibility:"public", tags:["MQTT", "IoT", "pub-sub", "security", "kids"],
     desc:{ en:"Learn MQTT hands-on — connect to a broker, publish/subscribe to topics, explore IoT security and chat with an AI assistant.", fr:"Apprenez MQTT en pratique — connectez-vous à un broker, publiez/abonnez-vous à des sujets, explorez la sécurité IoT et chattez avec un assistant IA.", ar:"تعلم MQTT عمليًا — اتصل بوسيط، انشر/اشترك في المواضيع، استكشف أمان إنترنت الأشياء ودردش مع مساعد ذكاء اصطناعي." }},
-  { name:"nusuk", emoji:"🕋", categories:["arabic", "learning"], badge:"new", status:"stable", visibility:"public", tags:["Hajj", "Islamic", "pilgrimage", "guide"],
-    desc:{ en:"Interactive Hajj and Umrah guide.", fr:"Guide interactif du Hajj et de l'Omra.", ar:"دليل تفاعلي للحج والعمرة." }},
+  { name:"nearpay", emoji:"🛠️", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["HTML", "developer-tool", "web-app"],
+    desc:{ en:"Cloner le projet", fr:"NearPay — Le paiement à portée de main", ar:"أداة من Workshop-DIY." }},
+  { name:"ngrok", emoji:"🛠️", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Ngrok tunneling tool setup and usage guide.", fr:"Guide d'installation et d'utilisation de l'outil de tunneling Ngrok.", ar:"دليل إعداد واستخدام أداة الأنفاق Ngrok." }},
+  { name:"nodered-lab", emoji:"🔩", categories:["hardware"], badge:"new", status:"dev", visibility:"public", tags:["IoT", "lab", "networking"],
+    desc:{ en:"Node-RED visual programming and IoT flow experiments.", fr:"Programmation visuelle Node-RED et expériences de flux IoT.", ar:"برمجة مرئية Node-RED وتجارب تدفقات IoT." }},
   { name:"ocpp", emoji:"⛽", categories:["tools", "learning"], badge:"new", status:"dev", visibility:"public", tags:["OCPP", "EV-charging", "WebSocket", "Python", "simulation"],
     desc:{ en:"A complete, production-quality OCPP 1.6J simulation ecosystem for learning, testing, and development. Includes a CSMS, Charging Station, and EV Battery simulator — all with real-time web UIs —...", fr:"Écosystème complet de simulation OCPP 1.6J pour l'apprentissage, les tests et le développement — CSMS, station de charge et simulateur de batterie avec interfaces web en temps réel.", ar:"منظومة محاكاة OCPP 1.6J كاملة للتعلم والاختبار والتطوير — CSMS ومحطة شحن ومحاكي بطارية مع واجهات ويب في الوقت الفعلي." }},
   { name:"ollama-bot", emoji:"🦙", categories:["ai", "tools"], badge:"new", status:"dev", visibility:"public", tags:["AI", "chatbot", "ollama", "local-LLM", "offline"],
     desc:{ en:"Chat with a local AI running on your computer via Ollama — private, offline, no cloud needed.", fr:"Discutez avec une IA locale sur votre ordinateur via Ollama — privé, hors ligne, sans cloud.", ar:"تحدث مع ذكاء اصطناعي محلي على حاسوبك عبر Ollama — خاص، بدون إنترنت، بدون سحابة." }},
+  { name:"openbot", emoji:"🛠️", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Open robot platform for educational robotics.", fr:"Plateforme de robotique ouverte pour l'éducation.", ar:"منصة روبوت مفتوحة للتعليم." }},
   { name:"ops-catalog", emoji:"📋", categories:["tools"], badge:"dev", status:"beta", visibility:"public", tags:["projects", "voting", "hardware", "catalog"],
     desc:{ en:"293 DIY hardware project ideas across 42 categories — team voting app to decide what gets built first.", fr:"293 idées de projets hardware DIY en 42 catégories — application de vote en équipe pour choisir quoi construire.", ar:"293 فكرة مشروع عتاد DIY في 42 فئة — تطبيق تصويت جماعي لاختيار ما يُبنى أولاً." }},
-  { name:"ops-catalog-islamic-kids-apps", emoji:"☪️", categories:["arabic", "learning", "classroom"], badge:"popular", status:"stable", visibility:"public", tags:["Islamic", "kids", "educational", "apps"],
-    desc:{ en:"Interactive Islamic educational apps for Muslim kids.", fr:"Applications islamiques éducatives pour enfants musulmans.", ar:"تطبيقات إسلامية تعليمية تفاعلية للأطفال المسلمين." }},
-  { name:"ops-catalog-islamic-kids-quizzes", emoji:"❓", categories:["arabic", "learning", "classroom"], badge:"popular", status:"stable", visibility:"public", tags:["Islamic", "quizzes", "kids", "education"],
-    desc:{ en:"1,091 Islamic educational quizzes for Muslim kids.", fr:"1 091 quiz islamiques éducatifs pour enfants.", ar:"1091 اختبار إسلامي تعليمي للأطفال المسلمين." }},
   { name:"ops-catalog-kids-apps", emoji:"🎠", categories:["learning", "classroom"], badge:"popular", status:"stable", visibility:"public", tags:["kids", "games", "GCompris", "education"],
     desc:{ en:"190 interactive educational games for kids — GCompris & TuxMath.", fr:"190 jeux éducatifs interactifs — GCompris & TuxMath.", ar:"190 لعبة تعليمية تفاعلية للأطفال." }},
   { name:"ops-catalog-kids-quizzes", emoji:"🧮", categories:["learning", "classroom"], badge:"popular", status:"stable", visibility:"public", tags:["quizzes", "kids", "math", "science"],
     desc:{ en:"2,215 educational quizzes for kids — math, science, geography.", fr:"2 215 quiz éducatifs — maths, sciences, géographie.", ar:"2215 اختبار تعليمي للأطفال في الرياضيات والعلوم." }},
+  { name:"ota", emoji:"🛠️", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Over-the-air update tools for embedded devices.", fr:"Outils de mise à jour OTA pour appareils embarqués.", ar:"أدوات التحديث عبر الهواء للأجهزة المدمجة." }},
   { name:"passassion-report", emoji:"📈", categories:["tools"], badge:"dev", status:"dev", visibility:"public", tags:["report", "analytics", "tools"],
     desc:{ en:"Passion project reporting and tracking tool.", fr:"Outil de rapport et suivi de projets passion.", ar:"أداة تقارير وتتبع مشاريع الشغف." }},
   { name:"pentest-lab", emoji:"🔐", categories:["learning"], badge:"stable", status:"beta", visibility:"public", tags:["security", "pentest", "hacking", "education", "CTF"],
     desc:{ en:"A beginner-friendly penetration testing sandbox — learn cybersecurity basics through guided challenges and CTF-style exercises.", fr:"Un bac à sable de test d'intrusion pour débutants — apprenez la cybersécurité à travers des défis guidés et des exercices de type CTF.", ar:"بيئة اختبار اختراق للمبتدئين — تعلّم أساسيات الأمن السيبراني من خلال تحديات موجهة وتمارين CTF." }},
-  { name:"piper-arabic-tts", emoji:"🎙️", categories:["arabic", "ai"], badge:"stable", status:"beta", visibility:"public", tags:["arabic", "piper", "WASM", "TTS", "neural"],
-    desc:{ en:"High-quality Arabic text-to-speech using Piper neural TTS compiled to WebAssembly — runs in the browser, no cloud needed.", fr:"Synthèse vocale arabe haute qualité avec Piper TTS neuronal compilé en WebAssembly — fonctionne dans le navigateur.", ar:"تحويل نص إلى كلام عربي عالي الجودة بتقنية Piper TTS العصبية عبر WebAssembly — يعمل في المتصفح." }},
   { name:"pixel-gateway", emoji:"🟥", categories:["microbit"], badge:"stable", status:"stable", visibility:"public", tags:["neopixel", "micro:bit", "LED", "emoji"],
     desc:{ en:"Send colorful emoji art to a NeoPixel LED matrix connected to a micro:bit — supports USB Serial and Bluetooth LE.", fr:"Envoyez des emojis colorés vers une matrice LED NeoPixel connectée à un micro:bit — USB Serial et Bluetooth LE.", ar:"أرسل رسومات إيموجي ملونة إلى مصفوفة LED NeoPixel متصلة بـ micro:bit — عبر USB Serial وBluetooth LE." }},
   { name:"PlanPilot", emoji:"🗺️", categories:["tools"], badge:"stable", status:"beta", visibility:"public", tags:["planning", "project", "kids"],
     desc:{ en:"Project planning tool for builders.", fr:"Outil de planification de projets.", ar:"أداة تخطيط المشاريع للبناة." }},
+  { name:"playwright", emoji:"🛠️", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Playwright browser automation and testing experiments.", fr:"Automatisation de navigateur et tests avec Playwright.", ar:"أتمتة المتصفح واختبارات مع Playwright." }},
   { name:"posts", emoji:"✍️", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["post-generator", "social-media", "canvas", "PWA"],
     desc:{ en:"Multi-mode visual creator for Workshop-DIY — 58 styles, cowsay art, chat mockups, memes and notifications. 100% client-side, single HTML file, installable PWA.", fr:"Outil multi-mode de création de visuels pour Workshop-DIY — 58 styles, art cowsay, maquettes de chat, mèmes et notifications. 100% client-side, fichier HTML unique, PWA installable.", ar:"منشئ مرئيات متعدد الأوضاع لـ Workshop-DIY — 58 نمطًا، فن cowsay، محاكاة محادثات، ميمات وإشعارات. 100% من جانب العميل، ملف HTML واحد، PWA قابل للتثبيت." }},
+  { name:"presentation", emoji:"🛠️", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["HTML", "developer-tool", "web-app"],
+    desc:{ en:"Workshop-DIY — Apps", fr:"Presentation — application Workshop-DIY.", ar:"أداة من Workshop-DIY." }},
   { name:"production-chain", emoji:"⛓️", categories:["tools", "learning"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "git", "linux", "security", "HTML", "LED"],
     desc:{ en:"A fully containerized development and CI/CD infrastructure for teams building firmware (ARM Cortex-M), embedded Linux (Yocto/Buildroot), and desktop applications. Everything runs in Docker on a...", fr:"Production Chain — explorez et expérimentez !", ar:"Production Chain — استكشف وجرّب!" }},
   { name:"prompt-hero", emoji:"✨", categories:["ai", "learning"], badge:"dev", status:"beta", visibility:"public", tags:["prompt", "LLM", "ai", "writing", "techniques"],
     desc:{ en:"Master AI prompting — learn techniques to write effective prompts for ChatGPT, Claude and other language models.", fr:"Maîtrisez l'art du prompting IA — techniques pour écrire des prompts efficaces pour ChatGPT, Claude et autres.", ar:"أتقن كتابة الأوامر للذكاء الاصطناعي — تقنيات لكتابة أوامر فعّالة لـ ChatGPT و Claude وغيرها." }},
   { name:"puppeteer-playground", emoji:"🎭", categories:["tools"], badge:"stable", status:"beta", visibility:"public", tags:["puppeteer", "automation", "scraping", "testing", "headless"],
     desc:{ en:"Experiment with Puppeteer browser automation — write scripts to scrape pages, take screenshots and run headless tests.", fr:"Expérimentez l'automatisation navigateur avec Puppeteer — scraping, captures d'écran et tests headless.", ar:"جرّب أتمتة المتصفح مع Puppeteer — كشط صفحات، التقاط لقطات شاشة واختبارات بدون واجهة." }},
+  { name:"pyshark", emoji:"🔩", categories:["hardware"], badge:"new", status:"dev", visibility:"public", tags:["IoT", "networking"],
+    desc:{ en:"Python packet analysis tool using PyShark.", fr:"Outil d'analyse de paquets Python avec PyShark.", ar:"أداة تحليل حزم بايثون باستخدام PyShark." }},
+  { name:"python3", emoji:"🛠️", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Python 3 experiments, scripts and learning exercises.", fr:"Expériences Python 3, scripts et exercices d'apprentissage.", ar:"تجارب بايثون 3، سكريبتات وتمارين تعلم." }},
+  { name:"qrcodes", emoji:"🛠️", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"QR code generator and scanner web app.", fr:"Générateur et scanner de codes QR.", ar:"مولّد وماسح رموز QR." }},
+  { name:"reddis", emoji:"🛠️", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Redis database experiments and learning tool.", fr:"Expériences de base de données Redis et outil d'apprentissage.", ar:"تجارب قاعدة بيانات Redis وأداة تعلم." }},
   { name:"rocket-shield-vpn", emoji:"🛡️", categories:["tools"], badge:"dev", status:"beta", visibility:"public", tags:["vpn", "network", "security", "privacy"],
     desc:{ en:"Visual guide to VPNs and network security — see how encrypted tunnels protect your data.", fr:"Guide visuel des VPN et de la sécurité réseau — visualisez les tunnels chiffrés qui protègent vos données.", ar:"دليل مرئي للشبكات الافتراضية وأمن الشبكات — شاهد كيف تحمي الأنفاق المشفرة بياناتك." }},
   { name:"bit-rxy", emoji:"🎮", categories:["microbit"], badge:"stable", status:"stable", visibility:"public", tags:["remote", "builder", "micro:bit", "BLE", "no-code"],
     desc:{ en:"Build a custom Bluetooth remote for micro:bit — drag buttons, sliders and D-pads. No coding, just click and play.", fr:"Créez une télécommande Bluetooth personnalisée pour micro:bit — glissez des boutons, curseurs et D-pads. Sans code.", ar:"أنشئ جهاز تحكم بلوتوث مخصص لـ micro:bit — اسحب أزراراً ومنزلقات ولوحات اتجاه. بدون برمجة." }},
-  { name:"sada", emoji:"🌊", categories:["learning", "arabic"], badge:"stable", status:"stable", visibility:"public", tags:["content-archive", "564-files", "multilingual", "educational"],
-    desc:{ en:"564 self-contained HTML files across 3 languages (EN/FR/AR) for the Workshop-DIY educational ecosystem.", fr:"564 fichiers HTML autonomes en 3 langues (EN/FR/AR) pour l'écosystème éducatif Workshop-DIY.", ar:"564 ملف HTML مستقل بـ 3 لغات (EN/FR/AR) للمنظومة التعليمية Workshop-DIY." }},
-  { name:"salat-times", emoji:"🕌", categories:["microbit", "arabic"], badge:"new", status:"dev", visibility:"public", tags:["prayer-times", "adhan", "micro:bit", "BLE", "PWA", "Islamic"],
-    desc:{ en:"A single-file Islamic prayer times web app with micro:bit V2 Adhan Lantern support.", fr:"Application web de horaires de prière islamique en fichier unique avec support micro:bit V2 Adhan Lantern.", ar:"تطبيق ويب لمواقيت الصلاة الإسلامية في ملف واحد مع دعم فانوس الأذان micro:bit V2." }},
   { name:"sanitize-names-toolkit", emoji:"🧹", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["bash", "file-names", "sanitize", "CLI"],
     desc:{ en:"Bash toolkit to sanitize and normalize file and folder names — simple and advanced modes.", fr:"Boîte à outils Bash pour assainir et normaliser les noms de fichiers et dossiers — modes simple et avancé.", ar:"مجموعة أدوات Bash لتنظيف وتوحيد أسماء الملفات والمجلدات — وضع بسيط ومتقدم." }},
-  { name:"satellites", emoji:"🛰️", categories:["learning", "arabic", "classroom"], badge:"stable", status:"stable", visibility:"public", tags:["satellite-tracking", "astronomy", "Islamic-heritage", "interactive", "kids"],
-    desc:{ en:"An interactive educational experience about satellites, orbital mechanics, and the Arab astronomical heritage that made it all possible.", fr:"Expérience éducative interactive sur les satellites, la mécanique orbitale et l'héritage astronomique arabe qui a rendu tout cela possible.", ar:"تجربة تعليمية تفاعلية عن الأقمار الصناعية وميكانيكا المدارات والتراث الفلكي العربي الذي جعل كل ذلك ممكنًا." }},
   { name:"save-our-planet", emoji:"🌍", categories:["learning"], badge:"dev", status:"beta", visibility:"public", tags:["robots", "environment", "asimov", "kids"],
     desc:{ en:"Interactive trilingual app for kids — robots saving Earth in 2050, inspired by Asimov's Three Laws. 13 zones, 39 robots.", fr:"Application interactive trilingue pour enfants — des robots sauvent la Terre en 2050, inspirée des Trois Lois d'Asimov. 13 zones, 39 robots.", ar:"تطبيق تفاعلي ثلاثي اللغات للأطفال — روبوتات تنقذ الأرض في 2050، مستوحى من قوانين أسيموف الثلاثة. 13 منطقة، 39 روبوتاً." }},
   { name:"scapy", emoji:"🕸️", categories:["learning"], badge:"new", status:"dev", visibility:"public", tags:["packets", "networking", "Scapy", "cybersecurity", "kids"],
@@ -318,6 +326,8 @@ const INLINE_APPS = [
     desc:{ en:"SDR Kids Lab — learn Software Defined Radio with interactive lessons on radio waves, frequencies and signal decoding.", fr:"SDR Kids Lab — apprenez la Radio Logicielle avec des leçons interactives sur les ondes radio, les fréquences et le décodage de signaux.", ar:"SDR Kids Lab — تعلم الراديو المعرّف بالبرمجيات مع دروس تفاعلية عن موجات الراديو والترددات وفك تشفير الإشارات." }},
   { name:"smart-home", emoji:"🏡", categories:["hardware", "learning"], badge:"dev", status:"beta", visibility:"public", tags:["IoT", "dashboard", "sensors", "ESP32", "automation"],
     desc:{ en:"Build a smart home dashboard — monitor sensors, toggle lights, set automations and learn IoT basics.", fr:"Créez un tableau de bord maison connectée — capteurs, lumières, automatisations et bases de l'IoT.", ar:"أنشئ لوحة تحكم للمنزل الذكي — راقب المستشعرات، بدّل الأضواء، اضبط الأتمتة وتعلّم أساسيات IoT." }},
+  { name:"sniffers-sallae", emoji:"🔩", categories:["hardware"], badge:"stable", status:"stable", visibility:"public", tags:["IoT", "networking"],
+    desc:{ en:"Network packet sniffers and Saleae logic analyzer tools.", fr:"Sniffers réseau et outils d'analyse logique Saleae.", ar:"أدوات التقاط حزم الشبكة ومحلل المنطق Saleae." }},
   { name:"sync-files", emoji:"🗂️", categories:["tools"], badge:"dev", status:"dev", visibility:"public", tags:["sync", "files", "Python", "automation"],
     desc:{ en:"Python file sync and automation utility.", fr:"Utilitaire Python de synchronisation de fichiers.", ar:"أداة Python لمزامنة الملفات والأتمتة." }},
   { name:"talking-robot", emoji:"💬", categories:["microbit", "ai"], badge:"stable", status:"stable", visibility:"public", tags:["robot", "speech", "TTS", "STT", "BLE", "emotions"],
@@ -326,23 +336,23 @@ const INLINE_APPS = [
     desc:{ en:"Train gestures or sounds in the browser with Teachable Machine, then send the results to a micro:bit over Bluetooth in real time.", fr:"Entraînez des gestes ou sons dans le navigateur avec Teachable Machine, puis envoyez les résultats à un micro:bit en Bluetooth en temps réel.", ar:"درّب إيماءات أو أصوات في المتصفح مع Teachable Machine، ثم أرسل النتائج إلى micro:bit عبر البلوتوث في الوقت الحقيقي." }},
   { name:"termlite", emoji:"⌨️", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["SSH", "SFTP", "VNC", "remote-access", "self-hosted"],
     desc:{ en:"Self-hosted browser-based remote access hub. SSH terminal, SFTP file browser, VNC viewer, network scanner, encrypted credential vault, AI copilot, DHCP server, session recording, workflow...", fr:"Hub d'accès distant auto-hébergé dans le navigateur — terminal SSH, navigateur SFTP, client VNC, scanner réseau, coffre-fort chiffré, copilote IA, serveur DHCP et enregistrement de sessions.", ar:"مركز وصول عن بُعد ذاتي الاستضافة في المتصفح — طرفية SSH، متصفح SFTP، عارض VNC، ماسح شبكة، خزنة مشفرة، مساعد ذكاء اصطناعي، خادم DHCP وتسجيل جلسات." }},
-  { name:"tesbih", emoji:"📿", categories:["arabic"], badge:"new", status:"dev", visibility:"public", tags:["tasbih", "dhikr", "prayer", "counter", "PWA", "Islamic"],
-    desc:{ en:"A digital tasbih (prayer bead counter) with dhikr tracking — tap to count, fully offline PWA.", fr:"Tasbih numérique (compteur de perles de prière) avec suivi du dhikr — tapez pour compter, PWA entièrement hors ligne.", ar:"تسبيح رقمي (عداد مسبحة) مع تتبع الذكر — اضغط للعدّ، تطبيق PWA يعمل بدون إنترنت." }},
-  { name:"tethkir", emoji:"📔", categories:["arabic", "tools"], badge:"new", status:"dev", visibility:"public", tags:["task-manager", "notes", "encryption", "PWA", "Islamic"],
-    desc:{ en:"Islamic Task Manager & Secure Notes", fr:"Gestionnaire de tâches islamique et notes sécurisées.", ar:"مدير مهام إسلامي وملاحظات مشفّرة." }},
-  { name:"time-machine", emoji:"🕰️", categories:["learning", "arabic"], badge:"new", status:"dev", visibility:"public", tags:["Islamic-scientists", "history", "game", "interactive", "kids"],
-    desc:{ en:"An interactive educational game about Muslim scientists who changed the world.", fr:"Jeu éducatif interactif sur les scientifiques musulmans qui ont changé le monde.", ar:"لعبة تعليمية تفاعلية عن العلماء المسلمين الذين غيّروا العالم." }},
   { name:"tools", emoji:"🧰", categories:["tools"], badge:"new", status:"stable", visibility:"public", tags:[],
     desc:{ en:"Official Workshop-DIY logo pack — SVG, PNG, ICO and AI formats for all platforms.", fr:"Tools — explorez et expérimentez !", ar:"Tools — استكشف وجرّب!" }},
   { name:"true-crypt", emoji:"🔑", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["BLE", "git", "security", "crypto", "HTML"],
     desc:{ en:"A browser-based encrypted volume manager inspired by TrueCrypt/VeraCrypt. Create, lock/unlock, and manage AES-256-GCM encrypted containers through a modern web interface.", fr:"True Crypt — explorez et expérimentez !", ar:"True Crypt — استكشف وجرّب!" }},
+  { name:"tshark", emoji:"🔩", categories:["hardware"], badge:"new", status:"dev", visibility:"public", tags:["IoT", "networking"],
+    desc:{ en:"Packet analysis with tshark — educational network tool.", fr:"Analyse de paquets avec tshark — outil réseau éducatif.", ar:"تحليل الحزم باستخدام tshark — أداة شبكات تعليمية." }},
   { name:"tty", emoji:"🖥️", categories:["tools", "hardware"], badge:"new", status:"dev", visibility:"public", tags:["serial", "terminal", "bash", "WebSerial", "remote"],
     desc:{ en:"A web-based tool to send and execute bash scripts on a Linux board over serial — terminal, session recording, hex display and profiles.", fr:"Outil web pour envoyer et exécuter des scripts bash sur une carte Linux via série — terminal, enregistrement de session, affichage hex et profils.", ar:"أداة ويب لإرسال وتنفيذ سكريبتات bash على لوحة Linux عبر المنفذ التسلسلي — طرفية، تسجيل جلسات، عرض hex وملفات تعريف." }},
   { name:"usb-logger", emoji:"🔌", categories:["microbit"], badge:"stable", status:"stable", visibility:"public", tags:["micro:bit", "serial", "USB", "WebSerial", "data"],
     desc:{ en:"Talk to your micro:bit over USB serial from the browser — send commands, receive data and run speed tests via WebSerial.", fr:"Communiquez avec votre micro:bit via USB série depuis le navigateur — commandes, données et tests de vitesse via WebSerial.", ar:"تواصل مع micro:bit عبر USB التسلسلي من المتصفح — أرسل أوامر، استقبل بيانات واختبر السرعة عبر WebSerial." }},
+  { name:"virus", emoji:"🛠️", categories:["tools"], badge:"new", status:"dev", visibility:"public", tags:["developer-tool"],
+    desc:{ en:"Educational virus analysis and cybersecurity awareness tool.", fr:"Outil éducatif d'analyse de virus et sensibilisation à la cybersécurité.", ar:"أداة تعليمية لتحليل الفيروسات والتوعية بالأمن السيبراني." }},
   { name:"warsha", emoji:"🔩", categories:["hardware"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "git", "linux", "HTML"],
-    desc:{ en:"بسم الله الرحمن الرحيم", fr:"Warsha — explorez et expérimentez !", ar:"Warsha — استكشف وجرّب!" }},
-  { name:"web-kids", emoji:"🕷️", categories:["learning", "arabic"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "TTS", "game", "linux", "HTML", "LED", "kids"],
+    desc:{ en:"Warsha — Workshop-DIY interactive workshop builder.", fr:"Warsha — créateur d'ateliers interactifs Workshop-DIY.", ar:"ورشة — منشئ ورش عمل تفاعلية من Workshop-DIY." }},
+  { name:"web-developer-toolkit", emoji:"🛠", categories:["tools"], badge:"stable", status:"stable", visibility:"public", tags:["HTML", "developer-tool", "web-app"],
+    desc:{ en:"🛠️ Web Developer Toolkit v1.0", fr:"Web Developer Toolkit — application Workshop-DIY.", ar:"أداة من Workshop-DIY." }},
+  { name:"web-kids", emoji:"🕷️", categories:["learning"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "TTS", "game", "linux", "HTML", "LED", "kids"],
     desc:{ en:"A zero-dependency, single-file educational coding platform for kids aged 6–14.", fr:"Web Kids — explorez et expérimentez !", ar:"Web Kids — استكشف وجرّب!" }},
   { name:"web-kvm", emoji:"🖱️", categories:["tools", "hardware"], badge:"new", status:"stable", visibility:"public", tags:["BLE", "game", "git", "linux", "security", "crypto", "HTML", "LED"],
     desc:{ en:"Software KVM switch — share one keyboard and mouse across multiple computers over your local network.", fr:"Web Kvm — explorez et expérimentez !", ar:"Web Kvm — استكشف وجرّب!" }},
@@ -351,7 +361,7 @@ const INLINE_APPS = [
   { name:"wled-kids-lab", emoji:"💡", categories:["hardware", "learning"], badge:"stable", status:"beta", visibility:"public", tags:["WLED", "LED", "ESP32", "neopixel", "colors"],
     desc:{ en:"Control WS2812 / Neopixel LED strips with WLED — pick colors, effects and brightness. Fun intro to addressable LEDs.", fr:"Contrôlez des rubans LED WS2812 / Neopixel avec WLED — couleurs, effets et luminosité. Introduction ludique aux LEDs adressables.", ar:"تحكم في شرائط LED WS2812 / Neopixel مع WLED — ألوان، تأثيرات وسطوع. مقدمة ممتعة لأضواء LED القابلة للعنونة." }},
   { name:"workshop-diy", emoji:"🏗️", categories:["tools"], badge:"hub", status:"stable", visibility:"public", tags:["website", "workshop", "landing", "STEM"],
-    desc:{ en:"The official Workshop-Diy landing site — browse workshops, meet the team and explore STEM resources.", fr:"Le site officiel Workshop-Diy — parcourez les ateliers, découvrez l'équipe et explorez les ressources STEM.", ar:"موقع Workshop-Diy الرسمي — تصفح الورشات، تعرّف على الفريق واستكشف موارد STEM." }}
+    desc:{ en:"The official Workshop-Diy landing site — browse workshops, meet the team and explore STEM resources.", fr:"Le site officiel Workshop-Diy — parcourez les ateliers, découvrez l'équipe et explorez les ressources STEM.", ar:"موقع Workshop-Diy الرسمي — تصفح الورشات، تعرّف على الفريق واستكشف موارد STEM." }},
 ];
 
 /* ============================================================
@@ -663,6 +673,12 @@ const CARD_COLORS = [
   "#16a34a","#d97706","#9333ea"
 ];
 
+function escapeHtml(s) {
+  const d = document.createElement("div");
+  d.textContent = s;
+  return d.innerHTML;
+}
+
 function card(app, index) {
   const el = document.createElement("article");
   const num = app._num || (index + 1);
@@ -701,8 +717,8 @@ function card(app, index) {
     ${badgeHTML}
     ${visHTML}
     <button class="fav-btn ${isFav ? 'favorited' : ''}" data-fav="${app.name}" title="Favorite" aria-label="Toggle favorite">🔥</button>
-    <h3><span class="card-number">#${num}</span><span class="kids-emoji">${app.emoji}</span><span class="kids-name">${app.name}</span>${statusHTML}</h3>
-    <p class="kids-desc">${desc}</p>
+    <h3><span class="card-number">#${num}</span><span class="kids-emoji">${escapeHtml(app.emoji)}</span><span class="kids-name">${escapeHtml(app.name)}</span>${statusHTML}</h3>
+    <p class="kids-desc">${escapeHtml(desc)}</p>
     <div class="kids-actions">
       ${isPublic
         ? `<a class="kids-link" href="${app.github}" target="_blank" rel="noreferrer">${t("github")}</a>`
@@ -714,7 +730,7 @@ function card(app, index) {
       }
     </div>
     <div class="kids-tags">
-      ${(app.tags || []).slice(0, 5).map(tag => `<span class="kids-tag">${tag}</span>`).join("")}
+      ${(app.tags || []).slice(0, 5).map(tag => `<span class="kids-tag">${escapeHtml(tag)}</span>`).join("")}
     </div>
   `;
 

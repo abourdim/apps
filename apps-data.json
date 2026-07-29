@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-09T03:43:49.972332Z",
+  "generated": "2026-04-08T17:03:04.425058Z",
   "user": "abourdim",
   "apps": [
     {
@@ -52,27 +52,6 @@
       "visibility": "public"
     },
     {
-      "name": "al-maqlub",
-      "emoji": "↩️",
-      "categories": [
-        "arabic",
-        "ai"
-      ],
-      "badge": "dev",
-      "status": "dev",
-      "visibility": "public",
-      "tags": [
-        "arabic",
-        "reverse",
-        "language"
-      ],
-      "desc": {
-        "en": "Arabic text reversal and transformation tool.",
-        "fr": "Outil de transformation de texte arabe.",
-        "ar": "أداة عكس وتحويل النص العربي."
-      }
-    },
-    {
       "name": "apps",
       "emoji": "🏠",
       "categories": [
@@ -95,54 +74,44 @@
       "visibility": "public"
     },
     {
-      "name": "arabic-translator",
-      "emoji": "🌐",
+      "name": "avahi",
+      "emoji": "🔩",
       "categories": [
-        "arabic"
+        "hardware"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "IoT",
+        "networking"
+      ],
+      "desc": {
+        "en": "Avahi/mDNS service discovery educational tool.",
+        "fr": "Outil éducatif de découverte de services Avahi/mDNS.",
+        "ar": "أداة تعليمية لاكتشاف خدمات Avahi/mDNS."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "bash-toolkit",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
       ],
       "badge": "stable",
       "status": "stable",
       "tags": [
-        "arabic",
-        "translate",
-        "browser-only",
-        "no-server"
+        "developer-tool"
       ],
       "desc": {
-        "en": "Translate text to and from Arabic directly in the browser — no server, no API key, fully offline-capable.",
-        "fr": "Traduisez du texte vers et depuis l'arabe dans le navigateur — sans serveur, sans clé API, fonctionne hors ligne.",
-        "ar": "ترجم النصوص من وإلى العربية مباشرة في المتصفح — بدون خادم، بدون مفتاح API، يعمل بدون إنترنت."
+        "en": "Collection of Bash scripts and CLI utilities for developers.",
+        "fr": "Collection de scripts Bash et utilitaires CLI pour développeurs.",
+        "ar": "مجموعة سكريبتات Bash وأدوات سطر أوامر للمطورين."
       },
       "visibility": "public"
     },
     {
-      "name": "arabic-tts",
-      "emoji": "🔊",
-      "categories": [
-        "arabic",
-        "ai",
-        "tools"
-      ],
-      "badge": "new",
-      "status": "stable",
-      "tags": [
-        "BLE",
-        "TTS",
-        "game",
-        "git",
-        "linux",
-        "HTML",
-        "LED"
-      ],
-      "desc": {
-        "en": "> Modern Standard Arabic Text-to-Speech · VITS + HiFi-GAN · FastAPI · PyTorch",
-        "fr": "Arabic Tts — explorez et expérimentez !",
-        "ar": "Arabic Tts — استكشف وجرّب!"
-      },
-      "visibility": "public"
-    },
-    {
-      "name": "bit-54-activities",
+      "name": "bit-activities",
       "emoji": "🎯",
       "categories": [
         "microbit",
@@ -158,9 +127,9 @@
         "advanced"
       ],
       "desc": {
-        "en": "54 hands-on activities for BBC micro:bit — from blinking LEDs to BLE robots, beginner to advanced.",
-        "fr": "54 activités pratiques pour BBC micro:bit — du clignotement de LEDs aux robots BLE, débutant à avancé.",
-        "ar": "54 نشاطاً عملياً لـ BBC micro:bit — من إضاءة LEDs إلى روبوتات BLE، من المبتدئ إلى المتقدم."
+        "en": "Hands-on activities for BBC micro:bit — from blinking LEDs to BLE robots, beginner to advanced.",
+        "fr": "Activités pratiques pour BBC micro:bit — du clignotement de LEDs aux robots BLE, débutant à avancé.",
+        "ar": "أنشطة عملية لـ BBC micro:bit — من إضاءة LEDs إلى روبوتات BLE، من المبتدئ إلى المتقدم."
       },
       "visibility": "public"
     },
@@ -299,29 +268,22 @@
       "visibility": "public"
     },
     {
-      "name": "builders-of-light",
-      "emoji": "💫",
+      "name": "browsers-secrets",
+      "emoji": "🔭",
       "categories": [
-        "learning",
-        "arabic",
-        "classroom"
+        "tools"
       ],
       "badge": "new",
-      "status": "stable",
+      "status": "dev",
       "tags": [
-        "BLE",
-        "TTS",
-        "STT",
-        "WLED",
-        "game",
         "HTML",
-        "LED",
-        "kids"
+        "developer-tool",
+        "web-app"
       ],
       "desc": {
-        "en": "Version 1.0 · Single-file HTML app · 830 KB · 139 sections · 434+ functions · 3 languages · Zero dependencies",
-        "fr": "Builders Of Light — explorez et expérimentez !",
-        "ar": "Builders Of Light — استكشف وجرّب!"
+        "en": "🔭 Browsers Secrets — Workshop DIY",
+        "fr": "Explorez ensemble les pages cachées de Chrome et Edge !",
+        "ar": "أداة من Workshop-DIY."
       },
       "visibility": "public"
     },
@@ -516,33 +478,31 @@
         "HTML"
       ],
       "desc": {
-        "en": "بسم الله الرحمن الرحيم",
-        "fr": "Dir Pulse — explorez et expérimentez !",
-        "ar": "Dir Pulse — استكشف وجرّب!"
+        "en": "Directory structure analyzer with real-time web dashboard.",
+        "fr": "Analyseur de structure de répertoires avec tableau de bord web en temps réel.",
+        "ar": "محلّل هيكل المجلدات مع لوحة تحكم ويب في الوقت الفعلي."
       },
       "visibility": "public"
     },
     {
-      "name": "eid",
-      "emoji": "🌙",
+      "name": "docker-lab",
+      "emoji": "🔩",
       "categories": [
-        "arabic",
-        "learning"
+        "hardware"
       ],
       "badge": "new",
-      "status": "stable",
-      "visibility": "public",
+      "status": "dev",
       "tags": [
-        "Eid",
-        "Islamic",
-        "celebration",
-        "kids"
+        "IoT",
+        "lab",
+        "networking"
       ],
       "desc": {
-        "en": "Eid celebration app for kids.",
-        "fr": "Application de célébration de l'Aïd pour enfants.",
-        "ar": "تطبيق احتفالات العيد للأطفال."
-      }
+        "en": "Docker container experiments and learning environment.",
+        "fr": "Expériences Docker et environnement d'apprentissage des conteneurs.",
+        "ar": "تجارب Docker وبيئة تعلم الحاويات."
+      },
+      "visibility": "public"
     },
     {
       "name": "emojis",
@@ -586,6 +546,24 @@
         "en": "Hands-on ESP32-C3 lab — blink LEDs, read temperature sensors, connect to WiFi and build simple IoT projects from the browser.",
         "fr": "Labo pratique ESP32-C3 — faites clignoter des LEDs, lisez des capteurs, connectez-vous au WiFi et créez des projets IoT depuis le navigateur.",
         "ar": "مختبر ESP32-C3 عملي — أضئ LEDs، اقرأ مستشعرات الحرارة، اتصل بالواي فاي وأنشئ مشاريع IoT من المتصفح."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "evic-toolkit",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "stable",
+      "status": "stable",
+      "tags": [
+        "developer-tool"
+      ],
+      "desc": {
+        "en": "EV charger infrastructure toolkit for OCPP diagnostics.",
+        "fr": "Boîte à outils d'infrastructure de bornes de recharge pour diagnostics OCPP.",
+        "ar": "مجموعة أدوات البنية التحتية لشواحن السيارات الكهربائية لتشخيصات OCPP."
       },
       "visibility": "public"
     },
@@ -637,32 +615,38 @@
       "visibility": "public"
     },
     {
-      "name": "fihris",
-      "emoji": "📂",
+      "name": "firebase",
+      "emoji": "🛠️",
       "categories": [
-        "tools",
-        "learning",
-        "arabic"
+        "tools"
       ],
       "badge": "new",
-      "status": "stable",
+      "status": "dev",
       "tags": [
-        "BLE",
-        "camera",
-        "micro:bit",
-        "WLED",
-        "IoT",
-        "linux",
-        "security",
-        "HTML",
-        "robot",
-        "LED",
-        "kids"
+        "developer-tool"
       ],
       "desc": {
-        "en": "The Workshop-DIY App Catalog",
-        "fr": "Fihris — explorez et expérimentez !",
-        "ar": "Fihris — استكشف وجرّب!"
+        "en": "Firebase integration tools and authentication experiments.",
+        "fr": "Outils d'intégration Firebase et expériences d'authentification.",
+        "ar": "أدوات تكامل Firebase وتجارب المصادقة."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "firmware-update",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "developer-tool"
+      ],
+      "desc": {
+        "en": "Over-the-air firmware update tools for IoT devices.",
+        "fr": "Outils de mise à jour du firmware OTA pour appareils IoT.",
+        "ar": "أدوات تحديث البرامج الثابتة عبر الهواء لأجهزة IoT."
       },
       "visibility": "public"
     },
@@ -775,26 +759,24 @@
       "visibility": "public"
     },
     {
-      "name": "golden-age",
-      "emoji": "🏛️",
+      "name": "gmail-lab",
+      "emoji": "🛠️",
       "categories": [
-        "learning",
-        "arabic",
-        "classroom"
+        "tools"
       ],
       "badge": "stable",
       "status": "stable",
       "tags": [
-        "Islamic-history",
-        "Golden-Age",
-        "interactive",
-        "game",
-        "kids"
+        "HTML",
+        "PWA",
+        "developer-tool",
+        "lab",
+        "web-app"
       ],
       "desc": {
-        "en": "An interactive educational journey through the Islamic Golden Age — explore algebra, medicine, optics, engineering and more.",
-        "fr": "Voyage éducatif interactif à travers l'Âge d'Or islamique — explorez l'algèbre, la médecine, l'optique, l'ingénierie et plus encore.",
-        "ar": "رحلة تعليمية تفاعلية عبر العصر الذهبي الإسلامي — استكشف الجبر والطب والبصريات والهندسة والمزيد."
+        "en": "Gmail Lab — Workshop DIY",
+        "fr": "Gmail Lab — application Workshop-DIY.",
+        "ar": "أداة من Workshop-DIY."
       },
       "visibility": "public"
     },
@@ -843,57 +825,6 @@
       "visibility": "public"
     },
     {
-      "name": "jisr",
-      "emoji": "🌉",
-      "categories": [
-        "arabic",
-        "learning",
-        "hardware"
-      ],
-      "badge": "new",
-      "status": "stable",
-      "tags": [
-        "TTS",
-        "WLED",
-        "IoT",
-        "game",
-        "HTML",
-        "LED"
-      ],
-      "desc": {
-        "en": "> \"Le pont entre les civilisations\" · The bridge between civilizations · الجسر بين الحضارات",
-        "fr": "Jisr — explorez et expérimentez !",
-        "ar": "Jisr — استكشف وجرّب!"
-      },
-      "visibility": "public"
-    },
-    {
-      "name": "kalami",
-      "emoji": "🗣️",
-      "categories": [
-        "arabic",
-        "microbit",
-        "ai"
-      ],
-      "badge": "new",
-      "status": "dev",
-      "tags": [
-        "BLE",
-        "TTS",
-        "STT",
-        "git",
-        "linux",
-        "HTML",
-        "LED"
-      ],
-      "desc": {
-        "en": "<div align=\"center\">",
-        "fr": "Kalami — explorez et expérimentez !",
-        "ar": "Kalami — استكشف وجرّب!"
-      },
-      "visibility": "public"
-    },
-    {
       "name": "linkedin",
       "emoji": "💼",
       "categories": [
@@ -937,33 +868,20 @@
       "visibility": "public"
     },
     {
-      "name": "luminaries-of-islam",
-      "emoji": "🌟",
+      "name": "loggy",
+      "emoji": "🛠️",
       "categories": [
-        "learning",
-        "arabic",
-        "ai"
+        "tools"
       ],
-      "badge": "new",
+      "badge": "stable",
       "status": "stable",
       "tags": [
-        "BLE",
-        "TTS",
-        "STT",
-        "WLED",
-        "game",
-        "git",
-        "linux",
-        "security",
-        "HTML",
-        "robot",
-        "LED",
-        "kids"
+        "developer-tool"
       ],
       "desc": {
-        "en": "> أنوار الإسلام — علماء العصر الذهبي",
-        "fr": "Luminaries Of Islam — explorez et expérimentez !",
-        "ar": "Luminaries Of Islam — استكشف وجرّب!"
+        "en": "Bash log analyzer for EV charger RACC bundles.",
+        "fr": "Analyseur de logs Bash pour les bundles RACC de bornes de recharge.",
+        "ar": "محلّل سجلات Bash لحزم RACC الخاصة بشواحن السيارات الكهربائية."
       },
       "visibility": "public"
     },
@@ -1034,6 +952,25 @@
       "visibility": "public"
     },
     {
+      "name": "mdns",
+      "emoji": "🔩",
+      "categories": [
+        "hardware"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "IoT",
+        "networking"
+      ],
+      "desc": {
+        "en": "mDNS/DNS-SD discovery tool for local network services.",
+        "fr": "Outil de découverte mDNS/DNS-SD pour les services réseau locaux.",
+        "ar": "أداة اكتشاف mDNS/DNS-SD لخدمات الشبكة المحلية."
+      },
+      "visibility": "public"
+    },
+    {
       "name": "meridian",
       "emoji": "🧭",
       "categories": [
@@ -1051,9 +988,9 @@
         "LED"
       ],
       "desc": {
-        "en": "<div align=\"center\">",
-        "fr": "Meridian — explorez et expérimentez !",
-        "ar": "Meridian — استكشف وجرّب!"
+        "en": "A self-hosted, privacy-first video platform — own your content, audience and data.",
+        "fr": "Plateforme vidéo auto-hébergée respectueuse de la vie privée — gardez le contrôle de votre contenu.",
+        "ar": "منصة فيديو مستضافة ذاتياً تحترم الخصوصية — تحكّم في محتواك وجمهورك وبياناتك."
       },
       "visibility": "public"
     },
@@ -1128,26 +1065,62 @@
       "visibility": "public"
     },
     {
-      "name": "nusuk",
-      "emoji": "🕋",
+      "name": "nearpay",
+      "emoji": "🛠️",
       "categories": [
-        "arabic",
-        "learning"
+        "tools"
       ],
-      "badge": "new",
+      "badge": "stable",
       "status": "stable",
-      "visibility": "public",
       "tags": [
-        "Hajj",
-        "Islamic",
-        "pilgrimage",
-        "guide"
+        "HTML",
+        "developer-tool",
+        "web-app"
       ],
       "desc": {
-        "en": "Interactive Hajj and Umrah guide.",
-        "fr": "Guide interactif du Hajj et de l'Omra.",
-        "ar": "دليل تفاعلي للحج والعمرة."
-      }
+        "en": "Cloner le projet",
+        "fr": "NearPay — Le paiement à portée de main",
+        "ar": "أداة من Workshop-DIY."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "ngrok",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "developer-tool"
+      ],
+      "desc": {
+        "en": "Ngrok tunneling tool setup and usage guide.",
+        "fr": "Guide d'installation et d'utilisation de l'outil de tunneling Ngrok.",
+        "ar": "دليل إعداد واستخدام أداة الأنفاق Ngrok."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "nodered-lab",
+      "emoji": "🔩",
+      "categories": [
+        "hardware"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "IoT",
+        "lab",
+        "networking"
+      ],
+      "desc": {
+        "en": "Node-RED visual programming and IoT flow experiments.",
+        "fr": "Programmation visuelle Node-RED et expériences de flux IoT.",
+        "ar": "برمجة مرئية Node-RED وتجارب تدفقات IoT."
+      },
+      "visibility": "public"
     },
     {
       "name": "ocpp",
@@ -1196,6 +1169,24 @@
       "visibility": "public"
     },
     {
+      "name": "openbot",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "developer-tool"
+      ],
+      "desc": {
+        "en": "Open robot platform for educational robotics.",
+        "fr": "Plateforme de robotique ouverte pour l'éducation.",
+        "ar": "منصة روبوت مفتوحة للتعليم."
+      },
+      "visibility": "public"
+    },
+    {
       "name": "ops-catalog",
       "emoji": "📋",
       "categories": [
@@ -1215,52 +1206,6 @@
         "ar": "293 فكرة مشروع عتاد DIY في 42 فئة — تطبيق تصويت جماعي لاختيار ما يُبنى أولاً."
       },
       "visibility": "public"
-    },
-    {
-      "name": "ops-catalog-islamic-kids-apps",
-      "emoji": "☪️",
-      "categories": [
-        "arabic",
-        "learning",
-        "classroom"
-      ],
-      "badge": "popular",
-      "status": "stable",
-      "visibility": "public",
-      "tags": [
-        "Islamic",
-        "kids",
-        "educational",
-        "apps"
-      ],
-      "desc": {
-        "en": "Interactive Islamic educational apps for Muslim kids.",
-        "fr": "Applications islamiques éducatives pour enfants musulmans.",
-        "ar": "تطبيقات إسلامية تعليمية تفاعلية للأطفال المسلمين."
-      }
-    },
-    {
-      "name": "ops-catalog-islamic-kids-quizzes",
-      "emoji": "❓",
-      "categories": [
-        "arabic",
-        "learning",
-        "classroom"
-      ],
-      "badge": "popular",
-      "status": "stable",
-      "visibility": "public",
-      "tags": [
-        "Islamic",
-        "quizzes",
-        "kids",
-        "education"
-      ],
-      "desc": {
-        "en": "1,091 Islamic educational quizzes for Muslim kids.",
-        "fr": "1 091 quiz islamiques éducatifs pour enfants.",
-        "ar": "1091 اختبار إسلامي تعليمي للأطفال المسلمين."
-      }
     },
     {
       "name": "ops-catalog-kids-apps",
@@ -1307,6 +1252,24 @@
       }
     },
     {
+      "name": "ota",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "developer-tool"
+      ],
+      "desc": {
+        "en": "Over-the-air update tools for embedded devices.",
+        "fr": "Outils de mise à jour OTA pour appareils embarqués.",
+        "ar": "أدوات التحديث عبر الهواء للأجهزة المدمجة."
+      },
+      "visibility": "public"
+    },
+    {
       "name": "passassion-report",
       "emoji": "📈",
       "categories": [
@@ -1345,29 +1308,6 @@
         "en": "A beginner-friendly penetration testing sandbox — learn cybersecurity basics through guided challenges and CTF-style exercises.",
         "fr": "Un bac à sable de test d'intrusion pour débutants — apprenez la cybersécurité à travers des défis guidés et des exercices de type CTF.",
         "ar": "بيئة اختبار اختراق للمبتدئين — تعلّم أساسيات الأمن السيبراني من خلال تحديات موجهة وتمارين CTF."
-      },
-      "visibility": "public"
-    },
-    {
-      "name": "piper-arabic-tts",
-      "emoji": "🎙️",
-      "categories": [
-        "arabic",
-        "ai"
-      ],
-      "badge": "stable",
-      "status": "beta",
-      "tags": [
-        "arabic",
-        "piper",
-        "WASM",
-        "TTS",
-        "neural"
-      ],
-      "desc": {
-        "en": "High-quality Arabic text-to-speech using Piper neural TTS compiled to WebAssembly — runs in the browser, no cloud needed.",
-        "fr": "Synthèse vocale arabe haute qualité avec Piper TTS neuronal compilé en WebAssembly — fonctionne dans le navigateur.",
-        "ar": "تحويل نص إلى كلام عربي عالي الجودة بتقنية Piper TTS العصبية عبر WebAssembly — يعمل في المتصفح."
       },
       "visibility": "public"
     },
@@ -1413,6 +1353,24 @@
       }
     },
     {
+      "name": "playwright",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "developer-tool"
+      ],
+      "desc": {
+        "en": "Playwright browser automation and testing experiments.",
+        "fr": "Automatisation de navigateur et tests avec Playwright.",
+        "ar": "أتمتة المتصفح واختبارات مع Playwright."
+      },
+      "visibility": "public"
+    },
+    {
       "name": "posts",
       "emoji": "✍️",
       "categories": [
@@ -1430,6 +1388,26 @@
         "en": "Multi-mode visual creator for Workshop-DIY — 58 styles, cowsay art, chat mockups, memes and notifications. 100% client-side, single HTML file, installable PWA.",
         "fr": "Outil multi-mode de création de visuels pour Workshop-DIY — 58 styles, art cowsay, maquettes de chat, mèmes et notifications. 100% client-side, fichier HTML unique, PWA installable.",
         "ar": "منشئ مرئيات متعدد الأوضاع لـ Workshop-DIY — 58 نمطًا، فن cowsay، محاكاة محادثات، ميمات وإشعارات. 100% من جانب العميل، ملف HTML واحد، PWA قابل للتثبيت."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "presentation",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "stable",
+      "status": "stable",
+      "tags": [
+        "HTML",
+        "developer-tool",
+        "web-app"
+      ],
+      "desc": {
+        "en": "Workshop-DIY — Apps",
+        "fr": "Presentation — application Workshop-DIY.",
+        "ar": "أداة من Workshop-DIY."
       },
       "visibility": "public"
     },
@@ -1503,6 +1481,79 @@
       "visibility": "public"
     },
     {
+      "name": "pyshark",
+      "emoji": "🔩",
+      "categories": [
+        "hardware"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "IoT",
+        "networking"
+      ],
+      "desc": {
+        "en": "Python packet analysis tool using PyShark.",
+        "fr": "Outil d'analyse de paquets Python avec PyShark.",
+        "ar": "أداة تحليل حزم بايثون باستخدام PyShark."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "python3",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "developer-tool"
+      ],
+      "desc": {
+        "en": "Python 3 experiments, scripts and learning exercises.",
+        "fr": "Expériences Python 3, scripts et exercices d'apprentissage.",
+        "ar": "تجارب بايثون 3، سكريبتات وتمارين تعلم."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "qrcodes",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "developer-tool"
+      ],
+      "desc": {
+        "en": "QR code generator and scanner web app.",
+        "fr": "Générateur et scanner de codes QR.",
+        "ar": "مولّد وماسح رموز QR."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "reddis",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "developer-tool"
+      ],
+      "desc": {
+        "en": "Redis database experiments and learning tool.",
+        "fr": "Expériences de base de données Redis et outil d'apprentissage.",
+        "ar": "تجارب قاعدة بيانات Redis وأداة تعلم."
+      },
+      "visibility": "public"
+    },
+    {
       "name": "rocket-shield-vpn",
       "emoji": "🛡️",
       "categories": [
@@ -1546,52 +1597,6 @@
       "visibility": "public"
     },
     {
-      "name": "sada",
-      "emoji": "🌊",
-      "categories": [
-        "learning",
-        "arabic"
-      ],
-      "badge": "stable",
-      "status": "stable",
-      "tags": [
-        "content-archive",
-        "564-files",
-        "multilingual",
-        "educational"
-      ],
-      "desc": {
-        "en": "564 self-contained HTML files across 3 languages (EN/FR/AR) for the Workshop-DIY educational ecosystem.",
-        "fr": "564 fichiers HTML autonomes en 3 langues (EN/FR/AR) pour l'écosystème éducatif Workshop-DIY.",
-        "ar": "564 ملف HTML مستقل بـ 3 لغات (EN/FR/AR) للمنظومة التعليمية Workshop-DIY."
-      },
-      "visibility": "public"
-    },
-    {
-      "name": "salat-times",
-      "emoji": "🕌",
-      "categories": [
-        "microbit",
-        "arabic"
-      ],
-      "badge": "new",
-      "status": "dev",
-      "tags": [
-        "prayer-times",
-        "adhan",
-        "micro:bit",
-        "BLE",
-        "PWA",
-        "Islamic"
-      ],
-      "desc": {
-        "en": "A single-file Islamic prayer times web app with micro:bit V2 Adhan Lantern support.",
-        "fr": "Application web de horaires de prière islamique en fichier unique avec support micro:bit V2 Adhan Lantern.",
-        "ar": "تطبيق ويب لمواقيت الصلاة الإسلامية في ملف واحد مع دعم فانوس الأذان micro:bit V2."
-      },
-      "visibility": "public"
-    },
-    {
       "name": "sanitize-names-toolkit",
       "emoji": "🧹",
       "categories": [
@@ -1609,30 +1614,6 @@
         "en": "Bash toolkit to sanitize and normalize file and folder names — simple and advanced modes.",
         "fr": "Boîte à outils Bash pour assainir et normaliser les noms de fichiers et dossiers — modes simple et avancé.",
         "ar": "مجموعة أدوات Bash لتنظيف وتوحيد أسماء الملفات والمجلدات — وضع بسيط ومتقدم."
-      },
-      "visibility": "public"
-    },
-    {
-      "name": "satellites",
-      "emoji": "🛰️",
-      "categories": [
-        "learning",
-        "arabic",
-        "classroom"
-      ],
-      "badge": "stable",
-      "status": "stable",
-      "tags": [
-        "satellite-tracking",
-        "astronomy",
-        "Islamic-heritage",
-        "interactive",
-        "kids"
-      ],
-      "desc": {
-        "en": "An interactive educational experience about satellites, orbital mechanics, and the Arab astronomical heritage that made it all possible.",
-        "fr": "Expérience éducative interactive sur les satellites, la mécanique orbitale et l'héritage astronomique arabe qui a rendu tout cela possible.",
-        "ar": "تجربة تعليمية تفاعلية عن الأقمار الصناعية وميكانيكا المدارات والتراث الفلكي العربي الذي جعل كل ذلك ممكنًا."
       },
       "visibility": "public"
     },
@@ -1722,6 +1703,25 @@
         "en": "Build a smart home dashboard — monitor sensors, toggle lights, set automations and learn IoT basics.",
         "fr": "Créez un tableau de bord maison connectée — capteurs, lumières, automatisations et bases de l'IoT.",
         "ar": "أنشئ لوحة تحكم للمنزل الذكي — راقب المستشعرات، بدّل الأضواء، اضبط الأتمتة وتعلّم أساسيات IoT."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "sniffers-sallae",
+      "emoji": "🔩",
+      "categories": [
+        "hardware"
+      ],
+      "badge": "stable",
+      "status": "stable",
+      "tags": [
+        "IoT",
+        "networking"
+      ],
+      "desc": {
+        "en": "Network packet sniffers and Saleae logic analyzer tools.",
+        "fr": "Sniffers réseau et outils d'analyse logique Saleae.",
+        "ar": "أدوات التقاط حزم الشبكة ومحلل المنطق Saleae."
       },
       "visibility": "public"
     },
@@ -1818,75 +1818,6 @@
       "visibility": "public"
     },
     {
-      "name": "tesbih",
-      "emoji": "📿",
-      "categories": [
-        "arabic"
-      ],
-      "badge": "new",
-      "status": "dev",
-      "tags": [
-        "tasbih",
-        "dhikr",
-        "prayer",
-        "counter",
-        "PWA",
-        "Islamic"
-      ],
-      "desc": {
-        "en": "A digital tasbih (prayer bead counter) with dhikr tracking — tap to count, fully offline PWA.",
-        "fr": "Tasbih numérique (compteur de perles de prière) avec suivi du dhikr — tapez pour compter, PWA entièrement hors ligne.",
-        "ar": "تسبيح رقمي (عداد مسبحة) مع تتبع الذكر — اضغط للعدّ، تطبيق PWA يعمل بدون إنترنت."
-      },
-      "visibility": "public"
-    },
-    {
-      "name": "tethkir",
-      "emoji": "📔",
-      "categories": [
-        "arabic",
-        "tools"
-      ],
-      "badge": "new",
-      "status": "dev",
-      "tags": [
-        "task-manager",
-        "notes",
-        "encryption",
-        "PWA",
-        "Islamic"
-      ],
-      "desc": {
-        "en": "Islamic Task Manager & Secure Notes",
-        "fr": "Gestionnaire de tâches islamique et notes sécurisées.",
-        "ar": "مدير مهام إسلامي وملاحظات مشفّرة."
-      },
-      "visibility": "public"
-    },
-    {
-      "name": "time-machine",
-      "emoji": "🕰️",
-      "categories": [
-        "learning",
-        "arabic"
-      ],
-      "badge": "new",
-      "status": "dev",
-      "tags": [
-        "Islamic-scientists",
-        "history",
-        "game",
-        "interactive",
-        "kids"
-      ],
-      "desc": {
-        "en": "An interactive educational game about Muslim scientists who changed the world.",
-        "fr": "Jeu éducatif interactif sur les scientifiques musulmans qui ont changé le monde.",
-        "ar": "لعبة تعليمية تفاعلية عن العلماء المسلمين الذين غيّروا العالم."
-      },
-      "visibility": "public"
-    },
-    {
       "name": "tools",
       "emoji": "🧰",
       "categories": [
@@ -1921,6 +1852,25 @@
         "en": "A browser-based encrypted volume manager inspired by TrueCrypt/VeraCrypt. Create, lock/unlock, and manage AES-256-GCM encrypted containers through a modern web interface.",
         "fr": "True Crypt — explorez et expérimentez !",
         "ar": "True Crypt — استكشف وجرّب!"
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "tshark",
+      "emoji": "🔩",
+      "categories": [
+        "hardware"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "IoT",
+        "networking"
+      ],
+      "desc": {
+        "en": "Packet analysis with tshark — educational network tool.",
+        "fr": "Analyse de paquets avec tshark — outil réseau éducatif.",
+        "ar": "تحليل الحزم باستخدام tshark — أداة شبكات تعليمية."
       },
       "visibility": "public"
     },
@@ -1970,6 +1920,24 @@
       "visibility": "public"
     },
     {
+      "name": "virus",
+      "emoji": "🛠️",
+      "categories": [
+        "tools"
+      ],
+      "badge": "new",
+      "status": "dev",
+      "tags": [
+        "developer-tool"
+      ],
+      "desc": {
+        "en": "Educational virus analysis and cybersecurity awareness tool.",
+        "fr": "Outil éducatif d'analyse de virus et sensibilisation à la cybersécurité.",
+        "ar": "أداة تعليمية لتحليل الفيروسات والتوعية بالأمن السيبراني."
+      },
+      "visibility": "public"
+    },
+    {
       "name": "warsha",
       "emoji": "🔩",
       "categories": [
@@ -1984,9 +1952,29 @@
         "HTML"
       ],
       "desc": {
-        "en": "بسم الله الرحمن الرحيم",
-        "fr": "Warsha — explorez et expérimentez !",
-        "ar": "Warsha — استكشف وجرّب!"
+        "en": "Warsha — Workshop-DIY interactive workshop builder.",
+        "fr": "Warsha — créateur d'ateliers interactifs Workshop-DIY.",
+        "ar": "ورشة — منشئ ورش عمل تفاعلية من Workshop-DIY."
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "web-developer-toolkit",
+      "emoji": "🛠",
+      "categories": [
+        "tools"
+      ],
+      "badge": "stable",
+      "status": "stable",
+      "tags": [
+        "HTML",
+        "developer-tool",
+        "web-app"
+      ],
+      "desc": {
+        "en": "🛠️ Web Developer Toolkit v1.0",
+        "fr": "Web Developer Toolkit — application Workshop-DIY.",
+        "ar": "أداة من Workshop-DIY."
       },
       "visibility": "public"
     },
@@ -1994,8 +1982,7 @@
       "name": "web-kids",
       "emoji": "🕷️",
       "categories": [
-        "learning",
-        "arabic"
+        "learning"
       ],
       "badge": "new",
       "status": "stable",
@@ -2107,7 +2094,5 @@
       },
       "visibility": "public"
     }
-  ],
-  "visibility_tagged": true,
-  "visibility_tagged_date": "2026-03-24"
+  ]
 }
