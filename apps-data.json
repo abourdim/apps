@@ -1524,7 +1524,7 @@
       "visibility": "public"
     },
     {
-      "name": "rxy",
+      "name": "bit-rxy",
       "emoji": "🎮",
       "categories": [
         "microbit"
